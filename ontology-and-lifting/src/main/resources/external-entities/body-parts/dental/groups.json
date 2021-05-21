@@ -1,0 +1,1791 @@
+[
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/primary_canines",
+    "displayName": "primary canines",
+    "surfaceForms": [
+      "primary canine"
+    ],
+    "tag": null,
+    "timestamp": null,
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_C",
+        "label": "tooth c/tooth 3d - primary maxillary right canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_H",
+        "label": "tooth h/tooth 8d - primary maxillary left canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_M",
+        "label": "tooth m/tooth 13d - primary mandibular left canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_R",
+        "label": "tooth r/tooth 18d - primary mandibular right canine molar",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/canines",
+    "displayName": "canines",
+    "surfaceForms": [
+      "canine",
+      "canine tooth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.924Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_C",
+        "label": "tooth c/tooth 3d - primary maxillary right canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_27",
+        "label": "tooth 27 - permanent mandibular right canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_6",
+        "label": "tooth 6 - permanent maxillary right canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_22",
+        "label": "tooth 22 - permanent mandibular left canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_11",
+        "label": "tooth 11 - permanent maxillary left canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_H",
+        "label": "tooth h/tooth 8d - primary maxillary left canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_M",
+        "label": "tooth m/tooth 13d - primary mandibular left canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_R",
+        "label": "tooth r/tooth 18d - primary mandibular right canine molar",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/primary_posterior_teeth",
+    "displayName": "primary posterior teeth",
+    "surfaceForms": [
+      "primary posterior tooth",
+      "deciduous posterior teeth",
+      "deciduous posterior tooth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.879Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_B",
+        "label": "tooth b/tooth 2d - primary maxillary right first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_J",
+        "label": "tooth j/tooth 10d - primary maxillary left second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_K",
+        "label": "tooth k/tooth 11d - primary mandibular left second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_L",
+        "label": "tooth l/tooth 12d - primary mandibular left first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_T",
+        "label": "tooth t/tooth 20d - primary mandibular right second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_I",
+        "label": "tooth i/tooth 9d - primary maxillary left first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_A",
+        "label": "tooth a/tooth 1d - primary maxillary right second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_S",
+        "label": "tooth s/tooth 19d - primary mandibular right first molar",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/anterior_teeth",
+    "displayName": "anterior teeth",
+    "surfaceForms": [
+      "anterior teeth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.827Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_7",
+        "label": "tooth 7 - permanent maxillary right lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_10",
+        "label": "tooth 10 - permanent maxillary left lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_6",
+        "label": "tooth 6 - permanent maxillary right canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_F",
+        "label": "tooth f/tooth 6d - primary maxillary left central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_P",
+        "label": "tooth p/tooth 16d - primary mandibular right central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_23",
+        "label": "tooth 23 - permanent mandibular left lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_G",
+        "label": "tooth g/tooth 7d - primary maxillary left lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_8",
+        "label": "tooth 8 - permanent maxillary right central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_R",
+        "label": "tooth r/tooth 18d - primary mandibular right canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_C",
+        "label": "tooth c/tooth 3d - primary maxillary right canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_27",
+        "label": "tooth 27 - permanent mandibular right canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_25",
+        "label": "tooth 25 - permanent mandibular right central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_26",
+        "label": "tooth 26 - permanent mandibular right lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_O",
+        "label": "tooth o/tooth 15d - primary mandibular left central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_N",
+        "label": "tooth n/tooth 14d - primary mandibular left lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_D",
+        "label": "tooth d/tooth 4d - primary maxillary right lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_24",
+        "label": "tooth 24 - permanent mandibular left central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_9",
+        "label": "tooth 9 - permanent maxillary left central incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_22",
+        "label": "tooth 22 - permanent mandibular left canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_11",
+        "label": "tooth 11 - permanent maxillary left canine",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_H",
+        "label": "tooth h/tooth 8d - primary maxillary left canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_M",
+        "label": "tooth m/tooth 13d - primary mandibular left canine molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_Q",
+        "label": "tooth q/tooth 17d - primary mandibular right lateral incisor",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_E",
+        "label": "tooth e/tooth 5d - primary maxillary right central incisor",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/posterior_teeth",
+    "displayName": "posterior teeth",
+    "surfaceForms": [
+      "posterior tooth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.839Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_14",
+        "label": "tooth 14 - permanent maxillary left first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_13",
+        "label": "tooth 13 - permanent maxillary left second premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_2",
+        "label": "tooth 2 - permanent maxillary right second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_5",
+        "label": "tooth 5 - permanent maxillary right first premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_4",
+        "label": "tooth 4 - permanent maxillary right second premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_17",
+        "label": "tooth 17 - permanent mandibular left third molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_30",
+        "label": "tooth 30 - permanent mandibular right first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_B",
+        "label": "tooth b/tooth 2d - primary maxillary right first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_32",
+        "label": "tooth 32 - permanent mandibular right third molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_L",
+        "label": "tooth l/tooth 12d - primary mandibular left first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_15",
+        "label": "tooth 15 - permanent maxillary left second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_J",
+        "label": "tooth j/tooth 10d - primary maxillary left second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_18",
+        "label": "tooth 18 - permanent mandibular left second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_K",
+        "label": "tooth k/tooth 11d - primary mandibular left second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_I",
+        "label": "tooth i/tooth 9d - primary maxillary left first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_19",
+        "label": "tooth 19 - permanent mandibular left first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_28",
+        "label": "tooth 28 - permanent mandibular right first premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_31",
+        "label": "tooth 31 - permanent mandibular right second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_20",
+        "label": "tooth 20 - permanent mandibular left second premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_12",
+        "label": "tooth 12 - permanent maxillary left first premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_21",
+        "label": "tooth 21 - permanent mandibular left first premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_1",
+        "label": "tooth 1 - permanent maxillary right third molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_T",
+        "label": "tooth t/tooth 20d - primary mandibular right second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_3",
+        "label": "tooth 3 - permanent maxillary right first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_A",
+        "label": "tooth a/tooth 1d - primary maxillary right second molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_29",
+        "label": "tooth 29 - permanent mandibular right second premolar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_S",
+        "label": "tooth s/tooth 19d - primary mandibular right first molar",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_16",
+        "label": "tooth 16 - permanent maxillary left third molar",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/permanent_quadrants",
+    "displayName": "permanent quadrants",
+    "surfaceForms": [
+      "permanent quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.874Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_3",
+        "label": "quadrant 3 - lower left quadrant, permanent dentition",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_1",
+        "label": "quadrant 1 - upper right quadrant, permanent dentition",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_2",
+        "label": "quadrant 2 - upper left quadrant, permanent dentition",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_4",
+        "label": "quadrant 4 - lower left quadrant, permanent dentition",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/teeth",
+    "displayName": "per tooth",
+    "surfaceForms": [
+      "any tooth",
+      "tooth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.896Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_13",
+        "type": "SINGLE",
+        "label": "tooth 13 - permanent maxillary left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_10",
+        "type": "SINGLE",
+        "label": "tooth 10 - permanent maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_6",
+        "type": "SINGLE",
+        "label": "tooth 6 - permanent maxillary right canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_2",
+        "type": "SINGLE",
+        "label": "tooth 2 - permanent maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_5",
+        "type": "SINGLE",
+        "label": "tooth 5 - permanent maxillary right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_4",
+        "type": "SINGLE",
+        "label": "tooth 4 - permanent maxillary right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_P",
+        "type": "SINGLE",
+        "label": "tooth p/tooth 16d - primary mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_30",
+        "type": "SINGLE",
+        "label": "tooth 30 - permanent mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_B",
+        "type": "SINGLE",
+        "label": "tooth b/tooth 2d - primary maxillary right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_24",
+        "type": "SINGLE",
+        "label": "tooth 24 - permanent mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_M",
+        "type": "SINGLE",
+        "label": "tooth m/tooth 13d - primary mandibular left canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_L",
+        "type": "SINGLE",
+        "label": "tooth l/tooth 12d - primary mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_E",
+        "type": "SINGLE",
+        "label": "tooth e/tooth 5d - primary maxillary right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_F",
+        "type": "SINGLE",
+        "label": "tooth f/tooth 6d - primary maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_15",
+        "type": "SINGLE",
+        "label": "tooth 15 - permanent maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_23",
+        "type": "SINGLE",
+        "label": "tooth 23 - permanent mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_I",
+        "type": "SINGLE",
+        "label": "tooth i/tooth 9d - primary maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_R",
+        "type": "SINGLE",
+        "label": "tooth r/tooth 18d - primary mandibular right canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_8",
+        "type": "SINGLE",
+        "label": "tooth 8 - permanent maxillary right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_19",
+        "type": "SINGLE",
+        "label": "tooth 19 - permanent mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_C",
+        "type": "SINGLE",
+        "label": "tooth c/tooth 3d - primary maxillary right canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_28",
+        "type": "SINGLE",
+        "label": "tooth 28 - permanent mandibular right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_25",
+        "type": "SINGLE",
+        "label": "tooth 25 - permanent mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_27",
+        "type": "SINGLE",
+        "label": "tooth 27 - permanent mandibular right canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_O",
+        "type": "SINGLE",
+        "label": "tooth o/tooth 15d - primary mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_N",
+        "type": "SINGLE",
+        "label": "tooth n/tooth 14d - primary mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_12",
+        "type": "SINGLE",
+        "label": "tooth 12 - permanent maxillary left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_21",
+        "type": "SINGLE",
+        "label": "tooth 21 - permanent mandibular left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_Q",
+        "type": "SINGLE",
+        "label": "tooth q/tooth 17d - primary mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_29",
+        "type": "SINGLE",
+        "label": "tooth 29 - permanent mandibular right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_S",
+        "type": "SINGLE",
+        "label": "tooth s/tooth 19d - primary mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_A",
+        "type": "SINGLE",
+        "label": "tooth a/tooth 1d - primary maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_16",
+        "type": "SINGLE",
+        "label": "tooth 16 - permanent maxillary left third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_14",
+        "type": "SINGLE",
+        "label": "tooth 14 - permanent maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_7",
+        "type": "SINGLE",
+        "label": "tooth 7 - permanent maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_17",
+        "type": "SINGLE",
+        "label": "tooth 17 - permanent mandibular left third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_26",
+        "type": "SINGLE",
+        "label": "tooth 26 - permanent mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_32",
+        "type": "SINGLE",
+        "label": "tooth 32 - permanent mandibular right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_D",
+        "type": "SINGLE",
+        "label": "tooth d/tooth 4d - primary maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_11",
+        "type": "SINGLE",
+        "label": "tooth 11 - permanent maxillary left canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_H",
+        "type": "SINGLE",
+        "label": "tooth h/tooth 8d - primary maxillary left canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_J",
+        "type": "SINGLE",
+        "label": "tooth j/tooth 10d - primary maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_18",
+        "type": "SINGLE",
+        "label": "tooth 18 - permanent mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_K",
+        "type": "SINGLE",
+        "label": "tooth k/tooth 11d - primary mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_G",
+        "type": "SINGLE",
+        "label": "tooth g/tooth 7d - primary maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_31",
+        "type": "SINGLE",
+        "label": "tooth 31 - permanent mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_20",
+        "type": "SINGLE",
+        "label": "tooth 20 - permanent mandibular left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_22",
+        "type": "SINGLE",
+        "label": "tooth 22 - permanent mandibular left canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_9",
+        "type": "SINGLE",
+        "label": "tooth 9 - permanent maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_1",
+        "type": "SINGLE",
+        "label": "tooth 1 - permanent maxillary right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_T",
+        "type": "SINGLE",
+        "label": "tooth t/tooth 20d - primary mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_3",
+        "type": "SINGLE",
+        "label": "tooth 3 - permanent maxillary right first molar"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/permanent_posterior_teeth",
+    "displayName": "permanent posterior teeth",
+    "surfaceForms": [
+      "permanent posterior tooth",
+      "permanent posterior teeth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.913Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_14",
+        "type": "SINGLE",
+        "label": "tooth 14 - permanent maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_13",
+        "type": "SINGLE",
+        "label": "tooth 13 - permanent maxillary left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_15",
+        "type": "SINGLE",
+        "label": "tooth 15 - permanent maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_18",
+        "type": "SINGLE",
+        "label": "tooth 18 - permanent mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_2",
+        "type": "SINGLE",
+        "label": "tooth 2 - permanent maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_5",
+        "type": "SINGLE",
+        "label": "tooth 5 - permanent maxillary right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_4",
+        "type": "SINGLE",
+        "label": "tooth 4 - permanent maxillary right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_17",
+        "type": "SINGLE",
+        "label": "tooth 17 - permanent mandibular left third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_19",
+        "type": "SINGLE",
+        "label": "tooth 19 - permanent mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_28",
+        "type": "SINGLE",
+        "label": "tooth 28 - permanent mandibular right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_30",
+        "type": "SINGLE",
+        "label": "tooth 30 - permanent mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_31",
+        "type": "SINGLE",
+        "label": "tooth 31 - permanent mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_20",
+        "type": "SINGLE",
+        "label": "tooth 20 - permanent mandibular left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_32",
+        "type": "SINGLE",
+        "label": "tooth 32 - permanent mandibular right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_12",
+        "type": "SINGLE",
+        "label": "tooth 12 - permanent maxillary left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_21",
+        "type": "SINGLE",
+        "label": "tooth 21 - permanent mandibular left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_1",
+        "type": "SINGLE",
+        "label": "tooth 1 - permanent maxillary right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_3",
+        "type": "SINGLE",
+        "label": "tooth 3 - permanent maxillary right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_29",
+        "type": "SINGLE",
+        "label": "tooth 29 - permanent mandibular right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_16",
+        "type": "SINGLE",
+        "label": "tooth 16 - permanent maxillary left third molar"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/primary_quadrants",
+    "displayName": "primary quadrants",
+    "surfaceForms": [
+      "primary quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.885Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_5",
+        "type": "SINGLE",
+        "label": "quadrant 5 - upper right quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_8",
+        "type": "SINGLE",
+        "label": "quadrant 8 - lower right quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_6",
+        "type": "SINGLE",
+        "label": "quadrant 6 - upper left quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_7",
+        "type": "SINGLE",
+        "label": "quadrant 7 - lower left quadrant, primary dentition"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/permanent_teeth",
+    "displayName": "permanent teeth",
+    "surfaceForms": [
+      "permanent tooth",
+      "permanent dentition"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.813Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_14",
+        "type": "SINGLE",
+        "label": "tooth 14 - permanent maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_13",
+        "type": "SINGLE",
+        "label": "tooth 13 - permanent maxillary left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_10",
+        "type": "SINGLE",
+        "label": "tooth 10 - permanent maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_7",
+        "type": "SINGLE",
+        "label": "tooth 7 - permanent maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_6",
+        "type": "SINGLE",
+        "label": "tooth 6 - permanent maxillary right canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_2",
+        "type": "SINGLE",
+        "label": "tooth 2 - permanent maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_5",
+        "type": "SINGLE",
+        "label": "tooth 5 - permanent maxillary right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_4",
+        "type": "SINGLE",
+        "label": "tooth 4 - permanent maxillary right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_17",
+        "type": "SINGLE",
+        "label": "tooth 17 - permanent mandibular left third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_30",
+        "type": "SINGLE",
+        "label": "tooth 30 - permanent mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_26",
+        "type": "SINGLE",
+        "label": "tooth 26 - permanent mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_32",
+        "type": "SINGLE",
+        "label": "tooth 32 - permanent mandibular right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_24",
+        "type": "SINGLE",
+        "label": "tooth 24 - permanent mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_11",
+        "type": "SINGLE",
+        "label": "tooth 11 - permanent maxillary left canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_15",
+        "type": "SINGLE",
+        "label": "tooth 15 - permanent maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_18",
+        "type": "SINGLE",
+        "label": "tooth 18 - permanent mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_23",
+        "type": "SINGLE",
+        "label": "tooth 23 - permanent mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_8",
+        "type": "SINGLE",
+        "label": "tooth 8 - permanent maxillary right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_19",
+        "type": "SINGLE",
+        "label": "tooth 19 - permanent mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_28",
+        "type": "SINGLE",
+        "label": "tooth 28 - permanent mandibular right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_31",
+        "type": "SINGLE",
+        "label": "tooth 31 - permanent mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_20",
+        "type": "SINGLE",
+        "label": "tooth 20 - permanent mandibular left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_27",
+        "type": "SINGLE",
+        "label": "tooth 27 - permanent mandibular right canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_25",
+        "type": "SINGLE",
+        "label": "tooth 25 - permanent mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_12",
+        "type": "SINGLE",
+        "label": "tooth 12 - permanent maxillary left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_22",
+        "type": "SINGLE",
+        "label": "tooth 22 - permanent mandibular left canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_9",
+        "type": "SINGLE",
+        "label": "tooth 9 - permanent maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_21",
+        "type": "SINGLE",
+        "label": "tooth 21 - permanent mandibular left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_1",
+        "type": "SINGLE",
+        "label": "tooth 1 - permanent maxillary right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_3",
+        "type": "SINGLE",
+        "label": "tooth 3 - permanent maxillary right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_29",
+        "type": "SINGLE",
+        "label": "tooth 29 - permanent mandibular right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_16",
+        "type": "SINGLE",
+        "label": "tooth 16 - permanent maxillary left third molar"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/primary_anterior_teeth",
+    "displayName": "primary anterior teeth",
+    "surfaceForms": [
+      "primary anterior tooth",
+      "anterior primary teeth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.856Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_C",
+        "type": "SINGLE",
+        "label": "tooth c/tooth 3d - primary maxillary right canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_O",
+        "type": "SINGLE",
+        "label": "tooth o/tooth 15d - primary mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_N",
+        "type": "SINGLE",
+        "label": "tooth n/tooth 14d - primary mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_D",
+        "type": "SINGLE",
+        "label": "tooth d/tooth 4d - primary maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_F",
+        "type": "SINGLE",
+        "label": "tooth f/tooth 6d - primary maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_H",
+        "type": "SINGLE",
+        "label": "tooth h/tooth 8d - primary maxillary left canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_M",
+        "type": "SINGLE",
+        "label": "tooth m/tooth 13d - primary mandibular left canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_Q",
+        "type": "SINGLE",
+        "label": "tooth q/tooth 17d - primary mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_P",
+        "type": "SINGLE",
+        "label": "tooth p/tooth 16d - primary mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_G",
+        "type": "SINGLE",
+        "label": "tooth g/tooth 7d - primary maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_R",
+        "type": "SINGLE",
+        "label": "tooth r/tooth 18d - primary mandibular right canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_E",
+        "type": "SINGLE",
+        "label": "tooth e/tooth 5d - primary maxillary right central incisor"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/permanent_anterior_teeth",
+    "displayName": "permanent anterior teeth",
+    "surfaceForms": [
+      "permanent anterior tooth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.908Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_27",
+        "type": "SINGLE",
+        "label": "tooth 27 - permanent mandibular right canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_25",
+        "type": "SINGLE",
+        "label": "tooth 25 - permanent mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_26",
+        "type": "SINGLE",
+        "label": "tooth 26 - permanent mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_7",
+        "type": "SINGLE",
+        "label": "tooth 7 - permanent maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_10",
+        "type": "SINGLE",
+        "label": "tooth 10 - permanent maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_6",
+        "type": "SINGLE",
+        "label": "tooth 6 - permanent maxillary right canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_24",
+        "type": "SINGLE",
+        "label": "tooth 24 - permanent mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_9",
+        "type": "SINGLE",
+        "label": "tooth 9 - permanent maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_22",
+        "type": "SINGLE",
+        "label": "tooth 22 - permanent mandibular left canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_11",
+        "type": "SINGLE",
+        "label": "tooth 11 - permanent maxillary left canine"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_23",
+        "type": "SINGLE",
+        "label": "tooth 23 - permanent mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_8",
+        "type": "SINGLE",
+        "label": "tooth 8 - permanent maxillary right central incisor"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/molars",
+    "displayName": "molars",
+    "surfaceForms": [
+      "molar teeth",
+      "molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.919Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_14",
+        "type": "SINGLE",
+        "label": "tooth 14 - permanent maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_15",
+        "type": "SINGLE",
+        "label": "tooth 15 - permanent maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_J",
+        "type": "SINGLE",
+        "label": "tooth j/tooth 10d - primary maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_18",
+        "type": "SINGLE",
+        "label": "tooth 18 - permanent mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_2",
+        "type": "SINGLE",
+        "label": "tooth 2 - permanent maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_K",
+        "type": "SINGLE",
+        "label": "tooth k/tooth 11d - primary mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_17",
+        "type": "SINGLE",
+        "label": "tooth 17 - permanent mandibular left third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_I",
+        "type": "SINGLE",
+        "label": "tooth i/tooth 9d - primary maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_19",
+        "type": "SINGLE",
+        "label": "tooth 19 - permanent mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_30",
+        "type": "SINGLE",
+        "label": "tooth 30 - permanent mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_31",
+        "type": "SINGLE",
+        "label": "tooth 31 - permanent mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_B",
+        "type": "SINGLE",
+        "label": "tooth b/tooth 2d - primary maxillary right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_32",
+        "type": "SINGLE",
+        "label": "tooth 32 - permanent mandibular right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_1",
+        "type": "SINGLE",
+        "label": "tooth 1 - permanent maxillary right third molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_L",
+        "type": "SINGLE",
+        "label": "tooth l/tooth 12d - primary mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_T",
+        "type": "SINGLE",
+        "label": "tooth t/tooth 20d - primary mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_3",
+        "type": "SINGLE",
+        "label": "tooth 3 - permanent maxillary right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_A",
+        "type": "SINGLE",
+        "label": "tooth a/tooth 1d - primary maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_S",
+        "type": "SINGLE",
+        "label": "tooth s/tooth 19d - primary mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_16",
+        "type": "SINGLE",
+        "label": "tooth 16 - permanent maxillary left third molar"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrants",
+    "displayName": "per quadrant",
+    "surfaceForms": [
+      "any quadrant",
+      "quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.847Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_5",
+        "type": "SINGLE",
+        "label": "quadrant 5 - upper right quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_8",
+        "type": "SINGLE",
+        "label": "quadrant 8 - lower right quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_3",
+        "type": "SINGLE",
+        "label": "quadrant 3 - lower left quadrant, permanent dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_1",
+        "type": "SINGLE",
+        "label": "quadrant 1 - upper right quadrant, permanent dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_2",
+        "type": "SINGLE",
+        "label": "quadrant 2 - upper left quadrant, permanent dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_6",
+        "type": "SINGLE",
+        "label": "quadrant 6 - upper left quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_7",
+        "type": "SINGLE",
+        "label": "quadrant 7 - lower left quadrant, primary dentition"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/quadrant_4",
+        "type": "SINGLE",
+        "label": "quadrant 4 - lower left quadrant, permanent dentition"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/primary_teeth",
+    "displayName": "primary teeth",
+    "surfaceForms": [
+      "milk tooth",
+      "primary dentition",
+      "primary tooth",
+      "deciduous tooth",
+      "baby tooth"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.866Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_F",
+        "type": "SINGLE",
+        "label": "tooth f/tooth 6d - primary maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_J",
+        "type": "SINGLE",
+        "label": "tooth j/tooth 10d - primary maxillary left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_K",
+        "type": "SINGLE",
+        "label": "tooth k/tooth 11d - primary mandibular left second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_P",
+        "type": "SINGLE",
+        "label": "tooth p/tooth 16d - primary mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_I",
+        "type": "SINGLE",
+        "label": "tooth i/tooth 9d - primary maxillary left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_G",
+        "type": "SINGLE",
+        "label": "tooth g/tooth 7d - primary maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_R",
+        "type": "SINGLE",
+        "label": "tooth r/tooth 18d - primary mandibular right canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_C",
+        "type": "SINGLE",
+        "label": "tooth c/tooth 3d - primary maxillary right canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_O",
+        "type": "SINGLE",
+        "label": "tooth o/tooth 15d - primary mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_B",
+        "type": "SINGLE",
+        "label": "tooth b/tooth 2d - primary maxillary right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_N",
+        "type": "SINGLE",
+        "label": "tooth n/tooth 14d - primary mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_D",
+        "type": "SINGLE",
+        "label": "tooth d/tooth 4d - primary maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_H",
+        "type": "SINGLE",
+        "label": "tooth h/tooth 8d - primary maxillary left canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_M",
+        "type": "SINGLE",
+        "label": "tooth m/tooth 13d - primary mandibular left canine molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_L",
+        "type": "SINGLE",
+        "label": "tooth l/tooth 12d - primary mandibular left first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_Q",
+        "type": "SINGLE",
+        "label": "tooth q/tooth 17d - primary mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_T",
+        "type": "SINGLE",
+        "label": "tooth t/tooth 20d - primary mandibular right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_A",
+        "type": "SINGLE",
+        "label": "tooth a/tooth 1d - primary maxillary right second molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_S",
+        "type": "SINGLE",
+        "label": "tooth s/tooth 19d - primary mandibular right first molar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_E",
+        "type": "SINGLE",
+        "label": "tooth e/tooth 5d - primary maxillary right central incisor"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/premolars",
+    "displayName": "premolars",
+    "surfaceForms": [
+      "premolar tooth",
+      "premolar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.891Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_28",
+        "type": "SINGLE",
+        "label": "tooth 28 - permanent mandibular right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_20",
+        "type": "SINGLE",
+        "label": "tooth 20 - permanent mandibular left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_13",
+        "type": "SINGLE",
+        "label": "tooth 13 - permanent maxillary left second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_12",
+        "type": "SINGLE",
+        "label": "tooth 12 - permanent maxillary left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_21",
+        "type": "SINGLE",
+        "label": "tooth 21 - permanent mandibular left first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_5",
+        "type": "SINGLE",
+        "label": "tooth 5 - permanent maxillary right first premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_4",
+        "type": "SINGLE",
+        "label": "tooth 4 - permanent maxillary right second premolar"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_29",
+        "type": "SINGLE",
+        "label": "tooth 29 - permanent mandibular right second premolar"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/incisors",
+    "displayName": "incisors",
+    "surfaceForms": [
+      "incisor tooth",
+      "incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T09:06:49.903Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_7",
+        "type": "SINGLE",
+        "label": "tooth 7 - permanent maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_10",
+        "type": "SINGLE",
+        "label": "tooth 10 - permanent maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_F",
+        "type": "SINGLE",
+        "label": "tooth f/tooth 6d - primary maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_P",
+        "type": "SINGLE",
+        "label": "tooth p/tooth 16d - primary mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_23",
+        "type": "SINGLE",
+        "label": "tooth 23 - permanent mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_G",
+        "type": "SINGLE",
+        "label": "tooth g/tooth 7d - primary maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_8",
+        "type": "SINGLE",
+        "label": "tooth 8 - permanent maxillary right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_25",
+        "type": "SINGLE",
+        "label": "tooth 25 - permanent mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_26",
+        "type": "SINGLE",
+        "label": "tooth 26 - permanent mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_O",
+        "type": "SINGLE",
+        "label": "tooth o/tooth 15d - primary mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_N",
+        "type": "SINGLE",
+        "label": "tooth n/tooth 14d - primary mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_D",
+        "type": "SINGLE",
+        "label": "tooth d/tooth 4d - primary maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_24",
+        "type": "SINGLE",
+        "label": "tooth 24 - permanent mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_9",
+        "type": "SINGLE",
+        "label": "tooth 9 - permanent maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_Q",
+        "type": "SINGLE",
+        "label": "tooth q/tooth 17d - primary mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_E",
+        "type": "SINGLE",
+        "label": "tooth e/tooth 5d - primary maxillary right central incisor"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/primary_incisors",
+    "displayName": "primary incisors",
+    "surfaceForms": [
+      "primary incisor"
+    ],
+    "tag": null,
+    "timestamp": null,
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/tooth_F",
+        "type": "SINGLE",
+        "label": "tooth f/tooth 6d - primary maxillary left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_P",
+        "type": "SINGLE",
+        "label": "tooth p/tooth 16d - primary mandibular right central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_G",
+        "type": "SINGLE",
+        "label": "tooth g/tooth 7d - primary maxillary left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_O",
+        "type": "SINGLE",
+        "label": "tooth o/tooth 15d - primary mandibular left central incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_N",
+        "type": "SINGLE",
+        "label": "tooth n/tooth 14d - primary mandibular left lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_D",
+        "type": "SINGLE",
+        "label": "tooth d/tooth 4d - primary maxillary right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_Q",
+        "type": "SINGLE",
+        "label": "tooth q/tooth 17d - primary mandibular right lateral incisor"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/tooth_E",
+        "type": "SINGLE",
+        "label": "tooth e/tooth 5d - primary maxillary right central incisor"
+      }
+    ]
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/per_arch",
+    "displayName": "per arch",
+    "surfaceForms": [
+      "per denture",
+      "per prosthesis"
+    ],
+    "tag": null,
+    "timestamp": null,
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/CustomBodyPartsGroup"
+    ],
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/upper_arch",
+        "type": "SINGLE",
+        "label": "maxillary arch"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/lower_arch",
+        "type": "SINGLE",
+        "label": "mandibular arch"
+      }
+    ]
+  }
+]

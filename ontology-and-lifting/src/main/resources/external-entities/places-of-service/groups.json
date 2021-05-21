@@ -1,0 +1,28 @@
+[
+  {
+    "entityId": "http://claims-audit.ibm.com/places_of_service_group_non_hospital",
+    "displayName": "non-hospital",
+    "surfaceForms": [
+      "non-hospital"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/PlacesOfServiceGroup"
+    ],
+    "tag": "places-of-service.20190718",
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/places_of_service_group_hospital",
+    "displayName": "hospital",
+    "surfaceForms": [
+      "hospital"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/PlacesOfServiceGroup"
+    ],
+    "tag": "places-of-service.20190718",
+    "type": "GROUP",
+    "members": []
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_rinse",
+    "surfaceForms": [
+      "fluoride rinse"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_dentures",
+    "surfaceForms": [
+      "complete denture"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_removable_prosthetics",
+    "surfaceForms": [
+      "removable prosthetic"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___resin_base",
+    "surfaceForms": [
+      "partial low denture/resin base",
+      "partial lower denture/resin base"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_varnish",
+    "surfaceForms": [
+      "fluoride varnish"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_space_maintainer_placement",
+    "surfaceForms": [
+      "space maintainer"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_dental_benefits",
+    "surfaceForms": [
+      "preventative dental benefit"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_procedures",
+    "surfaceForms": [
+      "preventative procedure",
+      "preventive procedure"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_maxillary_denture",
+    "surfaceForms": [
+      "complete upper denture"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_sealants_application",
+    "surfaceForms": [
+      "sealant"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___resin_base",
+    "surfaceForms": [
+      "partial up denture/resin base",
+      "partial upper denture/resin base"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_benefits",
+    "surfaceForms": [
+      "denture benefit"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_repair",
+    "surfaceForms": [
+      "denture repair",
+      "prosthesis repair"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_oral_evaluation",
+    "surfaceForms": [
+      "oral evaluation"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_prefabricated_stainless_steel_crowns",
+    "surfaceForms": [
+      "prefabricated stainless steel crowns"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+    "surfaceForms": [
+      "prophylaxis procedure",
+      "dental prophylaxis",
+      "prophylaxis"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_emergency_dental_benefits",
+    "surfaceForms": [
+      "emergency benefit"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___flexible_base",
+    "surfaceForms": [
+      "partial lower denture/flexible base",
+      "partial low denture/flexible base"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_basic_dental_benefits",
+    "surfaceForms": [
+      "basic dental benefit"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_mandibular_denture",
+    "surfaceForms": [
+      "complete lower denture"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_major_dental_benefits",
+    "surfaceForms": [
+      "major dental benefit"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___cast_metal_framework",
+    "surfaceForms": [
+      "partial up denture/cast metal framework",
+      "partial upper denture/cast metal framework"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___cast_metal_framework",
+    "surfaceForms": [
+      "partial lower denture/cast metal framework",
+      "partial low denture/cast metal framework"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___flexible_base",
+    "surfaceForms": [
+      "partial upper denture/flexible base",
+      "partial up denture/flexible base"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+    "surfaceForms": [
+      "periodontal treatment",
+      "periodontal procedure"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_dentures",
+    "surfaceForms": [
+      "partial denture",
+      ""
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fixed_space_maintainer_removal",
+    "surfaceForms": [
+      "fixed space maintainer removal",
+      "removal of fix space maintainer",
+      "removal of fixed space maintainer"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+    "surfaceForms": [
+      "fluoride topical application",
+      "topical fluoride",
+      "topical application of fluoride"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_toothbrush_prophylaxis",
+    "surfaceForms": [
+      "toothbrush prophylaxis"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_all_crowns",
+    "surfaceForms": [
+      "crowns"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_bitewing_films",
+    "surfaceForms": [
+      "bitewing film"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_radiographs",
+    "surfaceForms": [
+      "radiograph"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_laboratory_fabricated_crowns_utilizing_non_precious_materials",
+    "surfaceForms": [
+      "laboratory - fabricate crown utilize non - precious material"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_implants_and_related_services",
+    "surfaceForms": [
+      "dental implant and relate service"
+    ],
+    "type": "GROUP"
+  },  
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_early_and_periodic_screening__diagnostic_and_treatment",
+    "surfaceForms": [
+      "care for kids"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_fitting_and_follow_up",
+    "surfaceForms": [
+      "fitting and follow-up"
+    ],
+    "type": "GROUP"
+  }
+]

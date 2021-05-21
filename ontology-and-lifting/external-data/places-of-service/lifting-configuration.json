@@ -1,0 +1,25 @@
+{
+  "namespace": "http://claims-audit.ibm.com/",
+  "columns": [
+    {
+      "column": "Place of Service Code(s)",
+      "type": "http://claims-audit.ibm.com/SinglePlaceOfService",
+      "properties": [
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "Place of Service Name"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "DISPLAY_NAME",
+          "columns": [
+            "Place of Service Name"
+          ],
+          "transformation": "LOWERCASE"
+        }
+      ]
+    }
+  ]
+}

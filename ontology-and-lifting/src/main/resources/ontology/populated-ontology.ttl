@@ -1,0 +1,1912 @@
+@prefix :      <http://claims-audit.ibm.com/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+[ a             owl:Ontology ;
+  rdfs:comment  "Updated on 08/03/19 based on https://en.wikipedia.org/wiki/Dental_notation"
+] .
+
+:       a                owl:Ontology ;
+        owl:versionInfo  "[1.3.29] - 22/11/2020" .
+
+:AgeRange  a                owl:Class ;
+        rdfs:subClassOf     [ a                   owl:Restriction ;
+                              owl:onProperty      owl:sameAs ;
+                              owl:someValuesFrom  :UmlsPopulationGroup
+                            ] ;
+        :extractionPattern  "through age[s]* <hasMaxAge>" , "age[s]* <hasMinAge> through <hasMaxAge>\\s*(?:years|year){0,1}" , "age[s]* <hasMinAge> (?:years|year){0,1}\\s*(?:old){0,1}\\s*(?:and|or)\\s+(?:over|older)" , "age[s]* <hasMaxAge> (?:years|year){0,1}\\s*(?:old){0,1}\\s*(?:and|or)\\s+(?:under|younger)" , "(?:up to|under)\\s*(?:the){0,1}\\s*age[s]*\\s*(?:of){0,1} <hasMaxAge>" , "(?:through|under|up to) <hasMaxAge>\\s*(?:years|year)\\s*(?:of age){0,1}" .
+
+:ApplicableTimePeriod
+        a                   owl:Class ;
+        rdfs:comment        "The time period the rule is referring to" ;
+        rdfs:label          "interval" , "period" , "lifespan" , "when" ;
+        :extractionPattern  "<hasAmountOfTime>\\s*[-]{0,1}<hasUnitOfTime> (?:interval|period)" , "<hasStartDate> through <hasEndDate>" , "<hasStartDate>\\s*[-]{0,1}\\s*<hasEndDate>" , "(?:every|within) <hasAmountOfTime>\\s+(?:\\(\\d+\\)\\s*){0,1}<hasUnitOfTime>" .
+
+:Arch   a                owl:Class ;
+        rdfs:label       "arch" ;
+        rdfs:subClassOf  :BodyPart .
+
+:BenefitRule  a  owl:Class .
+
+:BillingCommonality  a  owl:Class .
+
+:BodyPart  a    owl:Class .
+
+:ComplianceRuleTag  a  owl:Class .
+
+:ConfidenceScore  a      owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+:CustomBodyPartsGroup
+        a                owl:Class ;
+        rdfs:subClassOf  :BodyPart .
+
+:CustomProcedureCodesGroup
+        a                owl:Class ;
+        rdfs:label       "procedure" ;
+        rdfs:subClassOf  :Service .
+
+:Date   a                    rdfs:Datatype ;
+        rdfs:comment         "Represents a date in a non specified format, default YYYY-MM-DD" ;
+        :annotatedAs         "DateTime" ;
+        owl:equivalentClass  xsd:string .
+
+:HighRiskCategory  a  owl:Class .
+
+:Jaw    a                owl:Class ;
+        rdfs:label       "jaw" ;
+        rdfs:subClassOf  :BodyPart .
+
+:MemberEligibility  a  owl:Class ;
+        rdfs:label  "member" .
+
+:MonetaryAmount  a           rdfs:Datatype ;
+        rdfs:comment         "Represents an amount of money with (optional) currency symbol, e.g. 1,000$, € 100, 10.00" ;
+        :annotatedAs         "com.ibm.watsonx.nlp_di.hutt.Money" , "CurrencyAmount" ;
+        owl:equivalentClass  [ a                     rdfs:Datatype ;
+                               owl:onDatatype        xsd:string ;
+                               owl:withRestrictions  ( [ xsd:pattern  "(\\p{Sc}\\s*){0,1}(\\d+[\\d,]*\\.?\\d*){1}(\\s*\\p{Sc}){0,1}" ]
+                                                     )
+                             ] .
+
+:MutualExclusionBenefitRule
+        a                      owl:Class ;
+        rdfs:subClassOf        :BenefitRule ;
+        rdfs:subClassOf        [ a                   owl:Restriction ;
+                                 owl:minCardinality  "1"^^xsd:nonNegativeInteger ;
+                                 owl:onProperty      :hasMutuallyExclusiveReimbursableService
+                               ] ;
+        rdfs:subClassOf        [ a                   owl:Restriction ;
+                                 owl:minCardinality  "1"^^xsd:nonNegativeInteger ;
+                                 owl:onProperty      :hasMutuallyExclusiveNotReimbursableService
+                               ] ;
+        :displayName           "Mutually Exclusive" ;
+        :hasComplianceRuleTag  :non_compliance .
+
+:NonCoverageBenefitRule
+        a                      owl:Class ;
+        rdfs:subClassOf        :BenefitRule ;
+        rdfs:subClassOf        [ a                   owl:Restriction ;
+                                 owl:minCardinality  "1"^^xsd:nonNegativeInteger ;
+                                 owl:onProperty      :hasNotApplicableService
+                               ] ;
+        :displayName           "Non Coverage" ;
+        :hasComplianceRuleTag  :non_compliance .
+
+:PlaceOfService  a  owl:Class .
+
+:PlacesOfServiceGroup
+        a                owl:Class ;
+        rdfs:subClassOf  :PlaceOfService .
+
+:Policy  a      owl:Class .
+
+:ProcedureCode  a        owl:Class ;
+        rdfs:label       "procedure" ;
+        rdfs:subClassOf  :Service .
+
+:ProcedureCodeGroup  a   owl:Class ;
+        rdfs:label       "procedure" ;
+        rdfs:subClassOf  :Service .
+
+:Program  a         owl:Class ;
+        rdfs:label  "program" , "participant" .
+
+:Quadrant  a             owl:Class ;
+        rdfs:label       "quadrant" ;
+        rdfs:subClassOf  :BodyPart .
+
+:Requirement  a     owl:Class ;
+        rdfs:label  "requirement" .
+
+:Service  a         owl:Class ;
+        rdfs:label  "treatment" , "therapy" , "service" , "benefit" .
+
+:ServiceCategory  a      owl:Class ;
+        rdfs:label       "service" ;
+        rdfs:subClassOf  :Service .
+
+:ServiceLimitation  a  owl:Class ;
+        rdfs:label  "unit" .
+
+:ServiceLimitationBenefitRule
+        a                      owl:Class ;
+        rdfs:subClassOf        :BenefitRule ;
+        :displayName           "Service Limitation" ;
+        :hasComplianceRuleTag  :compliance .
+
+:ServiceModifier  a      owl:Class ;
+        rdfs:subClassOf  :Service .
+
+:SinglePlaceOfService
+        a                owl:Class ;
+        rdfs:subClassOf  :PlaceOfService .
+
+:Tooth  a                owl:Class ;
+        rdfs:label       "tooth" ;
+        rdfs:subClassOf  :BodyPart .
+
+:UmlsBiomedicalOccupationOrDiscipline
+        a                owl:Class ;
+        rdfs:comment     "Umls semantic type BiomedicalOccupationOrDiscipline (bmod)" ;
+        rdfs:subClassOf  :UmlsConcept , :BillingCommonality ;
+        :annotatedAs     "bmod" .
+
+:UmlsConcept  a  owl:Class .
+
+:UmlsDiseaseOrSyndrome
+        a                owl:Class ;
+        rdfs:comment     "Umls semantic type DiseaseOrSyndrome" ;
+        rdfs:subClassOf  :UmlsConcept ;
+        :annotatedAs     "dsyn" .
+
+:UmlsHealthCareActivity
+        a                owl:Class ;
+        rdfs:comment     "Umls semantic type HealthCareActivity (hlca)" ;
+        rdfs:subClassOf  :UmlsConcept , :Service ;
+        :annotatedAs     "hlca" .
+
+:UmlsPopulationGroup  a  owl:Class ;
+        rdfs:comment     "Umls semantic type PopulationGroup (popg)" ;
+        rdfs:subClassOf  :UmlsConcept .
+
+:UmlsTemporalConcept  a  owl:Class ;
+        rdfs:comment     "Umls semantic type TemporalConcept (tmco)" ;
+        rdfs:subClassOf  :UmlsConcept ;
+        :annotatedAs     "tmco" .
+
+:UmlsTherapeuticOrPreventiveProcedure
+        a                owl:Class ;
+        rdfs:comment     "Umls semantic type TherapeuticOrPreventiveProcedure (topp)" ;
+        rdfs:subClassOf  :UmlsConcept , :Service ;
+        :annotatedAs     "topp" .
+
+:UnitOfTime  a  owl:Class .
+
+:adults  a                         :AgeRange , owl:NamedIndividual ;
+        rdfs:label                 "21 and over" , "adult" , "21 and older" ;
+        :hasMaxAge                 "120"^^xsd:int ;
+        :hasMinAge                 "21"^^xsd:int ;
+        :hasUmlsConceptIdentifier  "C0001675" ;
+        :hasUmlsPreferredName      "adult" ;
+        owl:sameAs                 :legal_adults .
+
+:affirmativeAction  a  owl:AnnotationProperty ;
+        rdfs:comment  "Represent an action that can help in identifying the property in the text if found with affirmative polarity. Should contain a verb in its base form, e.g. 'require', 'be eligible'" ;
+        rdfs:range    xsd:string .
+
+:all_members  a       :AgeRange , owl:NamedIndividual ;
+        rdfs:comment  "Refers to all members, both children and adult regardless of age" ;
+        rdfs:label    "all member" , "per member" , "regardless of age" , "any member" , "child and adult" ;
+        :hasMaxAge    "120"^^xsd:int ;
+        :hasMinAge    "0"^^xsd:int .
+
+:annotatedAs  a       owl:AnnotationProperty ;
+        rdfs:comment  "Defines the annotations types that correspond to candidate values for the class" ;
+        rdfs:range    xsd:string .
+
+:anterior_teeth  a    :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "anterior teeth" ;
+        :displayName  "anterior teeth" .
+
+:belongsToHighRiskCategory
+        a                   owl:ObjectProperty ;
+        rdfs:domain         :MemberEligibility ;
+        rdfs:label          "high risk" ;
+        rdfs:range          :HighRiskCategory ;
+        :affirmativeAction  "determine" ;
+        :displayName        "member - high risk category" .
+
+:canines  a           :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "canine tooth" , "canine" ;
+        :displayName  "canines" .
+
+:children  a                       :AgeRange , owl:NamedIndividual ;
+        rdfs:label                 "child" , "20 and younger" , "20 and under" ;
+        :hasMaxAge                 "20"^^xsd:int ;
+        :hasMinAge                 "0"^^xsd:int ;
+        :hasUmlsConceptIdentifier  "C0008059" ;
+        :hasUmlsPreferredName      "child" .
+
+:claimValue  a        owl:AnnotationProperty ;
+        rdfs:comment  "The value the annotated entity is identified with in the claims" ;
+        rdfs:range    xsd:string .
+
+:compliance  a        :ComplianceRuleTag , owl:NamedIndividual ;
+        :displayName  "compliance" .
+
+:custom_procedure_codes_group_adhesives__to_be_used_under_a_restoration_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "adhesives (to be used under a restoration" ;
+        :displayName  "adhesives (to be used under a restoration)" .
+
+:custom_procedure_codes_group_adjustments_to_complete_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "adjustments to complete dentures" ;
+        :displayName  "adjustments to complete dentures" .
+
+:custom_procedure_codes_group_adjustments_to_partial_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "adjustments to partial dentures" ;
+        :displayName  "adjustments to partial dentures" .
+
+:custom_procedure_codes_group_all_crowns
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "crowns" , "all types of crowns" ;
+        :displayName  "all crowns" .
+
+:custom_procedure_codes_group_amalgam_filling_material
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "amalgam filling material" ;
+        :displayName  "amalgam filling material" .
+
+:custom_procedure_codes_group_anasthesia
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "anasthesia" ;
+        :displayName  "anasthesia" .
+
+:custom_procedure_codes_group_apical_curettage
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "apical curettage" ;
+        :displayName  "apical curettage" .
+
+:custom_procedure_codes_group_apicoectomy
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "apicoectomy" ;
+        :displayName  "apicoectomy" .
+
+:custom_procedure_codes_group_ast_post_and_core__post_and_composite__or_post_and_amalgam
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "ast post and core, post and composite, or post and amalgam" ;
+        :displayName  "ast post and core, post and composite, or post and amalgam" .
+
+:custom_procedure_codes_group_bases__to_be_used_under_a_restoration_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "bases (to be used under a restoration" ;
+        :displayName  "bases (to be used under a restoration)" .
+
+:custom_procedure_codes_group_basic_dental_benefits
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "basic dental benefits" , "basic dental benefit" ;
+        :displayName  "basic dental benefits" .
+
+:custom_procedure_codes_group_bitewing_films
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "bitewing film" , "bitewing films" ;
+        :displayName  "bitewing films" .
+
+:custom_procedure_codes_group_cement_bases
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "cement bases" ;
+        :displayName  "cement bases" .
+
+:custom_procedure_codes_group_chairside_relines
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "chairside relines" ;
+        :displayName  "chairside relines" .
+
+:custom_procedure_codes_group_complete_and_partial_bony_impaction
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "complete and partial bony impaction that requires an incision of overlying soft tissue, elevation of a flap, removal of bone and sectioning of the tooth (upper or lower)" ;
+        :displayName  "complete and partial bony impaction" .
+
+:custom_procedure_codes_group_complete_denture_post_delivery_care
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "complete denture post-delivery care" ;
+        :displayName  "complete denture post-delivery care" .
+
+:custom_procedure_codes_group_complete_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "complete dentures" , "complete denture" ;
+        :displayName  "complete dentures" .
+
+:custom_procedure_codes_group_complete_mandibular_denture
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "complete mandibular (lower) denture" , "complete lower denture" ;
+        :displayName  "complete mandibular denture" .
+
+:custom_procedure_codes_group_complete_maxillary_denture
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "complete maxillary (upper) denture" , "complete upper denture" ;
+        :displayName  "complete maxillary denture" .
+
+:custom_procedure_codes_group_composite_resin_filling_material
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "composite resin filling material" ;
+        :displayName  "composite resin filling material" .
+
+:custom_procedure_codes_group_comprehensive_orthodontic_treatment
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "comprehensive orthodontic treatment" ;
+        :displayName  "comprehensive orthodontic treatment" .
+
+:custom_procedure_codes_group_comprehensive_periodontal_evaluation
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "comprehensive periodontal evaluation" ;
+        :displayName  "comprehensive periodontal evaluation" .
+
+:custom_procedure_codes_group_cone_beam_images
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "cone beam images" ;
+        :displayName  "cone beam images" .
+
+:custom_procedure_codes_group_crown_repair
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "crown repair" ;
+        :displayName  "crown repair" .
+
+:custom_procedure_codes_group_crowns_with_noble_metals
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "crowns with noble metals" ;
+        :displayName  "crowns with noble metals" .
+
+:custom_procedure_codes_group_custom_fabrication_and_placement_of_obturator
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "custom fabrication and placement of obturator" ;
+        :displayName  "custom fabrication and placement of obturator" .
+
+:custom_procedure_codes_group_definitive_obturator_prosthesis
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "definitive obturator prosthesis" ;
+        :displayName  "definitive obturator prosthesis" .
+
+:custom_procedure_codes_group_dental_diagnostic_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "dental diagnostic procedures" ;
+        :displayName  "dental diagnostic procedures" .
+
+:custom_procedure_codes_group_dental_implants_and_related_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "dental implants (and related services)" , "dental implant and relate service" ;
+        :displayName  "dental implants and related services" .
+
+:custom_procedure_codes_group_dental_prophylaxis
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "prophylaxis" , "dental prophylaxis" , "prophylaxis procedure" ;
+        :displayName  "dental prophylaxis" .
+
+:custom_procedure_codes_group_dental_surgery
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "dental surgery" ;
+        :displayName  "dental surgery" .
+
+:custom_procedure_codes_group_denture_benefits
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "denture benefits" , "denture benefit" ;
+        :displayName  "denture benefits" .
+
+:custom_procedure_codes_group_denture_fitting_and_follow_up
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "fitting and follow-up" , "denture fitting and follow-up" ;
+        :displayName  "denture fitting and follow-up" .
+
+:custom_procedure_codes_group_denture_placed
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "denture be place" ;
+        :displayName  "denture placed" .
+
+:custom_procedure_codes_group_denture_repair
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "prosthesis repair" , "denture repair" ;
+        :displayName  "denture repair" .
+
+:custom_procedure_codes_group_early_and_periodic_screening__diagnostic_and_treatment
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "epsdt" , "early and periodic screening, diagnostic and treatment" , "care for kids" ;
+        :displayName  "early and periodic screening, diagnostic and treatment" .
+
+:custom_procedure_codes_group_emergency_dental_benefits
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "emergency benefit" , "emergency dental benefits" ;
+        :displayName  "emergency dental benefits" .
+
+:custom_procedure_codes_group_emergency_treatment_visits
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "emergency treatment visits" ;
+        :displayName  "emergency treatment visits" .
+
+:custom_procedure_codes_group_endodontic_procedure
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "endodontic procedure" ;
+        :displayName  "endodontic procedure" .
+
+:custom_procedure_codes_group_evaluation_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "evaluation service" ;
+        :displayName  "evaluation services" .
+
+:custom_procedure_codes_group_excision_of_hyperplastic_tissue
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "excision of hyperplastic tissue" ;
+        :displayName  "excision of hyperplastic tissue" .
+
+:custom_procedure_codes_group_extraoral_films
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "extraoral films" ;
+        :displayName  "extraoral films" .
+
+:custom_procedure_codes_group_fixed_partial_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "fixed partial dentures" ;
+        :displayName  "fixed partial dentures" .
+
+:custom_procedure_codes_group_fixed_space_maintainer_placement
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "fixed space maintainer placement" ;
+        :displayName  "fixed space maintainer placement" .
+
+:custom_procedure_codes_group_fixed_space_maintainer_removal
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "removal of fixed space maintainer" , "removal of fix space maintainer" , "fixed space maintainer removal" ;
+        :displayName  "fixed space maintainer removal" .
+
+:custom_procedure_codes_group_fluoride_prophylaxis_paste
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "fluoride prophylaxis paste" ;
+        :displayName  "fluoride prophylaxis paste" .
+
+:custom_procedure_codes_group_fluoride_rinse
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "fluoride rinse" ;
+        :displayName  "fluoride rinse" .
+
+:custom_procedure_codes_group_fluoride_varnish
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "fluoride varnish" ;
+        :displayName  "fluoride varnish" .
+
+:custom_procedure_codes_group_free_soft_tissue_graft
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "free soft tissue graft" ;
+        :displayName  "free soft tissue graft" .
+
+:custom_procedure_codes_group_gingivectomy
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "gingivectomy" ;
+        :displayName  "gingivectomy" .
+
+:custom_procedure_codes_group_gingivoplasty
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "gingivoplasty" ;
+        :displayName  "gingivoplasty" .
+
+:custom_procedure_codes_group_impressions
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "impressions" ;
+        :displayName  "impressions" .
+
+:custom_procedure_codes_group_insulating_liners
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "insulating liners" ;
+        :displayName  "insulating liners" .
+
+:custom_procedure_codes_group_interceptive_orthodontic_treatment
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "interceptive orthodontic treatment" ;
+        :displayName  "interceptive orthodontic treatment" .
+
+:custom_procedure_codes_group_intraoral_films
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "intraoral films" ;
+        :displayName  "intraoral films" .
+
+:custom_procedure_codes_group_laboratory_fabricated_crowns_utilizing_non_precious_materials
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "laboratory - fabricate crown utilize non - precious material" , "laboratory fabricated crowns utilizing non-precious materials" ;
+        :displayName  "laboratory fabricated crowns utilizing non-precious materials" .
+
+:custom_procedure_codes_group_laboratory_processed_relines
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "laboratory processed relines" ;
+        :displayName  "laboratory processed relines" .
+
+:custom_procedure_codes_group_limited_oral_evaluation
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "limited oral evaluation" ;
+        :displayName  "limited oral evaluation" .
+
+:custom_procedure_codes_group_limited_root_planning_and_scaling
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "limited root planning and scaling" ;
+        :displayName  "limited root planning and scaling" .
+
+:custom_procedure_codes_group_liners__to_be_used_under_a_restoration_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "liners (to be used under a restoration)" ;
+        :displayName  "liners (to be used under a restoration)" .
+
+:custom_procedure_codes_group_maintenance_therapy
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "maintenance therapy" ;
+        :displayName  "maintenance therapy" .
+
+:custom_procedure_codes_group_major_dental_benefits
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "major dental benefit" , "major dental benefits" ;
+        :displayName  "major dental benefits" .
+
+:custom_procedure_codes_group_measurement_of_pocket_depths
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "measurement of pocket depths" ;
+        :displayName  "measurement of pocket depths" .
+
+:custom_procedure_codes_group_modifications_and_adjustments_for_obturators
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "modifications and adjustments for obturators" ;
+        :displayName  "modifications and adjustments for obturators" .
+
+:custom_procedure_codes_group_multi_visit_treatments__endodontics_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "multi-visit treatments (endodontics)" ;
+        :displayName  "multi-visit treatments (endodontics)" .
+
+:custom_procedure_codes_group_multi_visit_treatments__orthodontics_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "multi-visit treatments (orthodontics)" ;
+        :displayName  "multi-visit treatments (orthodontics)" .
+
+:custom_procedure_codes_group_nonsurgical_extractions
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "nonsurgical extractions" ;
+        :displayName  "nonsurgical extractions" .
+
+:custom_procedure_codes_group_obturator__for_surgically_excised_palatal_tissue_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "obturator (for surgically excised palatal tissue)" ;
+        :displayName  "obturator (for surgically excised palatal tissue)" .
+
+:custom_procedure_codes_group_occlusal_guards
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "occlusal guards" ;
+        :displayName  "occlusal guards" .
+
+:custom_procedure_codes_group_occlusal_orthotic_appliance
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "occlusal orthotic appliance" ;
+        :displayName  "occlusal orthotic appliance" .
+
+:custom_procedure_codes_group_occupational_therapy_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "occupational therapy" , "ot" ;
+        :displayName  "occupational therapy services" .
+
+:custom_procedure_codes_group_oral_antral_fistula_closure__or_antral_root_recovery_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "oral antral fistula closure (or antral root recovery)" ;
+        :displayName  "oral antral fistula closure (or antral root recovery)" .
+
+:custom_procedure_codes_group_oral_evaluation
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "oral evaluation" ;
+        :displayName  "oral evaluation" .
+
+:custom_procedure_codes_group_oral_prophylaxis
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "oral prophylaxis" ;
+        :displayName  "oral prophylaxis" .
+
+:custom_procedure_codes_group_orthodontic_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "orthodontic procedures" , "orthodontic services" ;
+        :displayName  "orthodontic procedures" .
+
+:custom_procedure_codes_group_orthotic_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "orthotic service" ;
+        :displayName  "orthotic services" .
+
+:custom_procedure_codes_group_osseous_allograft
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "osseous allograft" ;
+        :displayName  "osseous allograft" .
+
+:custom_procedure_codes_group_osseous_surgey
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "osseous surgey" ;
+        :displayName  "osseous surgey" .
+
+:custom_procedure_codes_group_partial_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial dentures" , "" , "partial denture" ;
+        :displayName  "partial dentures" .
+
+:custom_procedure_codes_group_partial_mandibular_denture___cast_metal_framework
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial low denture/cast metal framework" , "partial mandibular (lower) denture - cast metal framework" , "partial lower denture/cast metal framework" ;
+        :displayName  "partial mandibular denture - cast metal framework" .
+
+:custom_procedure_codes_group_partial_mandibular_denture___flexible_base
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial low denture/flexible base" , "partial mandibular (lower) denture - flexible base" , "partial lower denture/flexible base" ;
+        :displayName  "partial mandibular denture - flexible base" .
+
+:custom_procedure_codes_group_partial_mandibular_denture___resin_base
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial lower denture/resin base" , "partial mandibular (lower) denture - resin base" , "partial low denture/resin base" ;
+        :displayName  "partial mandibular denture - resin base" .
+
+:custom_procedure_codes_group_partial_maxillary_denture___cast_metal_framework
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial upper denture/cast metal framework" , "partial up denture/cast metal framework" , "partial maxillary (upper) denture - cast metal framework" ;
+        :displayName  "partial maxillary denture - cast metal framework" .
+
+:custom_procedure_codes_group_partial_maxillary_denture___flexible_base
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial up denture/flexible base" , "partial upper denture/flexible base" , "partial maxillary (upper) denture - flexible base" ;
+        :displayName  "partial maxillary denture - flexible base" .
+
+:custom_procedure_codes_group_partial_maxillary_denture___resin_base
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "partial upper denture/resin base" , "partial up denture/resin base" , "partial maxillary (upper) denture - resin base" ;
+        :displayName  "partial maxillary denture - resin base" .
+
+:custom_procedure_codes_group_pedicle_soft_tissue_graft
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "pedicle soft tissue graft" ;
+        :displayName  "pedicle soft tissue graft" .
+
+:custom_procedure_codes_group_periapical_films
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "periapical films" ;
+        :displayName  "periapical films" .
+
+:custom_procedure_codes_group_periodontal_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "periodontal procedure" , "periodontal treatment" , "periodontal procedures" ;
+        :displayName  "periodontal procedures" .
+
+:custom_procedure_codes_group_periodontal_scaling
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "periodontal scaling" ;
+        :displayName  "periodontal scaling" .
+
+:custom_procedure_codes_group_periodontal_scaling_and_root_planing
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "periodontal scaling and root planing" ;
+        :displayName  "periodontal scaling and root planing" .
+
+:custom_procedure_codes_group_periodontal_surgery_procedure
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "periodontal surgery procedure" ;
+        :displayName  "periodontal surgery procedure" .
+
+:custom_procedure_codes_group_periradicular_surgery
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "periradicular surgery" ;
+        :displayName  "periradicular surgery" .
+
+:custom_procedure_codes_group_physical_therapy_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "physical therapy" , "pt" ;
+        :displayName  "physical therapy services" .
+
+:custom_procedure_codes_group_post_operative_care
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "post-operative care" ;
+        :displayName  "post-operative care" .
+
+:custom_procedure_codes_group_postoperative_care
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "postoperative care" ;
+        :displayName  "postoperative care" .
+
+:custom_procedure_codes_group_prefabricated_stainless_steel_crowns
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "prefabricated stainless steel crowns" ;
+        :displayName  "prefabricated stainless steel crowns" .
+
+:custom_procedure_codes_group_prefabricated_steel_crown
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "prefabricated steel crown" ;
+        :displayName  "prefabricated steel crown" .
+
+:custom_procedure_codes_group_preventative_dental_benefits
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "preventative dental benefits" , "preventative dental benefit" ;
+        :displayName  "preventative dental benefits" .
+
+:custom_procedure_codes_group_preventative_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "preventive procedure" , "preventative procedure" , "preventative procedures" ;
+        :displayName  "preventative procedures" .
+
+:custom_procedure_codes_group_prophylactic_fillings
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "prophylactic fillings" ;
+        :displayName  "prophylactic fillings" .
+
+:custom_procedure_codes_group_prophylactic_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "prophylactic procedures" ;
+        :displayName  "prophylactic procedures" .
+
+:custom_procedure_codes_group_pulp_capping
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "pulp capping" ;
+        :displayName  "pulp capping" .
+
+:custom_procedure_codes_group_radiographs
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "radiographs" , "radiograph" ;
+        :displayName  "radiographs" .
+
+:custom_procedure_codes_group_rebase_of_complete_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "rebase of complete dentures" ;
+        :displayName  "rebase of complete dentures" .
+
+:custom_procedure_codes_group_rebase_of_partial_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "rebase of partial dentures" ;
+        :displayName  "rebase of partial dentures" .
+
+:custom_procedure_codes_group_removable_partial_dentures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "removable partial dentures" ;
+        :displayName  "removable partial dentures" .
+
+:custom_procedure_codes_group_removable_prosthetics
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "removable prosthetics" , "removable prosthetic" ;
+        :displayName  "removable prosthetics" .
+
+:custom_procedure_codes_group_restorative_fee
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "restorative fee" ;
+        :displayName  "restorative fee" .
+
+:custom_procedure_codes_group_restorative_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "restorative services" ;
+        :displayName  "restorative services" .
+
+:custom_procedure_codes_group_root_canal
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "root canal" ;
+        :displayName  "root canal" .
+
+:custom_procedure_codes_group_root_canal_retreatment
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "root canal retreatment" ;
+        :displayName  "root canal retreatment" .
+
+:custom_procedure_codes_group_root_recovery__surgical_removal_of_residual_root_
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "root recovery (surgical removal of residual root)" ;
+        :displayName  "root recovery (surgical removal of residual root)" .
+
+:custom_procedure_codes_group_root_resection
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "root resection" ;
+        :displayName  "root resection" .
+
+:custom_procedure_codes_group_routine_postoperative_care
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "routine postoperative care" ;
+        :displayName  "routine postoperative care" .
+
+:custom_procedure_codes_group_sealants_application
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "sealant" , "sealants application" ;
+        :displayName  "sealants application" .
+
+:custom_procedure_codes_group_sedative_filling
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "sedative filling" ;
+        :displayName  "sedative filling" .
+
+:custom_procedure_codes_group_soft_tissue_impaction_that_requires_an_incision_of_overlying_soft_tissue_and_the_removal_of_the_tooth
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "soft tissue impaction that requires an incision of overlying soft tissue and the removal of the tooth" ;
+        :displayName  "soft tissue impaction that requires an incision of overlying soft tissue and the removal of the tooth" .
+
+:custom_procedure_codes_group_space_maintainer_placement
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "space maintainer" , "space maintainer placement" ;
+        :displayName  "space maintainer placement" .
+
+:custom_procedure_codes_group_space_management_services
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "space management services" ;
+        :displayName  "space management services" .
+
+:custom_procedure_codes_group_surgical_endodontic_treatment
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "surgical endodontic treatment" ;
+        :displayName  "surgical endodontic treatment" .
+
+:custom_procedure_codes_group_surgical_exposure_of_impacted_or_unerupted_tooth_for_orthodontic_reasons__including_ligation_when_indicated
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "surgical exposure of impacted or unerupted tooth for orthodontic reasons, including ligation when indicated" ;
+        :displayName  "surgical exposure of impacted or unerupted tooth for orthodontic reasons, including ligation when indicated" .
+
+:custom_procedure_codes_group_surgical_exposure_of_impacted_or_unerupted_tooth_to_aid_eruption
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "surgical exposure of impacted or unerupted tooth to aid eruption" ;
+        :displayName  "surgical exposure of impacted or unerupted tooth to aid eruption" .
+
+:custom_procedure_codes_group_surgical_extractions
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "surgical extractions" ;
+        :displayName  "surgical extractions" .
+
+:custom_procedure_codes_group_temporary_restorations
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "temporary restorations" ;
+        :displayName  "temporary restorations" .
+
+:custom_procedure_codes_group_tissue_conditioning
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "tissue conditioning" ;
+        :displayName  "tissue conditioning" .
+
+:custom_procedure_codes_group_tissue_regeneration
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "tissue regeneration" ;
+        :displayName  "tissue regeneration" .
+
+:custom_procedure_codes_group_tooth_preparation
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "tooth preparation" ;
+        :displayName  "tooth preparation" .
+
+:custom_procedure_codes_group_toothbrush_prophylaxis
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "toothbrush prophylaxis" ;
+        :displayName  "toothbrush prophylaxis" .
+
+:custom_procedure_codes_group_topical_fluoride_treatments
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "topical application of fluoride" , "topical fluoride treatments" , "topical fluoride" , "fluoride topical application" ;
+        :displayName  "topical fluoride treatments" .
+
+:custom_procedure_codes_group_treatment_of_dental_caries
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "treatment of dental caries" ;
+        :displayName  "treatment of dental caries" .
+
+:custom_procedure_codes_group_treatment_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "treatment procedures" ;
+        :displayName  "treatment procedures" .
+
+:custom_procedure_codes_group_unspecified_restorative_procedures
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "unspecified restorative procedures" ;
+        :displayName  "unspecified restorative procedures" .
+
+:custom_procedure_codes_group_vital_pulpotomies
+        a             :CustomProcedureCodesGroup ;
+        rdfs:label    "vital pulpotomies" ;
+        :displayName  "vital pulpotomies" .
+
+:daily  a                 :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "per day" , "per date of service" , "daily" , "a day" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :day .
+
+:day    a             :UnitOfTime , owl:NamedIndividual ;
+        rdfs:label    "day" ;
+        :displayName  "day(s)" .
+
+:defaultValue  a      owl:AnnotationProperty ;
+        rdfs:comment  "This annotation property specifies the default value for properties." .
+
+:displayName  a       owl:AnnotationProperty ;
+        rdfs:comment  "A user friendly name that identifies the resource" ;
+        rdfs:range    xsd:string .
+
+:extractionPattern  a  owl:AnnotationProperty ;
+        rdfs:comment  "Represent an extraction pattern, i.e. regular expression with placeholders, for the specific resource" ;
+        rdfs:range    xsd:string .
+
+:fiscal_year  a       :UnitOfTime , owl:NamedIndividual ;
+        rdfs:label    "fiscal year" ;
+        :displayName  "fiscal year(s)" .
+
+:hasAge  a           owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain  :MemberEligibility ;
+        rdfs:label   "age" ;
+        rdfs:range   :AgeRange .
+
+:hasAmountOfTime  a   owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain   :ApplicableTimePeriod ;
+        rdfs:label    "times" ;
+        rdfs:range    xsd:int ;
+        :displayName  "reference period - amount of time" .
+
+:hasApplicableService
+        a                         owl:ObjectProperty ;
+        rdfs:comment              "Services applicable in the context of the benefit rule, e.g. the ones a limitation is applied to" ;
+        rdfs:domain               :ServiceLimitationBenefitRule ;
+        rdfs:label                "cover benefit" , "limit" , "payable" , "cover" , "apply" , "provide" , "cover service" , "reimburse" , "include" ;
+        rdfs:range                :Service ;
+        :affirmativeAction        "include" , "be a cover" , "be only a cover" , "limit" , "reimburse" , "receive" , "be a benefit" , "be the only acceptable" , "cover" , "be a payable" , "allow" , "apply" , "be payable" , "be reimbursable" , "be subject" , "provide" ;
+        :displayName              "applicable service" ;
+        owl:propertyDisjointWith  :hasExcludedService .
+
+:hasApplicableTimePeriod
+        a            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( :MutualExclusionBenefitRule :NonCoverageBenefitRule :ServiceLimitationBenefitRule )
+                     ] ;
+        rdfs:label   "provide" , "period" , "limit" , "after" ;
+        rdfs:range   :ApplicableTimePeriod .
+
+:hasBenefitRule  a    owl:ObjectProperty ;
+        rdfs:comment  "A policy may describe multiple instances of benefit rules" ;
+        rdfs:domain   :Policy ;
+        rdfs:range    :BenefitRule .
+
+:hasBillingCommonality
+        a             owl:ObjectProperty ;
+        rdfs:domain   [ a            owl:Class ;
+                        owl:unionOf  ( :MutualExclusionBenefitRule :ServiceLimitationBenefitRule )
+                      ] ;
+        rdfs:range    :BillingCommonality ;
+        :displayName  "billing commonality" .
+
+:hasComplianceRuleTag
+        a            owl:AnnotationProperty ;
+        rdfs:domain  :BenefitRule ;
+        rdfs:range   :ComplianceRuleTag .
+
+:hasConfidence  a     owl:AnnotationProperty ;
+        rdfs:comment  "Represent the information regarding the confidence of the domain resource" ;
+        rdfs:range    :ConfidenceScore .
+
+:hasConfidenceSource  a  owl:DatatypeProperty ;
+        rdfs:domain  :ConfidenceScore ;
+        rdfs:range   xsd:string .
+
+:hasConfidenceValue  a  owl:DatatypeProperty ;
+        rdfs:domain  :ConfidenceScore ;
+        rdfs:range   xsd:double .
+
+:hasEndDate  a                    owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain               :ApplicableTimePeriod ;
+        rdfs:range                :Date ;
+        :displayName              "reference period - end date" ;
+        owl:propertyDisjointWith  :hasStartDate .
+
+:hasExcludedService  a            owl:ObjectProperty ;
+        rdfs:comment              "The services that have to be removed from the set of services relevant for the benefit rule" ;
+        rdfs:domain               [ a            owl:Class ;
+                                    owl:unionOf  ( :NonCoverageBenefitRule :ServiceLimitationBenefitRule )
+                                  ] ;
+        rdfs:label                "exclude" , "except" , "not include" , "not subject" ;
+        rdfs:range                :Service ;
+        :affirmativeAction        "except" , "exclude" ;
+        :displayName              "excluded service" ;
+        :isNegated                true ;
+        :negativeAction           "be not subject" , "allow" , "include" ;
+        owl:propertyDisjointWith  :hasNotApplicableService .
+
+:hasMaxAge  a                     owl:DatatypeProperty , owl:FunctionalProperty ;
+        rdfs:domain               :AgeRange ;
+        rdfs:label                "and under" , "year of age and under" , "year of age" ;
+        rdfs:range                xsd:int ;
+        :defaultValue             "120"^^xsd:int ;
+        :displayName              "member - max age" ;
+        owl:propertyDisjointWith  :hasMinAge .
+
+:hasMaxReimbursedAmount
+        a             owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain   :ServiceLimitation ;
+        rdfs:label    "up to" , "total" , "limit" ;
+        rdfs:range    :MonetaryAmount ;
+        :displayName  "reimbursement limitation - max" .
+
+:hasMaxUnits  a                   owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain               :ServiceLimitation ;
+        rdfs:label                "up to" , "cover" , "total" , "for a total of" , "limit" , "limited" ;
+        rdfs:range                xsd:int ;
+        :affirmativeAction        "limit" ;
+        :displayName              "unit limitation - max" ;
+        owl:propertyDisjointWith  :hasMinUnits .
+
+:hasMedicalHistoryOfDisease
+        a                         owl:ObjectProperty ;
+        rdfs:domain               :MemberEligibility ;
+        rdfs:label                "with a history of" , "history" ;
+        rdfs:range                :UmlsDiseaseOrSyndrome ;
+        :affirmativeAction        "establish" ;
+        :displayName              "member - medical history of disease" ;
+        owl:propertyDisjointWith  :hasNoMedicalHistoryOfDisease .
+
+:hasMedicalHistoryOfTreatment
+        a                         owl:ObjectProperty ;
+        rdfs:domain               :MemberEligibility ;
+        rdfs:label                "with a history of" , "history" ;
+        rdfs:range                :Service ;
+        :affirmativeAction        "establish" ;
+        :displayName              "member - medical history of treatment" ;
+        owl:propertyDisjointWith  :hasNoMedicalHistoryOfTreatment .
+
+:hasMemberEligibility
+        a                   owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain         [ a            owl:Class ;
+                              owl:unionOf  ( :MutualExclusionBenefitRule :NonCoverageBenefitRule :ServiceLimitationBenefitRule )
+                            ] ;
+        rdfs:label          "who" , "eligible" , "eligibility" ;
+        rdfs:range          :MemberEligibility ;
+        :affirmativeAction  "be eligible" .
+
+:hasMinAge  a          owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain    :AgeRange ;
+        rdfs:label     "year of age and old" , "and old" ;
+        rdfs:range     xsd:int ;
+        :defaultValue  "0"^^xsd:int ;
+        :displayName   "member - min age" .
+
+:hasMinUnits  a             owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain         :ServiceLimitation ;
+        rdfs:label          "exceed" , "initial" , "beyond" ;
+        rdfs:range          xsd:int ;
+        :affirmativeAction  "exceed" ;
+        :defaultValue       "0"^^xsd:int ;
+        :displayName        "unit limitation - min" ;
+        :negativeAction     "limit" .
+
+:hasModifierCode  a  owl:AnnotationProperty ;
+        rdfs:domain  :ServiceModifier ;
+        rdfs:range   xsd:string .
+
+:hasMutuallyExclusiveNotReimbursableService
+        a                         owl:ObjectProperty ;
+        rdfs:domain               :MutualExclusionBenefitRule ;
+        rdfs:label                "include" , "not benefit" , "not payable" , "is not payable" , "beginning" , "not pay" ;
+        rdfs:range                :Service ;
+        :affirmativeAction        "reimbursement include" ;
+        :displayName              "mutual exclusive non-reimbursable service" ;
+        :isNegated                true ;
+        :negativeAction           "be not a benefit" , "be not payable" ;
+        owl:propertyDisjointWith  :hasMutuallyExclusiveReimbursableService .
+
+:hasMutuallyExclusiveReimbursableService
+        a                   owl:ObjectProperty ;
+        rdfs:domain         :MutualExclusionBenefitRule ;
+        rdfs:label          "bill" , "bill on the same" , "after" ;
+        rdfs:range          :Service ;
+        rdfs:subPropertyOf  owl:topObjectProperty ;
+        :affirmativeAction  "pay on the same" , "after" , "bill on the same" ;
+        :displayName        "mutual exclusive reimbursable service" .
+
+:hasNoMedicalHistoryOfDisease
+        a             owl:ObjectProperty ;
+        rdfs:domain   :MemberEligibility ;
+        rdfs:label    "without a history of" ;
+        rdfs:range    :UmlsDiseaseOrSyndrome ;
+        :displayName  "member - no medical history of disease" ;
+        :isNegated    true .
+
+:hasNoMedicalHistoryOfTreatment
+        a             owl:ObjectProperty ;
+        rdfs:domain   :MemberEligibility ;
+        rdfs:label    "without a history of" ;
+        rdfs:range    :Service ;
+        :displayName  "member - no medical history of treatment" ;
+        :isNegated    true .
+
+:hasNoRequirement  a              owl:ObjectProperty ;
+        rdfs:comment              "The prior requirements that are explicitly stated as not needed for this service limitation" ;
+        rdfs:domain               :ServiceLimitationBenefitRule ;
+        rdfs:label                "not require" , "not necessary" ;
+        rdfs:range                :Requirement ;
+        :affirmativeAction        "before a prior" ;
+        :displayName              "requirement - not needed" ;
+        :isNegated                true ;
+        :negativeAction           "obtain" , "submit" , "be not necessary" , "require" , "subject" ;
+        owl:propertyDisjointWith  :hasRequirement .
+
+:hasNotApplicableService
+        a                owl:ObjectProperty ;
+        rdfs:comment     "The services that are not covered under specific conditions (when no applicable service is specified)" ;
+        rdfs:domain      :NonCoverageBenefitRule ;
+        rdfs:label       "not acceptable" , "not cover" , "not reimburse" ;
+        rdfs:range       :Service ;
+        :displayName     "not covered service" ;
+        :isNegated       true ;
+        :negativeAction  "be not reimbursable" , "be not a benefit" , "allow" , "reimburse" , "be not an acceptable" , "cover" .
+
+:hasPerBodyPartApplicability
+        a             owl:ObjectProperty ;
+        rdfs:domain   [ a            owl:Class ;
+                        owl:unionOf  ( :MutualExclusionBenefitRule :NonCoverageBenefitRule :ServiceLimitationBenefitRule )
+                      ] ;
+        rdfs:range    :BodyPart ;
+        :displayName  "body part" .
+
+:hasPlaceOfService  a       owl:ObjectProperty ;
+        rdfs:domain         [ a            owl:Class ;
+                              owl:unionOf  ( :MutualExclusionBenefitRule :NonCoverageBenefitRule :ServiceLimitationBenefitRule )
+                            ] ;
+        rdfs:range          :PlaceOfService ;
+        :affirmativeAction  "provide" ;
+        :displayName        "place of service" .
+
+:hasRequirement  a          owl:ObjectProperty ;
+        rdfs:domain         [ a            owl:Class ;
+                              owl:unionOf  ( :MutualExclusionBenefitRule :ServiceLimitationBenefitRule )
+                            ] ;
+        rdfs:label          "submit" , "require" , "obtain" ;
+        rdfs:range          :Requirement ;
+        :affirmativeAction  "subject" , "require" , "obtain" , "submit" ;
+        :displayName        "requirement - needed" .
+
+:hasServiceLimitation
+        a            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain  :ServiceLimitationBenefitRule ;
+        rdfs:label   "receive" , "reach" , "limited" , "limit" , "allow" ;
+        rdfs:range   :ServiceLimitation .
+
+:hasSlidingWindowInDays
+        a             owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain   :BenefitRule ;
+        rdfs:range    xsd:decimal ;
+        :displayName  "reference period - sliding window in days" .
+
+:hasStartDate  a      owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:domain   :ApplicableTimePeriod ;
+        rdfs:range    :Date ;
+        :displayName  "reference period - start date" .
+
+:hasUmlsConceptIdentifier
+        a             owl:AnnotationProperty ;
+        rdfs:comment  "The UMLS entity identifier (CUI)" ;
+        rdfs:domain   :UmlsConcept ;
+        rdfs:range    xsd:string .
+
+:hasUmlsPreferredName
+        a             owl:AnnotationProperty ;
+        rdfs:comment  "The preferred resource name in UMLS" ;
+        rdfs:domain   :UmlsConcept ;
+        rdfs:range    xsd:string .
+
+:hasUnitOfTime  a     owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain   :ApplicableTimePeriod ;
+        rdfs:range    :UnitOfTime ;
+        :displayName  "reference period - unit of time" .
+
+:high_risk_category_for_caries
+        a             :HighRiskCategory ;
+        rdfs:label    "caries" , "high risk of caries" , "high risk for caries" , "high risk category for caries" ;
+        :displayName  "caries" .
+
+:high_risk_category_for_periodontal_disease
+        a             :HighRiskCategory ;
+        rdfs:label    "high risk of periodontal disease" , "periodontal disease" , "high risk for periodontal disease" , "high risk category for periodontal disease" ;
+        :displayName  "periodontal disease" .
+
+:high_risk_category_for_topical_fluoride_treatments
+        a             :HighRiskCategory ;
+        rdfs:label    "topical fluoride treatment high risk" , "topical fluoride treatment" ;
+        :displayName  "topical fluoride treatments" .
+
+:incisors  a          :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "incisor" , "incisor tooth" ;
+        :displayName  "incisors" .
+
+:individualized_service_plan_year
+        a             :UnitOfTime , owl:NamedIndividual ;
+        rdfs:label    "individualize service plan year" , "individualise service plan year" ;
+        :displayName  "individualized service plan year(s)" .
+
+:isEnrolledInProgram  a     owl:ObjectProperty ;
+        rdfs:domain         :MemberEligibility ;
+        rdfs:label          "enrol" ;
+        rdfs:range          :Program ;
+        :affirmativeAction  "be enrol" ;
+        :displayName        "member - program enrollment" .
+
+:isNegated  a         owl:AnnotationProperty ;
+        rdfs:comment  "If true means that a property has a negative intent, e.g. hasNotApplicableService, hasNoPriorRequirement" ;
+        rdfs:range    xsd:boolean .
+
+:legal_adults  a                   :UmlsPopulationGroup , owl:NamedIndividual ;
+        rdfs:label                 "legal adult" ;
+        :hasUmlsConceptIdentifier  "C1706450" ;
+        :hasUmlsPreferredName      "legal adult" .
+
+:lifetime  a          :UnitOfTime , owl:NamedIndividual ;
+        rdfs:label    "lifetime" ;
+        :displayName  "lifetime" .
+
+:lower_arch  a        :BodyPart , :Arch ;
+        :claimValue   "mand" ;
+        :displayName  "mandibular arch" .
+
+:lower_jaw  a         :BodyPart , :Jaw ;
+        rdfs:label    "mandible" , "lower jaw" ;
+        :displayName  "lower jaw" .
+
+:medical_necessity  a  :Requirement , owl:NamedIndividual ;
+        rdfs:label    "medical necessity" , "medically necessary" , "when necessary" ;
+        :displayName  "medical necessity" .
+
+:medical_record_review
+        a             :Requirement , owl:NamedIndividual ;
+        rdfs:comment  "For those that can not be covered with medical necessity" ;
+        :displayName  "medical record review" .
+
+:molars  a            :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "molar" , "molar teeth" ;
+        :displayName  "molars" .
+
+:month  a             :UnitOfTime , owl:NamedIndividual ;
+        rdfs:label    "month" ;
+        :displayName  "month(s)" .
+
+:monthly  a               :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "per month" , "monthly" , "a month" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :month .
+
+:negativeAction  a    owl:AnnotationProperty ;
+        rdfs:comment  "Represent an action that can help in identifying the property in the text if found with negative polarity. Should contain a verb in its base form, e.g. 'require', 'be eligible'" ;
+        rdfs:range    xsd:string .
+
+:nodeId  a      owl:AnnotationProperty .
+
+:non_compliance  a    :ComplianceRuleTag , owl:NamedIndividual ;
+        :displayName  "non compliance" .
+
+:one_max_unit  a      :ServiceLimitation , owl:NamedIndividual ;
+        rdfs:label    "one time" , "once" ;
+        :hasMaxUnits  "1"^^xsd:int ;
+        :hasMinUnits  "0"^^xsd:int .
+
+:per_arch  a          :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "per denture" , "per prosthesis" ;
+        :displayName  "per arch" .
+
+:per_fiscal_year  a       :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "per fiscal year" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :fiscal_year .
+
+:per_individualized_service_plan_year
+        a                 :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "per service plan year" , "per individualize service plan year" , "per individualise service plan year" , "per individual service plan year" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :individualized_service_plan_year .
+
+:per_lifetime  a          :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "per lifetime" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :lifetime .
+
+:permanent_anterior_teeth
+        a             :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "permanent anterior tooth" ;
+        :displayName  "permanent anterior teeth" .
+
+:permanent_posterior_teeth
+        a             :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "permanent posterior teeth" , "permanent posterior tooth" ;
+        :displayName  "permanent posterior teeth" .
+
+:permanent_quadrants  a  :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "permanent quadrant" ;
+        :displayName  "permanent quadrants" .
+
+:permanent_teeth  a   :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "permanent dentition" , "permanent tooth" ;
+        :displayName  "permanent teeth" .
+
+:place_of_service_1  a  :SinglePlaceOfService ;
+        rdfs:label    "pharmacy" ;
+        :displayName  "pharmacy" .
+
+:place_of_service_11  a  :SinglePlaceOfService ;
+        rdfs:label    "office" ;
+        :displayName  "office" .
+
+:place_of_service_12  a  :SinglePlaceOfService ;
+        rdfs:label    "home" ;
+        :displayName  "home" .
+
+:place_of_service_13  a  :SinglePlaceOfService ;
+        rdfs:label    "assisted living facility" ;
+        :displayName  "assisted living facility" .
+
+:place_of_service_14  a  :SinglePlaceOfService ;
+        rdfs:label    "group home" ;
+        :displayName  "group home" .
+
+:place_of_service_15  a  :SinglePlaceOfService ;
+        rdfs:label    "mobile unit" ;
+        :displayName  "mobile unit" .
+
+:place_of_service_16  a  :SinglePlaceOfService ;
+        rdfs:label    "temporary lodging" ;
+        :displayName  "temporary lodging" .
+
+:place_of_service_17  a  :SinglePlaceOfService ;
+        rdfs:label    "walk-in retail health clinic" ;
+        :displayName  "walk-in retail health clinic" .
+
+:place_of_service_18  a  :SinglePlaceOfService ;
+        rdfs:label    "place of employment-worksite" ;
+        :displayName  "place of employment-worksite" .
+
+:place_of_service_19  a  :SinglePlaceOfService ;
+        rdfs:label    "off campus-outpatient hospital" ;
+        :displayName  "off campus-outpatient hospital" .
+
+:place_of_service_2  a  :SinglePlaceOfService ;
+        rdfs:label    "telehealth" ;
+        :displayName  "telehealth" .
+
+:place_of_service_20  a  :SinglePlaceOfService ;
+        rdfs:label    "urgent care facility" ;
+        :displayName  "urgent care facility" .
+
+:place_of_service_21  a  :SinglePlaceOfService ;
+        rdfs:label    "inpatient hospital" ;
+        :displayName  "inpatient hospital" .
+
+:place_of_service_22  a  :SinglePlaceOfService ;
+        rdfs:label    "on campus-outpatient hospital" ;
+        :displayName  "on campus-outpatient hospital" .
+
+:place_of_service_23  a  :SinglePlaceOfService ;
+        rdfs:label    "emergency room  hospital" ;
+        :displayName  "emergency room  hospital" .
+
+:place_of_service_24  a  :SinglePlaceOfService ;
+        rdfs:label    "ambulatory surgical center" ;
+        :displayName  "ambulatory surgical center" .
+
+:place_of_service_25  a  :SinglePlaceOfService ;
+        rdfs:label    "birthing center" ;
+        :displayName  "birthing center" .
+
+:place_of_service_26  a  :SinglePlaceOfService ;
+        rdfs:label    "military treatment facility" ;
+        :displayName  "military treatment facility" .
+
+:place_of_service_3  a  :SinglePlaceOfService ;
+        rdfs:label    "school" ;
+        :displayName  "school" .
+
+:place_of_service_31  a  :SinglePlaceOfService ;
+        rdfs:label    "skilled nursing facility" ;
+        :displayName  "skilled nursing facility" .
+
+:place_of_service_32  a  :SinglePlaceOfService ;
+        rdfs:label    "nursing facility" ;
+        :displayName  "nursing facility" .
+
+:place_of_service_33  a  :SinglePlaceOfService ;
+        rdfs:label    "custodial care facility" ;
+        :displayName  "custodial care facility" .
+
+:place_of_service_34  a  :SinglePlaceOfService ;
+        rdfs:label    "hospice" ;
+        :displayName  "hospice" .
+
+:place_of_service_4  a  :SinglePlaceOfService ;
+        rdfs:label    "homeless shelter" ;
+        :displayName  "homeless shelter" .
+
+:place_of_service_41  a  :SinglePlaceOfService ;
+        rdfs:label    "ambulance - land" ;
+        :displayName  "ambulance - land" .
+
+:place_of_service_42  a  :SinglePlaceOfService ;
+        rdfs:label    "ambulance  air or water" ;
+        :displayName  "ambulance  air or water" .
+
+:place_of_service_49  a  :SinglePlaceOfService ;
+        rdfs:label    "independent clinic" ;
+        :displayName  "independent clinic" .
+
+:place_of_service_5  a  :SinglePlaceOfService ;
+        rdfs:label    "indian health service free-standing facility" ;
+        :displayName  "indian health service free-standing facility" .
+
+:place_of_service_50  a  :SinglePlaceOfService ;
+        rdfs:label    "federally qualified health center" ;
+        :displayName  "federally qualified health center" .
+
+:place_of_service_51  a  :SinglePlaceOfService ;
+        rdfs:label    "inpatient psychiatric facility" ;
+        :displayName  "inpatient psychiatric facility" .
+
+:place_of_service_52  a  :SinglePlaceOfService ;
+        rdfs:label    "psychiatric facility-partial hospitalization" ;
+        :displayName  "psychiatric facility-partial hospitalization" .
+
+:place_of_service_53  a  :SinglePlaceOfService ;
+        rdfs:label    "community mental health center" ;
+        :displayName  "community mental health center" .
+
+:place_of_service_54  a  :SinglePlaceOfService ;
+        rdfs:label    "intermediate care facility/ individuals with intellectual disabilities" ;
+        :displayName  "intermediate care facility/ individuals with intellectual disabilities" .
+
+:place_of_service_55  a  :SinglePlaceOfService ;
+        rdfs:label    "residential substance abuse treatment facility" ;
+        :displayName  "residential substance abuse treatment facility" .
+
+:place_of_service_56  a  :SinglePlaceOfService ;
+        rdfs:label    "psychiatric residential treatment center" ;
+        :displayName  "psychiatric residential treatment center" .
+
+:place_of_service_57  a  :SinglePlaceOfService ;
+        rdfs:label    "non-residential substance abuse treatment facility" ;
+        :displayName  "non-residential substance abuse treatment facility" .
+
+:place_of_service_6  a  :SinglePlaceOfService ;
+        rdfs:label    "indian health service provider-based facility" ;
+        :displayName  "indian health service provider-based facility" .
+
+:place_of_service_60  a  :SinglePlaceOfService ;
+        rdfs:label    "mass immunization center" ;
+        :displayName  "mass immunization center" .
+
+:place_of_service_61  a  :SinglePlaceOfService ;
+        rdfs:label    "comprehensive inpatient rehabilitation facility" ;
+        :displayName  "comprehensive inpatient rehabilitation facility" .
+
+:place_of_service_62  a  :SinglePlaceOfService ;
+        rdfs:label    "comprehensive outpatient rehabilitation facility" ;
+        :displayName  "comprehensive outpatient rehabilitation facility" .
+
+:place_of_service_65  a  :SinglePlaceOfService ;
+        rdfs:label    "end-stage renal disease treatment facility" ;
+        :displayName  "end-stage renal disease treatment facility" .
+
+:place_of_service_7  a  :SinglePlaceOfService ;
+        rdfs:label    "tribal 638 free-standing facility" ;
+        :displayName  "tribal 638 free-standing facility" .
+
+:place_of_service_71  a  :SinglePlaceOfService ;
+        rdfs:label    "public health clinic" ;
+        :displayName  "public health clinic" .
+
+:place_of_service_72  a  :SinglePlaceOfService ;
+        rdfs:label    "rural health clinic" ;
+        :displayName  "rural health clinic" .
+
+:place_of_service_8  a  :SinglePlaceOfService ;
+        rdfs:label    "tribal 638 provider-based facility" ;
+        :displayName  "tribal 638 provider-based facility" .
+
+:place_of_service_81  a  :SinglePlaceOfService ;
+        rdfs:label    "independent laboratory" ;
+        :displayName  "independent laboratory" .
+
+:place_of_service_9  a  :SinglePlaceOfService ;
+        rdfs:label    "prison / correctional facility" ;
+        :displayName  "prison / correctional facility" .
+
+:place_of_service_99  a  :SinglePlaceOfService ;
+        rdfs:label    "other place of service" ;
+        :displayName  "other place of service" .
+
+:places_of_service_group_hospital
+        a             :PlacesOfServiceGroup ;
+        rdfs:label    "hospital" ;
+        :displayName  "hospital" .
+
+:places_of_service_group_non_hospital
+        a             :PlacesOfServiceGroup ;
+        rdfs:label    "non-hospital" ;
+        :displayName  "non-hospital" .
+
+:posterior_teeth  a   :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "posterior tooth" ;
+        :displayName  "posterior teeth" .
+
+:premolars  a         :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "premolar" , "premolar tooth" ;
+        :displayName  "premolars" .
+
+:primary_anterior_teeth
+        a             :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "primary anterior tooth" , "anterior primary teeth" ;
+        :displayName  "primary anterior teeth" .
+
+:primary_canines  a   :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "primary canine" ;
+        :displayName  "primary canines" .
+
+:primary_incisors  a  :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "primary incisor" ;
+        :displayName  "primary incisors" .
+
+:primary_posterior_teeth
+        a             :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "deciduous posterior tooth" , "deciduous posterior teeth" , "primary posterior tooth" ;
+        :displayName  "primary posterior teeth" .
+
+:primary_quadrants  a  :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "primary quadrant" ;
+        :displayName  "primary quadrants" .
+
+:primary_teeth  a     :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "baby tooth" , "deciduous tooth" , "primary tooth" , "primary dentition" , "milk tooth" ;
+        :displayName  "primary teeth" .
+
+:prior_authorization_requirement
+        a             :Requirement , owl:NamedIndividual ;
+        rdfs:label    "prior authorization" , "prior authorisation requirement" , "prior authorisation" , "prior approval" , "par" , "authorization" ;
+        :displayName  "prior authorization requirement (par)" .
+
+:quadrant_1  a        :BodyPart , :Quadrant ;
+        rdfs:label    "upper right permanent dentition quadrant" , "quadrant 1" , "upper right quadrant - permanent dentition" , "ur permanent dentition quadrant" , "ur quadrant - permanent dentition" ;
+        :displayName  "quadrant 1 - upper right quadrant, permanent dentition" .
+
+:quadrant_2  a        :BodyPart , :Quadrant ;
+        rdfs:label    "quadrant 2" , "upper left quadrant - permanent dentition" , "ul quadrant - permanent dentition" , "upper left permanent dentition quadrant" , "ul permanent dentition quadrant" ;
+        :displayName  "quadrant 2 - upper left quadrant, permanent dentition" .
+
+:quadrant_3  a        :BodyPart , :Quadrant ;
+        rdfs:label    "lower left permanent dentition quadrant" , "quadrant 3" , "ll permanent dentition quadrant" , "lower left quadrant - permanent dentition" , "ll quadrant - permanent dentition" ;
+        :displayName  "quadrant 3 - lower left quadrant, permanent dentition" .
+
+:quadrant_4  a        :BodyPart , :Quadrant ;
+        rdfs:label    "lower right quadrant - permanent dentition" , "lr permanent dentition quadrant" , "lr quadrant - permanent dentition" , "quadrant 4" , "lower right permanent dentition quadrant" ;
+        :displayName  "quadrant 4 - lower left quadrant, permanent dentition" .
+
+:quadrant_5  a        :BodyPart , :Quadrant ;
+        rdfs:label    "upper right primary dentition quadrant" , "upper right quadrant - primary dentition" , "ur quadrant - primary dentition" , "quadrant 5" , "ur primary dentition quadrant" ;
+        :displayName  "quadrant 5 - upper right quadrant, primary dentition" .
+
+:quadrant_6  a        :BodyPart , :Quadrant ;
+        rdfs:label    "ul quadrant - primary dentition" , "upper left quadrant - primary dentition" , "quadrant 6" , "ul primary dentition quadrant" , "upper left primary dentition quadrant" ;
+        :displayName  "quadrant 6 - upper left quadrant, primary dentition" .
+
+:quadrant_7  a        :BodyPart , :Quadrant ;
+        rdfs:label    "ll primary dentition quadrant" , "lower left quadrant - primary dentition" , "ll quadrant - primary dentition" , "lower left primary dentition quadrant" , "quadrant 7" ;
+        :displayName  "quadrant 7 - lower left quadrant, primary dentition" .
+
+:quadrant_8  a        :BodyPart , :Quadrant ;
+        rdfs:label    "lr quadrant - primary dentition" , "lower right primary dentition quadrant" , "lower right quadrant - primary dentition" , "lr primary dentition quadrant" , "quadrant 8" ;
+        :displayName  "quadrant 8 - lower right quadrant, primary dentition" .
+
+:quadrants  a         :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "quadrant" , "any quadrant" ;
+        :displayName  "per quadrant" .
+
+:same_body_part  a    :BillingCommonality , owl:NamedIndividual ;
+        rdfs:label    "same surgical area" ;
+        :displayName  "same body part" .
+
+:same_date  a             :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "the same date" , "same day" , "same date" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :day .
+
+:same_place_of_service
+        a             :BillingCommonality , owl:NamedIndividual ;
+        rdfs:label    "same location" ;
+        :displayName  "same place of service" .
+
+:same_provider  a     :BillingCommonality , owl:NamedIndividual ;
+        rdfs:label    "same provider" ;
+        :displayName  "same provider" .
+
+:same_provider_group  a  :BillingCommonality , owl:NamedIndividual ;
+        rdfs:label    "same group" , "per dental practice" ;
+        :displayName  "same provider group" .
+
+:same_visit  a            :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "same visit" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :day .
+
+:service_category_dental
+        a             :ServiceCategory ;
+        rdfs:label    "dental benefit" , "dental service" ;
+        :displayName  "all dental services" .
+
+:service_category_medicine
+        a             :ServiceCategory ;
+        :displayName  "all medicine services" .
+
+:service_category_phys_ther
+        a             :ServiceCategory ;
+        :displayName  "all pt/ot services" .
+
+:service_modifier_early_intervention
+        a             :ServiceModifier ;
+        rdfs:label    "TL" , "early intervention" ;
+        :displayName  "early intervention (tl)" .
+
+:service_modifier_habilitative
+        a             :ServiceModifier ;
+        rdfs:label    "HB" , "habilitative" ;
+        :displayName  "habilitative (hb)" .
+
+:service_modifier_rehabilitative
+        a             :ServiceModifier ;
+        rdfs:label    "rehabilitative" ;
+        :displayName  "rehabilitative (gp/go)" .
+
+:service_modifier_rehabilitative_occupational_therapy
+        a             :ServiceModifier ;
+        rdfs:label    "rehabilitative occupational therapy" , "rehabilitative OT" , "GO" ;
+        :displayName  "rehabilitative occupational therapy (go)" .
+
+:service_modifier_rehabilitative_physical_therapy
+        a             :ServiceModifier ;
+        rdfs:label    "rehabilitative physical therapy" , "rehabilitative PT" , "GP" ;
+        :displayName  "rehabilitative physical therapy (gp)" .
+
+:teeth  a             :CustomBodyPartsGroup , :BodyPart ;
+        rdfs:label    "tooth" , "any tooth" ;
+        :displayName  "per tooth" .
+
+:tooth_1  a           :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary right third molar" , "tooth 1" ;
+        :displayName  "tooth 1 - permanent maxillary right third molar" .
+
+:tooth_10  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 10" , "permanent maxillary left lateral incisor" ;
+        :displayName  "tooth 10 - permanent maxillary left lateral incisor" .
+
+:tooth_11  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary left canine" , "tooth 11" ;
+        :displayName  "tooth 11 - permanent maxillary left canine" .
+
+:tooth_12  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 12" , "permanent maxillary left first premolar" ;
+        :displayName  "tooth 12 - permanent maxillary left first premolar" .
+
+:tooth_13  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary left second premolar" , "tooth 13" ;
+        :displayName  "tooth 13 - permanent maxillary left second premolar" .
+
+:tooth_14  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary left first molar" , "tooth 14" ;
+        :displayName  "tooth 14 - permanent maxillary left first molar" .
+
+:tooth_15  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary left second molar" , "tooth 15" ;
+        :displayName  "tooth 15 - permanent maxillary left second molar" .
+
+:tooth_16  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary left third molar" , "tooth 16" ;
+        :displayName  "tooth 16 - permanent maxillary left third molar" .
+
+:tooth_17  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 17" , "permanent mandibular left third molar" ;
+        :displayName  "tooth 17 - permanent mandibular left third molar" .
+
+:tooth_18  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular left second molar" , "tooth 18" ;
+        :displayName  "tooth 18 - permanent mandibular left second molar" .
+
+:tooth_19  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 19" , "permanent mandibular left first molar" ;
+        :displayName  "tooth 19 - permanent mandibular left first molar" .
+
+:tooth_2  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 2" , "permanent maxillary right second molar" ;
+        :displayName  "tooth 2 - permanent maxillary right second molar" .
+
+:tooth_20  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 20" , "permanent mandibular left second premolar" ;
+        :displayName  "tooth 20 - permanent mandibular left second premolar" .
+
+:tooth_21  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 21" , "permanent mandibular left first premolar" ;
+        :displayName  "tooth 21 - permanent mandibular left first premolar" .
+
+:tooth_22  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular left canine" , "tooth 22" ;
+        :displayName  "tooth 22 - permanent mandibular left canine" .
+
+:tooth_23  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular left lateral incisor" , "tooth 23" ;
+        :displayName  "tooth 23 - permanent mandibular left lateral incisor" .
+
+:tooth_24  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular left central incisor" , "tooth 24" ;
+        :displayName  "tooth 24 - permanent mandibular left central incisor" .
+
+:tooth_25  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular right central incisor" , "tooth 25" ;
+        :displayName  "tooth 25 - permanent mandibular right central incisor" .
+
+:tooth_26  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular right lateral incisor" , "tooth 26" ;
+        :displayName  "tooth 26 - permanent mandibular right lateral incisor" .
+
+:tooth_27  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular right canine" , "tooth 27" ;
+        :displayName  "tooth 27 - permanent mandibular right canine" .
+
+:tooth_28  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular right first premolar" , "tooth 28" ;
+        :displayName  "tooth 28 - permanent mandibular right first premolar" .
+
+:tooth_29  a          :BodyPart , :Tooth ;
+        rdfs:label    "permanent mandibular right second premolar" , "tooth 29" ;
+        :displayName  "tooth 29 - permanent mandibular right second premolar" .
+
+:tooth_3  a           :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary right first molar" , "tooth 3" ;
+        :displayName  "tooth 3 - permanent maxillary right first molar" .
+
+:tooth_30  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 30" , "permanent mandibular right first molar" ;
+        :displayName  "tooth 30 - permanent mandibular right first molar" .
+
+:tooth_31  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 31" , "permanent mandibular right second molar" ;
+        :displayName  "tooth 31 - permanent mandibular right second molar" .
+
+:tooth_32  a          :BodyPart , :Tooth ;
+        rdfs:label    "tooth 32" , "permanent mandibular right third molar" ;
+        :displayName  "tooth 32 - permanent mandibular right third molar" .
+
+:tooth_4  a           :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary right second premolar" , "tooth 4" ;
+        :displayName  "tooth 4 - permanent maxillary right second premolar" .
+
+:tooth_5  a           :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary right first premolar" , "tooth 5" ;
+        :displayName  "tooth 5 - permanent maxillary right first premolar" .
+
+:tooth_6  a           :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary right canine" , "tooth 6" ;
+        :displayName  "tooth 6 - permanent maxillary right canine" .
+
+:tooth_7  a           :BodyPart , :Tooth ;
+        rdfs:label    "permanent maxillary right lateral incisor" , "tooth 7" ;
+        :displayName  "tooth 7 - permanent maxillary right lateral incisor" .
+
+:tooth_8  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 8" , "permanent maxillary right central incisor" ;
+        :displayName  "tooth 8 - permanent maxillary right central incisor" .
+
+:tooth_9  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 9" , "permanent maxillary left central incisor" ;
+        :displayName  "tooth 9 - permanent maxillary left central incisor" .
+
+:tooth_A  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth a" , "primary maxillary right second molar" , "tooth 1d" ;
+        :displayName  "tooth a/tooth 1d - primary maxillary right second molar" .
+
+:tooth_B  a           :BodyPart , :Tooth ;
+        rdfs:label    "primary maxillary right first molar" , "tooth b" , "tooth 2d" ;
+        :displayName  "tooth b/tooth 2d - primary maxillary right first molar" .
+
+:tooth_C  a           :BodyPart , :Tooth ;
+        rdfs:label    "primary maxillary right canine molar" , "tooth c" , "tooth 3d" ;
+        :displayName  "tooth c/tooth 3d - primary maxillary right canine molar" .
+
+:tooth_D  a           :BodyPart , :Tooth ;
+        rdfs:label    "primary maxillary right lateral incisor" , "tooth d" , "tooth 4d" ;
+        :displayName  "tooth d/tooth 4d - primary maxillary right lateral incisor" .
+
+:tooth_E  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 5d" , "tooth e" , "primary maxillary right central incisor" ;
+        :displayName  "tooth e/tooth 5d - primary maxillary right central incisor" .
+
+:tooth_F  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 6d" , "primary maxillary left central incisor" , "tooth f" ;
+        :displayName  "tooth f/tooth 6d - primary maxillary left central incisor" .
+
+:tooth_G  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 7d" , "primary maxillary left lateral incisor" , "tooth g" ;
+        :displayName  "tooth g/tooth 7d - primary maxillary left lateral incisor" .
+
+:tooth_H  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth h" , "primary maxillary left canine molar" , "tooth 8d" ;
+        :displayName  "tooth h/tooth 8d - primary maxillary left canine molar" .
+
+:tooth_I  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth i" , "tooth 9d" , "primary maxillary left first molar" ;
+        :displayName  "tooth i/tooth 9d - primary maxillary left first molar" .
+
+:tooth_J  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 10d" , "primary maxillary left second molar" , "tooth j" ;
+        :displayName  "tooth j/tooth 10d - primary maxillary left second molar" .
+
+:tooth_K  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 11d" , "tooth k" , "primary mandibular left second molar" ;
+        :displayName  "tooth k/tooth 11d - primary mandibular left second molar" .
+
+:tooth_L  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth l" , "tooth 12d" , "primary mandibular left first molar" ;
+        :displayName  "tooth l/tooth 12d - primary mandibular left first molar" .
+
+:tooth_M  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth m" , "tooth 13d" , "primary mandibular left canine molar" ;
+        :displayName  "tooth m/tooth 13d - primary mandibular left canine molar" .
+
+:tooth_N  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 14d" , "tooth n" , "primary mandibular left lateral incisor" ;
+        :displayName  "tooth n/tooth 14d - primary mandibular left lateral incisor" .
+
+:tooth_O  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 15d" , "primary mandibular left central incisor" , "tooth o" ;
+        :displayName  "tooth o/tooth 15d - primary mandibular left central incisor" .
+
+:tooth_P  a           :BodyPart , :Tooth ;
+        rdfs:label    "primary mandibular right central incisor" , "tooth p" , "tooth 16d" ;
+        :displayName  "tooth p/tooth 16d - primary mandibular right central incisor" .
+
+:tooth_Q  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth q" , "primary mandibular right lateral incisor" , "tooth 17d" ;
+        :displayName  "tooth q/tooth 17d - primary mandibular right lateral incisor" .
+
+:tooth_R  a           :BodyPart , :Tooth ;
+        rdfs:label    "primary mandibular right canine molar" , "tooth 18d" , "tooth r" ;
+        :displayName  "tooth r/tooth 18d - primary mandibular right canine molar" .
+
+:tooth_S  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 19d" , "primary mandibular right first molar" , "tooth s" ;
+        :displayName  "tooth s/tooth 19d - primary mandibular right first molar" .
+
+:tooth_T  a           :BodyPart , :Tooth ;
+        rdfs:label    "tooth 20d" , "tooth t" , "primary mandibular right second molar" ;
+        :displayName  "tooth t/tooth 20d - primary mandibular right second molar" .
+
+:two_max_units  a     :ServiceLimitation , owl:NamedIndividual ;
+        rdfs:label    "twice" ;
+        :hasMaxUnits  "2"^^xsd:int ;
+        :hasMinUnits  "0"^^xsd:int .
+
+:upper_arch  a        :BodyPart , :Arch ;
+        :claimValue   "max" ;
+        :displayName  "maxillary arch" .
+
+:upper_jaw  a         :BodyPart , :Jaw ;
+        rdfs:label    "upper jaw" , "maxilla" ;
+        :displayName  "upper jaw" .
+
+:utilization_management_review
+        a             :Requirement , owl:NamedIndividual ;
+        rdfs:label    "utilisation management review" , "utilisation management ( um ) review" , "um review" ;
+        :displayName  "utilisation management review" .
+
+:when_prescribed  a   :Requirement , owl:NamedIndividual ;
+        rdfs:label    "when prescribed" ;
+        :displayName  "when prescribed" .
+
+:year   a             :UnitOfTime , owl:NamedIndividual ;
+        rdfs:label    "year" ;
+        :displayName  "year(s)" .
+
+:yearly  a                :ApplicableTimePeriod , owl:NamedIndividual ;
+        rdfs:label        "yearly" , "per year" , "a year" , "12-month" , "12 month" ;
+        :hasAmountOfTime  "1"^^xsd:int ;
+        :hasUnitOfTime    :year .
+
+dc:source  a    owl:AnnotationProperty .
+
+dc:title  a     owl:AnnotationProperty .
+
+owl:sameAs  a   owl:ObjectProperty .
+
+xsd:int  :annotatedAs  "IntegerNumber" .

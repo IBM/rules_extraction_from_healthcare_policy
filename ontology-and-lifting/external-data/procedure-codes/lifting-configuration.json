@@ -1,0 +1,86 @@
+{
+  "namespace": "http://claims-audit.ibm.com/",
+  "columns": [
+    {
+      "column": "hcpcscpt",
+      "type": "http://claims-audit.ibm.com/ProcedureCode",
+      "entityType": "INDIVIDUAL",
+      "properties": [
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "hcpcscpt"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "hcpcscpt abbreviated title"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "hcpcscpt medium title"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "hcpcscpt long title"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "DISPLAY_NAME",
+          "columns": [
+            "hcpcscpt",
+            "hcpcscpt long title"
+          ],
+          "formatter": "%s - %s",
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "CLAIM_VALUE",
+          "columns": [
+            "hcpcscpt"
+          ],
+          "transformation": "NONE"
+        }
+      ]
+    },
+    {
+      "column": "Procgroup code",
+      "type": "http://claims-audit.ibm.com/ProcedureCodeGroup",
+      "entityType": "INDIVIDUAL",
+      "properties": [
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "Procgroup code"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "Procgroup title"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "DISPLAY_NAME",
+          "columns": [
+            "Procgroup code",
+            "Procgroup title"
+          ],
+          "formatter": "%s - %s",
+          "transformation": "LOWERCASE"
+        }
+      ]
+    }
+  ]
+}

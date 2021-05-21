@@ -1,0 +1,674 @@
+[
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_20",
+    "displayName": "urgent care facility",
+    "surfaceForms": [
+      "urgent care facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.979Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_42",
+    "displayName": "ambulance  air or water",
+    "surfaceForms": [
+      "ambulance  air or water"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_21",
+    "displayName": "inpatient hospital",
+    "surfaceForms": [
+      "inpatient hospital"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.979Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_65",
+    "displayName": "end-stage renal disease treatment facility",
+    "surfaceForms": [
+      "end-stage renal disease treatment facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_22",
+    "displayName": "on campus-outpatient hospital",
+    "surfaceForms": [
+      "on campus-outpatient hospital"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.979Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_23",
+    "displayName": "emergency room  hospital",
+    "surfaceForms": [
+      "emergency room  hospital"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.979Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_24",
+    "displayName": "ambulatory surgical center",
+    "surfaceForms": [
+      "ambulatory surgical center"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.979Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_25",
+    "displayName": "birthing center",
+    "surfaceForms": [
+      "birthing center"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_26",
+    "displayName": "military treatment facility",
+    "surfaceForms": [
+      "military treatment facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_49",
+    "displayName": "independent clinic",
+    "surfaceForms": [
+      "independent clinic"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_71",
+    "displayName": "public health clinic",
+    "surfaceForms": [
+      "public health clinic"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.983Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_50",
+    "displayName": "federally qualified health center",
+    "surfaceForms": [
+      "federally qualified health center"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.981Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_72",
+    "displayName": "rural health clinic",
+    "surfaceForms": [
+      "rural health clinic"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.983Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_51",
+    "displayName": "inpatient psychiatric facility",
+    "surfaceForms": [
+      "inpatient psychiatric facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.981Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_52",
+    "displayName": "psychiatric facility-partial hospitalization",
+    "surfaceForms": [
+      "psychiatric facility-partial hospitalization"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.981Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_31",
+    "displayName": "skilled nursing facility",
+    "surfaceForms": [
+      "skilled nursing facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_53",
+    "displayName": "community mental health center",
+    "surfaceForms": [
+      "community mental health center"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.981Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_32",
+    "displayName": "nursing facility",
+    "surfaceForms": [
+      "nursing facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_54",
+    "displayName": "intermediate care facility/ individuals with intellectual disabilities",
+    "surfaceForms": [
+      "intermediate care facility/ individuals with intellectual disabilities"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.981Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_11",
+    "displayName": "office",
+    "surfaceForms": [
+      "office"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_33",
+    "displayName": "custodial care facility",
+    "surfaceForms": [
+      "custodial care facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_55",
+    "displayName": "residential substance abuse treatment facility",
+    "surfaceForms": [
+      "residential substance abuse treatment facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_99",
+    "displayName": "other place of service",
+    "surfaceForms": [
+      "other place of service"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.983Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_12",
+    "displayName": "home",
+    "surfaceForms": [
+      "home"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_34",
+    "displayName": "hospice",
+    "surfaceForms": [
+      "hospice"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_56",
+    "displayName": "psychiatric residential treatment center",
+    "surfaceForms": [
+      "psychiatric residential treatment center"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_13",
+    "displayName": "assisted living facility",
+    "surfaceForms": [
+      "assisted living facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.978Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_57",
+    "displayName": "non-residential substance abuse treatment facility",
+    "surfaceForms": [
+      "non-residential substance abuse treatment facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_14",
+    "displayName": "group home",
+    "surfaceForms": [
+      "group home"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.978Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_15",
+    "displayName": "mobile unit",
+    "surfaceForms": [
+      "mobile unit"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.978Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_16",
+    "displayName": "temporary lodging",
+    "surfaceForms": [
+      "temporary lodging"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.978Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_17",
+    "displayName": "walk-in retail health clinic",
+    "surfaceForms": [
+      "walk-in retail health clinic"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.978Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_1",
+    "displayName": "pharmacy",
+    "surfaceForms": [
+      "pharmacy"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.976Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_18",
+    "displayName": "place of employment-worksite",
+    "surfaceForms": [
+      "place of employment-worksite"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.978Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_19",
+    "displayName": "off campus-outpatient hospital",
+    "surfaceForms": [
+      "off campus-outpatient hospital"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.979Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_8",
+    "displayName": "tribal 638 provider-based facility",
+    "surfaceForms": [
+      "tribal 638 provider-based facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_9",
+    "displayName": "prison / correctional facility",
+    "surfaceForms": [
+      "prison / correctional facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_6",
+    "displayName": "indian health service provider-based facility",
+    "surfaceForms": [
+      "indian health service provider-based facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_7",
+    "displayName": "tribal 638 free-standing facility",
+    "surfaceForms": [
+      "tribal 638 free-standing facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_4",
+    "displayName": "homeless shelter",
+    "surfaceForms": [
+      "homeless shelter"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.976Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_5",
+    "displayName": "indian health service free-standing facility",
+    "surfaceForms": [
+      "indian health service free-standing facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.977Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_2",
+    "displayName": "telehealth",
+    "surfaceForms": [
+      "telehealth"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.976Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_3",
+    "displayName": "school",
+    "surfaceForms": [
+      "school"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.976Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_81",
+    "displayName": "independent laboratory",
+    "surfaceForms": [
+      "independent laboratory"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.983Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_60",
+    "displayName": "mass immunization center",
+    "surfaceForms": [
+      "mass immunization center"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_61",
+    "displayName": "comprehensive inpatient rehabilitation facility",
+    "surfaceForms": [
+      "comprehensive inpatient rehabilitation facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_62",
+    "displayName": "comprehensive outpatient rehabilitation facility",
+    "surfaceForms": [
+      "comprehensive outpatient rehabilitation facility"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.982Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/place_of_service_41",
+    "displayName": "ambulance - land",
+    "surfaceForms": [
+      "ambulance - land"
+    ],
+    "tag": "places-of-service.20190718",
+    "timestamp": "2019-07-12T17:37:05.980Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/SinglePlaceOfService"
+    ],
+    "type": "INDIVIDUAL"
+  }
+]

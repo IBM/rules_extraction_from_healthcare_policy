@@ -1,0 +1,26 @@
+{
+  "namespace": "http://claims-audit.ibm.com/",
+  "columns": [
+    {
+      "column": "Custom Group Name - Current (0.1.2)",
+      "type": "http://claims-audit.ibm.com/CustomProcedureCodesGroup",
+      "entityType": "GROUP",
+      "properties": [
+        {
+          "property": "DISPLAY_NAME",
+          "columns": [
+            "Custom Group Name - Current (0.1.2)"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "Custom Group Surface Form"
+          ],
+          "transformation": "LOWERCASE"
+        }
+      ]
+    }
+  ]
+}
