@@ -1,4 +1,4 @@
-# Rules extraction from Healthcare Policy
+# Ontology and Entity Lifting
 
 *Tools for protecting vital healthcare programs by extracting actionable knowledge from policy.*
 
