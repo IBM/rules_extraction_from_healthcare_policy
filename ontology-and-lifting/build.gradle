@@ -1,0 +1,133 @@
+plugins {
+    id "eclipse"
+    id "idea"
+    id "io.spring.dependency-management" version "1.0.10.RELEASE"
+    id "java"
+    // When both `org.springframework.boot` and `io.spring.dependency-management` plugins are present
+    // the version of spring and related libraries is automatically fixed and can be omitted in
+    // the following declarations
+    id "org.springframework.boot" version "2.2.10.RELEASE"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+}
+
+ext {
+    apacheCommonsLang3Version = "3.9"
+    commonsPool2Version = "2.6.2"
+    jacksonDataFormatVersion = "2.9.9"
+    jaxbVersion = "2.3.1"
+    jenaVersion = "3.12.0"
+    jsoupVersion = '1.12.1'
+    jungVersion = "2.0.1"
+    luceneVersion = "8.2.0"
+    openCsvVersion = "4.6"
+    springCloudContractVersion = "2.1.2.RELEASE"
+    springCloudVersion = "Greenwich.RELEASE"
+    springfoxVersion = "2.9.2"
+    uimaVersion = "2.10.2"
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+dependencies {
+    implementation("io.springfox:springfox-swagger2:${springfoxVersion}")
+    implementation("io.springfox:springfox-swagger-ui:${springfoxVersion}")
+    implementation("org.jsoup:jsoup:${jsoupVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.h2database:h2")
+    implementation("org.apache.jena:jena-core:${jenaVersion}")
+    implementation("org.apache.jena:jena-arq:${jenaVersion}")
+    implementation("org.apache.commons:commons-pool2:${commonsPool2Version}")
+
+    // -----------------------------------------
+    // Dependencies needed to upgrade to Java 11
+    // -----------------------------------------
+
+    // Required by: system-t-runtime
+    // Reason: JAXB has been deprecated in Java 9/10 and removed in Java 11
+    // See: http://openjdk.java.net/jeps/320
+    // Note that we don't need to add com.sun.xml.bind:jaxb-core, com.sun.xml.bind:jaxb-impl, javax.activation:activation
+    implementation("javax.xml.bind:jaxb-api:${jaxbVersion}")
+
+
+
+    implementation("org.apache.uima:uimaj-core:${uimaVersion}")
+    implementation("org.apache.uima:ConceptMapper:${uimaVersion}")
+    implementation("net.sf.jung:jung-graph-impl:${jungVersion}")
+    implementation("net.sf.jung:jung-algorithms:${jungVersion}")
+    implementation("net.sf.jung:jung-visualization:${jungVersion}")
+
+    // --------------------------------
+    // csv-to-rdf utility dependencies
+    // --------------------------------
+
+    implementation("com.opencsv:opencsv:${openCsvVersion}")
+
+    // --------------------------------
+    // Lucene dependencies
+    // https://mvnrepository.com/artifact/org.apache.lucene/lucene-core
+    // https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser
+    // https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-common
+    // --------------------------------
+
+    implementation("org.apache.lucene:lucene-analyzers-common:${luceneVersion}")
+    implementation("org.apache.lucene:lucene-queryparser:${luceneVersion}")
+
+}
+
+bootRun {
+    // The following JVM options are necessary to properly size the heap within
+    // a container. They will not be needed any more in Java 11+
+    jvmArgs = ["-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap"]
+}
+
+configurations {
+    // needed to avoid the conflict between slf4j-log4j12 and log4j-over-slf4j
+    // (see http://www.slf4j.org/codes.html#log4jDelegationLoop)
+    implementation.exclude module: "slf4j-log4j12"
+}
+
+idea {
+    module {
+        downloadJavadoc = true
+    }
+}
+
+task resolveDependencies {
+    setDescription "Resolves all project dependencies."
+    doLast {
+        rootProject.buildscript.configurations.forEach { configuration ->
+            if (configuration.canBeResolved) {
+                configuration.resolve()
+            }
+        }
+        rootProject.configurations.forEach { configuration ->
+            if (configuration.canBeResolved) {
+                configuration.resolve()
+            }
+        }
+    }
+}
+
+test {
+
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = "full"
+    }
+
+}

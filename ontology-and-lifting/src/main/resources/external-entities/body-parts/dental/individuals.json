@@ -1,0 +1,1062 @@
+[
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_29",
+    "displayName": "tooth 29 - permanent mandibular right second premolar",
+    "surfaceForms": [
+      "tooth 29",
+      "permanent mandibular right second premolar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_3",
+    "displayName": "quadrant 3 - lower left quadrant, permanent dentition",
+    "surfaceForms": [
+      "ll quadrant - permanent dentition",
+      "lower left quadrant - permanent dentition",
+      "ll permanent dentition quadrant",
+      "quadrant 3",
+      "lower left permanent dentition quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_D",
+    "displayName": "tooth d/tooth 4d - primary maxillary right lateral incisor",
+    "surfaceForms": [
+      "tooth 4d",
+      "tooth d",
+      "primary maxillary right lateral incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_6",
+    "displayName": "tooth 6 - permanent maxillary right canine",
+    "surfaceForms": [
+      "tooth 6",
+      "permanent maxillary right canine"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_K",
+    "displayName": "tooth k/tooth 11d - primary mandibular left second molar",
+    "surfaceForms": [
+      "primary mandibular left second molar",
+      "tooth k",
+      "tooth 11d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_24",
+    "displayName": "tooth 24 - permanent mandibular left central incisor",
+    "surfaceForms": [
+      "tooth 24",
+      "permanent mandibular left central incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/upper_jaw",
+    "displayName": "upper jaw",
+    "surfaceForms": [
+      "maxilla",
+      "upper jaw"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.166Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Jaw"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_8",
+    "displayName": "quadrant 8 - lower right quadrant, primary dentition",
+    "surfaceForms": [
+      "quadrant 8",
+      "lr primary dentition quadrant",
+      "lower right quadrant - primary dentition",
+      "lower right primary dentition quadrant",
+      "lr quadrant - primary dentition"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_11",
+    "displayName": "tooth 11 - permanent maxillary left canine",
+    "surfaceForms": [
+      "tooth 11",
+      "permanent maxillary left canine"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.173Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_23",
+    "displayName": "tooth 23 - permanent mandibular left lateral incisor",
+    "surfaceForms": [
+      "tooth 23",
+      "permanent mandibular left lateral incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/lower_jaw",
+    "displayName": "lower jaw",
+    "surfaceForms": [
+      "lower jaw",
+      "mandible"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.167Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Jaw"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_R",
+    "displayName": "tooth r/tooth 18d - primary mandibular right canine molar",
+    "surfaceForms": [
+      "tooth r",
+      "tooth 18d",
+      "primary mandibular right canine molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_3",
+    "displayName": "tooth 3 - permanent maxillary right first molar",
+    "surfaceForms": [
+      "tooth 3",
+      "permanent maxillary right first molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_21",
+    "displayName": "tooth 21 - permanent mandibular left first premolar",
+    "surfaceForms": [
+      "permanent mandibular left first premolar",
+      "tooth 21"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_H",
+    "displayName": "tooth h/tooth 8d - primary maxillary left canine molar",
+    "surfaceForms": [
+      "tooth 8d",
+      "primary maxillary left canine molar",
+      "tooth h"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_2",
+    "displayName": "quadrant 2 - upper left quadrant, permanent dentition",
+    "surfaceForms": [
+      "ul permanent dentition quadrant",
+      "upper left permanent dentition quadrant",
+      "ul quadrant - permanent dentition",
+      "upper left quadrant - permanent dentition",
+      "quadrant 2"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_L",
+    "displayName": "tooth l/tooth 12d - primary mandibular left first molar",
+    "surfaceForms": [
+      "primary mandibular left first molar",
+      "tooth 12d",
+      "tooth l"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_I",
+    "displayName": "tooth i/tooth 9d - primary maxillary left first molar",
+    "surfaceForms": [
+      "primary maxillary left first molar",
+      "tooth 9d",
+      "tooth i"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_M",
+    "displayName": "tooth m/tooth 13d - primary mandibular left canine molar",
+    "surfaceForms": [
+      "primary mandibular left canine molar",
+      "tooth 13d",
+      "tooth m"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_G",
+    "displayName": "tooth g/tooth 7d - primary maxillary left lateral incisor",
+    "surfaceForms": [
+      "tooth g",
+      "primary maxillary left lateral incisor",
+      "tooth 7d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_13",
+    "displayName": "tooth 13 - permanent maxillary left second premolar",
+    "surfaceForms": [
+      "tooth 13",
+      "permanent maxillary left second premolar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_9",
+    "displayName": "tooth 9 - permanent maxillary left central incisor",
+    "surfaceForms": [
+      "permanent maxillary left central incisor",
+      "tooth 9"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_2",
+    "displayName": "tooth 2 - permanent maxillary right second molar",
+    "surfaceForms": [
+      "permanent maxillary right second molar",
+      "tooth 2"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_7",
+    "displayName": "tooth 7 - permanent maxillary right lateral incisor",
+    "surfaceForms": [
+      "tooth 7",
+      "permanent maxillary right lateral incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_T",
+    "displayName": "tooth t/tooth 20d - primary mandibular right second molar",
+    "surfaceForms": [
+      "primary mandibular right second molar",
+      "tooth t",
+      "tooth 20d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_17",
+    "displayName": "tooth 17 - permanent mandibular left third molar",
+    "surfaceForms": [
+      "permanent mandibular left third molar",
+      "tooth 17"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_31",
+    "displayName": "tooth 31 - permanent mandibular right second molar",
+    "surfaceForms": [
+      "permanent mandibular right second molar",
+      "tooth 31"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_P",
+    "displayName": "tooth p/tooth 16d - primary mandibular right central incisor",
+    "surfaceForms": [
+      "tooth 16d",
+      "tooth p",
+      "primary mandibular right central incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_1",
+    "displayName": "tooth 1 - permanent maxillary right third molar",
+    "surfaceForms": [
+      "tooth 1",
+      "permanent maxillary right third molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_32",
+    "displayName": "tooth 32 - permanent mandibular right third molar",
+    "surfaceForms": [
+      "permanent mandibular right third molar",
+      "tooth 32"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_7",
+    "displayName": "quadrant 7 - lower left quadrant, primary dentition",
+    "surfaceForms": [
+      "quadrant 7",
+      "lower left primary dentition quadrant",
+      "ll quadrant - primary dentition",
+      "lower left quadrant - primary dentition",
+      "ll primary dentition quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_10",
+    "displayName": "tooth 10 - permanent maxillary left lateral incisor",
+    "surfaceForms": [
+      "permanent maxillary left lateral incisor",
+      "tooth 10"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_O",
+    "displayName": "tooth o/tooth 15d - primary mandibular left central incisor",
+    "surfaceForms": [
+      "tooth o",
+      "primary mandibular left central incisor",
+      "tooth 15d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_22",
+    "displayName": "tooth 22 - permanent mandibular left canine",
+    "surfaceForms": [
+      "tooth 22",
+      "permanent mandibular left canine"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_19",
+    "displayName": "tooth 19 - permanent mandibular left first molar",
+    "surfaceForms": [
+      "permanent mandibular left first molar",
+      "tooth 19"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_B",
+    "displayName": "tooth b/tooth 2d - primary maxillary right first molar",
+    "surfaceForms": [
+      "tooth 2d",
+      "tooth b",
+      "primary maxillary right first molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_28",
+    "displayName": "tooth 28 - permanent mandibular right first premolar",
+    "surfaceForms": [
+      "tooth 28",
+      "permanent mandibular right first premolar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_1",
+    "displayName": "quadrant 1 - upper right quadrant, permanent dentition",
+    "surfaceForms": [
+      "ur quadrant - permanent dentition",
+      "ur permanent dentition quadrant",
+      "upper right quadrant - permanent dentition",
+      "quadrant 1",
+      "upper right permanent dentition quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_16",
+    "displayName": "tooth 16 - permanent maxillary left third molar",
+    "surfaceForms": [
+      "tooth 16",
+      "permanent maxillary left third molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_C",
+    "displayName": "tooth c/tooth 3d - primary maxillary right canine molar",
+    "surfaceForms": [
+      "tooth 3d",
+      "tooth c",
+      "primary maxillary right canine molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_12",
+    "displayName": "tooth 12 - permanent maxillary left first premolar",
+    "surfaceForms": [
+      "permanent maxillary left first premolar",
+      "tooth 12"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_25",
+    "displayName": "tooth 25 - permanent mandibular right central incisor",
+    "surfaceForms": [
+      "tooth 25",
+      "permanent mandibular right central incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_Q",
+    "displayName": "tooth q/tooth 17d - primary mandibular right lateral incisor",
+    "surfaceForms": [
+      "tooth 17d",
+      "primary mandibular right lateral incisor",
+      "tooth q"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_4",
+    "displayName": "tooth 4 - permanent maxillary right second premolar",
+    "surfaceForms": [
+      "tooth 4",
+      "permanent maxillary right second premolar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.173Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_26",
+    "displayName": "tooth 26 - permanent mandibular right lateral incisor",
+    "surfaceForms": [
+      "tooth 26",
+      "permanent mandibular right lateral incisor"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_N",
+    "displayName": "tooth n/tooth 14d - primary mandibular left lateral incisor",
+    "surfaceForms": [
+      "primary mandibular left lateral incisor",
+      "tooth n",
+      "tooth 14d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_5",
+    "displayName": "quadrant 5 - upper right quadrant, primary dentition",
+    "surfaceForms": [
+      "ur primary dentition quadrant",
+      "quadrant 5",
+      "ur quadrant - primary dentition",
+      "upper right quadrant - primary dentition",
+      "upper right primary dentition quadrant"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_6",
+    "displayName": "quadrant 6 - upper left quadrant, primary dentition",
+    "surfaceForms": [
+      "upper left primary dentition quadrant",
+      "ul primary dentition quadrant",
+      "quadrant 6",
+      "upper left quadrant - primary dentition",
+      "ul quadrant - primary dentition"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_20",
+    "displayName": "tooth 20 - permanent mandibular left second premolar",
+    "surfaceForms": [
+      "permanent mandibular left second premolar",
+      "tooth 20"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_S",
+    "displayName": "tooth s/tooth 19d - primary mandibular right first molar",
+    "surfaceForms": [
+      "tooth s",
+      "primary mandibular right first molar",
+      "tooth 19d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_14",
+    "displayName": "tooth 14 - permanent maxillary left first molar",
+    "surfaceForms": [
+      "tooth 14",
+      "permanent maxillary left first molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_27",
+    "displayName": "tooth 27 - permanent mandibular right canine",
+    "surfaceForms": [
+      "tooth 27",
+      "permanent mandibular right canine"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_E",
+    "displayName": "tooth e/tooth 5d - primary maxillary right central incisor",
+    "surfaceForms": [
+      "primary maxillary right central incisor",
+      "tooth e",
+      "tooth 5d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_A",
+    "displayName": "tooth a/tooth 1d - primary maxillary right second molar",
+    "surfaceForms": [
+      "tooth 1d",
+      "primary maxillary right second molar",
+      "tooth a"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_J",
+    "displayName": "tooth j/tooth 10d - primary maxillary left second molar",
+    "surfaceForms": [
+      "tooth j",
+      "primary maxillary left second molar",
+      "tooth 10d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_30",
+    "displayName": "tooth 30 - permanent mandibular right first molar",
+    "surfaceForms": [
+      "permanent mandibular right first molar",
+      "tooth 30"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_5",
+    "displayName": "tooth 5 - permanent maxillary right first premolar",
+    "surfaceForms": [
+      "tooth 5",
+      "permanent maxillary right first premolar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_F",
+    "displayName": "tooth f/tooth 6d - primary maxillary left central incisor",
+    "surfaceForms": [
+      "tooth f",
+      "primary maxillary left central incisor",
+      "tooth 6d"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/quadrant_4",
+    "displayName": "quadrant 4 - lower left quadrant, permanent dentition",
+    "surfaceForms": [
+      "lower right permanent dentition quadrant",
+      "quadrant 4",
+      "lr quadrant - permanent dentition",
+      "lr permanent dentition quadrant",
+      "lower right quadrant - permanent dentition"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.168Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/BodyPart",
+      "http://claims-audit.ibm.com/Quadrant"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_15",
+    "displayName": "tooth 15 - permanent maxillary left second molar",
+    "surfaceForms": [
+      "tooth 15",
+      "permanent maxillary left second molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_18",
+    "displayName": "tooth 18 - permanent mandibular left second molar",
+    "surfaceForms": [
+      "tooth 18",
+      "permanent mandibular left second molar"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.171Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/tooth_8",
+    "displayName": "tooth 8 - permanent maxillary right central incisor",
+    "surfaceForms": [
+      "permanent maxillary right central incisor",
+      "tooth 8"
+    ],
+    "tag": "body-parts-dental.20190718",
+    "timestamp": "2019-07-13T08:48:47.172Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Tooth",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/upper_arch",
+    "displayName": "maxillary arch",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Arch",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "claimValue": "max",
+    "surfaceForms": [],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/lower_arch",
+    "displayName": "mandibular arch",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/Arch",
+      "http://claims-audit.ibm.com/BodyPart"
+    ],
+    "claimValue": "mand",
+    "surfaceForms": [],
+    "type": "INDIVIDUAL"
+  }
+]

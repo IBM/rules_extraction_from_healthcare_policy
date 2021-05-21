@@ -1,0 +1,1053 @@
+@prefix : <http://claims-audit.ibm.com/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://claims-audit.ibm.com/> .
+
+<http://claims-audit.ibm.com/> rdf:type owl:Ontology ;
+                                owl:versionInfo "[1.3.29] - 22/11/2020"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://claims-audit.ibm.com/affirmativeAction
+:affirmativeAction rdf:type owl:AnnotationProperty ;
+                   rdfs:comment "Represent an action that can help in identifying the property in the text if found with affirmative polarity. Should contain a verb in its base form, e.g. 'require', 'be eligible'" ;
+                   rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/annotatedAs
+:annotatedAs rdf:type owl:AnnotationProperty ;
+             rdfs:comment "Defines the annotations types that correspond to candidate values for the class" ;
+             rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/claimValue
+:claimValue rdf:type owl:AnnotationProperty ;
+            rdfs:comment "The value the annotated entity is identified with in the claims"^^xsd:string ;
+            rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/defaultValue
+:defaultValue rdf:type owl:AnnotationProperty ;
+              rdfs:comment "This annotation property specifies the default value for properties." .
+
+
+###  http://claims-audit.ibm.com/displayName
+:displayName rdf:type owl:AnnotationProperty ;
+             rdfs:comment "A user friendly name that identifies the resource"^^xsd:string ;
+             rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/extractionPattern
+:extractionPattern rdf:type owl:AnnotationProperty ;
+                   rdfs:comment "Represent an extraction pattern, i.e. regular expression with placeholders, for the specific resource" ;
+                   rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasComplianceRuleTag
+:hasComplianceRuleTag rdf:type owl:AnnotationProperty ;
+                      rdfs:range :ComplianceRuleTag ;
+                      rdfs:domain :BenefitRule .
+
+
+###  http://claims-audit.ibm.com/hasConfidence
+:hasConfidence rdf:type owl:AnnotationProperty ;
+               rdfs:comment "Represent the information regarding the confidence of the domain resource" ;
+               rdfs:range :ConfidenceScore .
+
+
+###  http://claims-audit.ibm.com/hasModifierCode
+:hasModifierCode rdf:type owl:AnnotationProperty ;
+                 rdfs:range xsd:string ;
+                 rdfs:domain :ServiceModifier .
+
+
+###  http://claims-audit.ibm.com/hasUmlsConceptIdentifier
+:hasUmlsConceptIdentifier rdf:type owl:AnnotationProperty ;
+                          rdfs:comment "The UMLS entity identifier (CUI)"^^xsd:string ;
+                          rdfs:range xsd:string ;
+                          rdfs:domain :UmlsConcept .
+
+
+###  http://claims-audit.ibm.com/hasUmlsPreferredName
+:hasUmlsPreferredName rdf:type owl:AnnotationProperty ;
+                      rdfs:comment "The preferred resource name in UMLS"^^xsd:string ;
+                      rdfs:range xsd:string ;
+                      rdfs:domain :UmlsConcept .
+
+
+###  http://claims-audit.ibm.com/isNegated
+:isNegated rdf:type owl:AnnotationProperty ;
+           rdfs:comment "If true means that a property has a negative intent, e.g. hasNotApplicableService, hasNoPriorRequirement" ;
+           rdfs:range xsd:boolean .
+
+
+###  http://claims-audit.ibm.com/negativeAction
+:negativeAction rdf:type owl:AnnotationProperty ;
+                rdfs:comment "Represent an action that can help in identifying the property in the text if found with negative polarity. Should contain a verb in its base form, e.g. 'require', 'be eligible'" ;
+                rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/nodeId
+:nodeId rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+dc:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://claims-audit.ibm.com/Date
+:Date rdf:type rdfs:Datatype ;
+      :annotatedAs "DateTime"^^xsd:string ;
+      rdfs:comment "Represents a date in a non specified format, default YYYY-MM-DD"^^xsd:string ;
+      owl:equivalentClass xsd:string .
+
+
+###  http://claims-audit.ibm.com/MonetaryAmount
+:MonetaryAmount rdf:type rdfs:Datatype ;
+                :annotatedAs "CurrencyAmount" ,
+                             "com.ibm.watsonx.nlp_di.hutt.Money" ;
+                rdfs:comment "Represents an amount of money with (optional) currency symbol, e.g. 1,000$, € 100, 10.00" ;
+                owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                      owl:onDatatype xsd:string ;
+                                      owl:withRestrictions ( [ xsd:pattern "(\\p{Sc}\\s*){0,1}(\\d+[\\d,]*\\.?\\d*){1}(\\s*\\p{Sc}){0,1}"
+                                                             ]
+                                                           )
+                                    ] .
+
+
+###  http://www.w3.org/2001/XMLSchema#int
+xsd:int :annotatedAs "IntegerNumber" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://claims-audit.ibm.com/belongsToHighRiskCategory
+:belongsToHighRiskCategory rdf:type owl:ObjectProperty ;
+                           rdfs:domain :MemberEligibility ;
+                           rdfs:range :HighRiskCategory ;
+                           :affirmativeAction "determine" ;
+                           :displayName "member - high risk category"^^xsd:string ;
+                           rdfs:label "high risk" .
+
+
+###  http://claims-audit.ibm.com/hasAge
+:hasAge rdf:type owl:ObjectProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :MemberEligibility ;
+        rdfs:range :AgeRange ;
+        rdfs:label "age" .
+
+
+###  http://claims-audit.ibm.com/hasApplicableService
+:hasApplicableService rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ServiceLimitationBenefitRule ;
+                      rdfs:range :Service ;
+                      owl:propertyDisjointWith :hasExcludedService ;
+                      :affirmativeAction "allow" ,
+                                         "apply" ,
+                                         "be a benefit" ,
+                                         "be a cover" ,
+                                         "be a payable" ,
+                                         "be only a cover" ,
+                                         "be payable" ,
+                                         "be reimbursable" ,
+                                         "be subject" ,
+                                         "be the only acceptable" ,
+                                         "cover" ,
+                                         "include" ,
+                                         "limit" ,
+                                         "provide" ,
+                                         "receive" ,
+                                         "reimburse" ;
+                      :displayName "applicable service" ;
+                      rdfs:comment "Services applicable in the context of the benefit rule, e.g. the ones a limitation is applied to" ;
+                      rdfs:label "apply" ,
+                                 "cover" ,
+                                 "cover benefit"^^xsd:string ,
+                                 "cover service"^^xsd:string ,
+                                 "include" ,
+                                 "limit" ,
+                                 "payable" ,
+                                 "provide" ,
+                                 "reimburse" .
+
+
+###  http://claims-audit.ibm.com/hasApplicableTimePeriod
+:hasApplicableTimePeriod rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( :MutualExclusionBenefitRule
+                                                     :NonCoverageBenefitRule
+                                                     :ServiceLimitationBenefitRule
+                                                   )
+                                     ] ;
+                         rdfs:range :ApplicableTimePeriod ;
+                         rdfs:label "after" ,
+                                    "limit" ,
+                                    "period"^^xsd:string ,
+                                    "provide"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasBenefitRule
+:hasBenefitRule rdf:type owl:ObjectProperty ;
+                rdfs:domain :Policy ;
+                rdfs:range :BenefitRule ;
+                rdfs:comment "A policy may describe multiple instances of benefit rules" .
+
+
+###  http://claims-audit.ibm.com/hasBillingCommonality
+:hasBillingCommonality rdf:type owl:ObjectProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :MutualExclusionBenefitRule
+                                                   :ServiceLimitationBenefitRule
+                                                 )
+                                   ] ;
+                       rdfs:range :BillingCommonality ;
+                       :displayName "billing commonality" .
+
+
+###  http://claims-audit.ibm.com/hasExcludedService
+:hasExcludedService rdf:type owl:ObjectProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :NonCoverageBenefitRule
+                                                :ServiceLimitationBenefitRule
+                                              )
+                                ] ;
+                    rdfs:range :Service ;
+                    owl:propertyDisjointWith :hasNotApplicableService ;
+                    :affirmativeAction "except" ,
+                                       "exclude" ;
+                    :displayName "excluded service" ;
+                    :isNegated "true"^^xsd:boolean ;
+                    :negativeAction "allow" ,
+                                    "be not subject" ,
+                                    "include" ;
+                    rdfs:comment "The services that have to be removed from the set of services relevant for the benefit rule" ;
+                    rdfs:label "except" ,
+                               "exclude" ,
+                               "not include"^^xsd:string ,
+                               "not subject"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasMedicalHistoryOfDisease
+:hasMedicalHistoryOfDisease rdf:type owl:ObjectProperty ;
+                            rdfs:domain :MemberEligibility ;
+                            rdfs:range :UmlsDiseaseOrSyndrome ;
+                            owl:propertyDisjointWith :hasNoMedicalHistoryOfDisease ;
+                            :affirmativeAction "establish" ;
+                            :displayName "member - medical history of disease"^^xsd:string ;
+                            rdfs:label "history" ,
+                                       "with a history of" .
+
+
+###  http://claims-audit.ibm.com/hasMedicalHistoryOfTreatment
+:hasMedicalHistoryOfTreatment rdf:type owl:ObjectProperty ;
+                              rdfs:domain :MemberEligibility ;
+                              rdfs:range :Service ;
+                              owl:propertyDisjointWith :hasNoMedicalHistoryOfTreatment ;
+                              :affirmativeAction "establish" ;
+                              :displayName "member - medical history of treatment" ;
+                              rdfs:label "history" ,
+                                         "with a history of" .
+
+
+###  http://claims-audit.ibm.com/hasMemberEligibility
+:hasMemberEligibility rdf:type owl:ObjectProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :MutualExclusionBenefitRule
+                                                  :NonCoverageBenefitRule
+                                                  :ServiceLimitationBenefitRule
+                                                )
+                                  ] ;
+                      rdfs:range :MemberEligibility ;
+                      :affirmativeAction "be eligible" ;
+                      rdfs:label "eligibility" ,
+                                 "eligible" ,
+                                 "who" .
+
+
+###  http://claims-audit.ibm.com/hasMutuallyExclusiveNotReimbursableService
+:hasMutuallyExclusiveNotReimbursableService rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :MutualExclusionBenefitRule ;
+                                            rdfs:range :Service ;
+                                            owl:propertyDisjointWith :hasMutuallyExclusiveReimbursableService ;
+                                            :affirmativeAction "reimbursement include" ;
+                                            :displayName "mutual exclusive non-reimbursable service"^^xsd:string ;
+                                            :isNegated "true"^^xsd:boolean ;
+                                            :negativeAction "be not a benefit" ,
+                                                            "be not payable" ;
+                                            rdfs:label "beginning" ,
+                                                       "include" ,
+                                                       "is not payable" ,
+                                                       "not benefit" ,
+                                                       "not pay" ,
+                                                       "not payable" .
+
+
+###  http://claims-audit.ibm.com/hasMutuallyExclusiveReimbursableService
+:hasMutuallyExclusiveReimbursableService rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                         rdfs:domain :MutualExclusionBenefitRule ;
+                                         rdfs:range :Service ;
+                                         :affirmativeAction "after" ,
+                                                            "bill on the same" ,
+                                                            "pay on the same" ;
+                                         :displayName "mutual exclusive reimbursable service"^^xsd:string ;
+                                         rdfs:label "after" ,
+                                                    "bill" ,
+                                                    "bill on the same" .
+
+
+###  http://claims-audit.ibm.com/hasNoMedicalHistoryOfDisease
+:hasNoMedicalHistoryOfDisease rdf:type owl:ObjectProperty ;
+                              rdfs:domain :MemberEligibility ;
+                              rdfs:range :UmlsDiseaseOrSyndrome ;
+                              :displayName "member - no medical history of disease"^^xsd:string ;
+                              :isNegated "true"^^xsd:boolean ;
+                              rdfs:label "without a history of" .
+
+
+###  http://claims-audit.ibm.com/hasNoMedicalHistoryOfTreatment
+:hasNoMedicalHistoryOfTreatment rdf:type owl:ObjectProperty ;
+                                rdfs:domain :MemberEligibility ;
+                                rdfs:range :Service ;
+                                :displayName "member - no medical history of treatment" ;
+                                :isNegated "true"^^xsd:boolean ;
+                                rdfs:label "without a history of" .
+
+
+###  http://claims-audit.ibm.com/hasNoRequirement
+:hasNoRequirement rdf:type owl:ObjectProperty ;
+                  rdfs:domain :ServiceLimitationBenefitRule ;
+                  rdfs:range :Requirement ;
+                  owl:propertyDisjointWith :hasRequirement ;
+                  :affirmativeAction "before a prior" ;
+                  :displayName "requirement - not needed"^^xsd:string ;
+                  :isNegated "true"^^xsd:boolean ;
+                  :negativeAction "be not necessary" ,
+                                  "obtain" ,
+                                  "require" ,
+                                  "subject" ,
+                                  "submit" ;
+                  rdfs:comment "The prior requirements that are explicitly stated as not needed for this service limitation" ;
+                  rdfs:label "not necessary" ,
+                             "not require" .
+
+
+###  http://claims-audit.ibm.com/hasNotApplicableService
+:hasNotApplicableService rdf:type owl:ObjectProperty ;
+                         rdfs:domain :NonCoverageBenefitRule ;
+                         rdfs:range :Service ;
+                         :displayName "not covered service" ;
+                         :isNegated "true"^^xsd:boolean ;
+                         :negativeAction "allow" ,
+                                         "be not a benefit" ,
+                                         "be not an acceptable" ,
+                                         "be not reimbursable" ,
+                                         "cover" ,
+                                         "reimburse" ;
+                         rdfs:comment "The services that are not covered under specific conditions (when no applicable service is specified)" ;
+                         rdfs:label "not acceptable"^^xsd:string ,
+                                    "not cover"^^xsd:string ,
+                                    "not reimburse"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasPerBodyPartApplicability
+:hasPerBodyPartApplicability rdf:type owl:ObjectProperty ;
+                             rdfs:domain [ rdf:type owl:Class ;
+                                           owl:unionOf ( :MutualExclusionBenefitRule
+                                                         :NonCoverageBenefitRule
+                                                         :ServiceLimitationBenefitRule
+                                                       )
+                                         ] ;
+                             rdfs:range :BodyPart ;
+                             :displayName "body part"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasPlaceOfService
+:hasPlaceOfService rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :MutualExclusionBenefitRule
+                                               :NonCoverageBenefitRule
+                                               :ServiceLimitationBenefitRule
+                                             )
+                               ] ;
+                   rdfs:range :PlaceOfService ;
+                   :affirmativeAction "provide" ;
+                   :displayName "place of service" .
+
+
+###  http://claims-audit.ibm.com/hasRequirement
+:hasRequirement rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :MutualExclusionBenefitRule
+                                            :ServiceLimitationBenefitRule
+                                          )
+                            ] ;
+                rdfs:range :Requirement ;
+                :affirmativeAction "obtain" ,
+                                   "require" ,
+                                   "subject" ,
+                                   "submit" ;
+                :displayName "requirement - needed"^^xsd:string ;
+                rdfs:label "obtain" ,
+                           "require" ,
+                           "submit" .
+
+
+###  http://claims-audit.ibm.com/hasServiceLimitation
+:hasServiceLimitation rdf:type owl:ObjectProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :ServiceLimitationBenefitRule ;
+                      rdfs:range :ServiceLimitation ;
+                      rdfs:label "allow" ,
+                                 "limit" ,
+                                 "limited" ,
+                                 "reach" ,
+                                 "receive" .
+
+
+###  http://claims-audit.ibm.com/hasUnitOfTime
+:hasUnitOfTime rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :ApplicableTimePeriod ;
+               rdfs:range :UnitOfTime ;
+               :displayName "reference period - unit of time"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/isEnrolledInProgram
+:isEnrolledInProgram rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MemberEligibility ;
+                     rdfs:range :Program ;
+                     :affirmativeAction "be enrol" ;
+                     :displayName "member - program enrollment"^^xsd:string ;
+                     rdfs:label "enrol" .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://claims-audit.ibm.com/hasAmountOfTime
+:hasAmountOfTime rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :ApplicableTimePeriod ;
+                 rdfs:range xsd:int ;
+                 :displayName "reference period - amount of time"^^xsd:string ;
+                 rdfs:label "times" .
+
+
+###  http://claims-audit.ibm.com/hasConfidenceSource
+:hasConfidenceSource rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ConfidenceScore ;
+                     rdfs:range xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasConfidenceValue
+:hasConfidenceValue rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ConfidenceScore ;
+                    rdfs:range xsd:double .
+
+
+###  http://claims-audit.ibm.com/hasEndDate
+:hasEndDate rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :ApplicableTimePeriod ;
+            rdfs:range :Date ;
+            owl:propertyDisjointWith :hasStartDate ;
+            :displayName "reference period - end date"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasMaxAge
+:hasMaxAge rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :AgeRange ;
+           rdfs:range xsd:int ;
+           owl:propertyDisjointWith :hasMinAge ;
+           :defaultValue "120"^^xsd:int ;
+           :displayName "member - max age"^^xsd:string ;
+           rdfs:label "and under" ,
+                      "year of age" ,
+                      "year of age and under" .
+
+
+###  http://claims-audit.ibm.com/hasMaxReimbursedAmount
+:hasMaxReimbursedAmount rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :ServiceLimitation ;
+                        rdfs:range :MonetaryAmount ;
+                        :displayName "reimbursement limitation - max"^^xsd:string ;
+                        rdfs:label "limit" ,
+                                   "total" ,
+                                   "up to" .
+
+
+###  http://claims-audit.ibm.com/hasMaxUnits
+:hasMaxUnits rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :ServiceLimitation ;
+             rdfs:range xsd:int ;
+             owl:propertyDisjointWith :hasMinUnits ;
+             :affirmativeAction "limit"^^xsd:string ;
+             :displayName "unit limitation - max"^^xsd:string ;
+             rdfs:label "cover" ,
+                        "for a total of" ,
+                        "limit"^^xsd:string ,
+                        "limited" ,
+                        "total" ,
+                        "up to" .
+
+
+###  http://claims-audit.ibm.com/hasMinAge
+:hasMinAge rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :AgeRange ;
+           rdfs:range xsd:int ;
+           :defaultValue "0"^^xsd:int ;
+           :displayName "member - min age"^^xsd:string ;
+           rdfs:label "and old" ,
+                      "year of age and old" .
+
+
+###  http://claims-audit.ibm.com/hasMinUnits
+:hasMinUnits rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :ServiceLimitation ;
+             rdfs:range xsd:int ;
+             :affirmativeAction "exceed"^^xsd:string ;
+             :defaultValue "0"^^xsd:int ;
+             :displayName "unit limitation - min"^^xsd:string ;
+             :negativeAction "limit"^^xsd:string ;
+             rdfs:label "beyond" ,
+                        "exceed"^^xsd:string ,
+                        "initial" .
+
+
+###  http://claims-audit.ibm.com/hasSlidingWindowInDays
+:hasSlidingWindowInDays rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :BenefitRule ;
+                        rdfs:range xsd:decimal ;
+                        :displayName "reference period - sliding window in days"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/hasStartDate
+:hasStartDate rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :ApplicableTimePeriod ;
+              rdfs:range :Date ;
+              :displayName "reference period - start date"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://claims-audit.ibm.com/AgeRange
+:AgeRange rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:sameAs ;
+                            owl:someValuesFrom :UmlsPopulationGroup
+                          ] ;
+          :extractionPattern "(?:through|under|up to) <hasMaxAge>\\s*(?:years|year)\\s*(?:of age){0,1}"^^xsd:string ,
+                             "(?:up to|under)\\s*(?:the){0,1}\\s*age[s]*\\s*(?:of){0,1} <hasMaxAge>"^^xsd:string ,
+                             "age[s]* <hasMaxAge> (?:years|year){0,1}\\s*(?:old){0,1}\\s*(?:and|or)\\s+(?:under|younger)"^^xsd:string ,
+                             "age[s]* <hasMinAge> (?:years|year){0,1}\\s*(?:old){0,1}\\s*(?:and|or)\\s+(?:over|older)"^^xsd:string ,
+                             "age[s]* <hasMinAge> through <hasMaxAge>\\s*(?:years|year){0,1}"^^xsd:string ,
+                             "through age[s]* <hasMaxAge>"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/ApplicableTimePeriod
+:ApplicableTimePeriod rdf:type owl:Class ;
+                      :extractionPattern "(?:every|within) <hasAmountOfTime>\\s+(?:\\(\\d+\\)\\s*){0,1}<hasUnitOfTime>"^^xsd:string ,
+                                         "<hasAmountOfTime>\\s*[-]{0,1}<hasUnitOfTime> (?:interval|period)"^^xsd:string ,
+                                         "<hasStartDate> through <hasEndDate>"^^xsd:string ,
+                                         "<hasStartDate>\\s*[-]{0,1}\\s*<hasEndDate>"^^xsd:string ;
+                      rdfs:comment "The time period the rule is referring to" ;
+                      rdfs:label "interval" ,
+                                 "lifespan" ,
+                                 "period" ,
+                                 "when" .
+
+
+###  http://claims-audit.ibm.com/BenefitRule
+:BenefitRule rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/BillingCommonality
+:BillingCommonality rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/BodyPart
+:BodyPart rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/ComplianceRuleTag
+:ComplianceRuleTag rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/ConfidenceScore
+:ConfidenceScore rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing .
+
+
+###  http://claims-audit.ibm.com/CustomProcedureCodesGroup
+:CustomProcedureCodesGroup rdf:type owl:Class ;
+                           rdfs:subClassOf :Service ;
+                           rdfs:label "procedure" .
+
+
+###  http://claims-audit.ibm.com/HighRiskCategory
+:HighRiskCategory rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/MemberEligibility
+:MemberEligibility rdf:type owl:Class ;
+                   rdfs:label "member" .
+
+
+###  http://claims-audit.ibm.com/MutualExclusionBenefitRule
+:MutualExclusionBenefitRule rdf:type owl:Class ;
+                            rdfs:subClassOf :BenefitRule ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasMutuallyExclusiveNotReimbursableService ;
+                                              owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasMutuallyExclusiveReimbursableService ;
+                                              owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                            ] ;
+                            :displayName "Mutually Exclusive" ;
+                            :hasComplianceRuleTag :non_compliance .
+
+
+###  http://claims-audit.ibm.com/NonCoverageBenefitRule
+:NonCoverageBenefitRule rdf:type owl:Class ;
+                        rdfs:subClassOf :BenefitRule ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasNotApplicableService ;
+                                          owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ;
+                        :displayName "Non Coverage" ;
+                        :hasComplianceRuleTag :non_compliance .
+
+
+###  http://claims-audit.ibm.com/PlaceOfService
+:PlaceOfService rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/PlacesOfServiceGroup
+:PlacesOfServiceGroup rdf:type owl:Class ;
+                      rdfs:subClassOf :PlaceOfService .
+
+
+###  http://claims-audit.ibm.com/Policy
+:Policy rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/ProcedureCode
+:ProcedureCode rdf:type owl:Class ;
+               rdfs:subClassOf :Service ;
+               rdfs:label "procedure" .
+
+
+###  http://claims-audit.ibm.com/ProcedureCodeGroup
+:ProcedureCodeGroup rdf:type owl:Class ;
+                    rdfs:subClassOf :Service ;
+                    rdfs:label "procedure" .
+
+
+###  http://claims-audit.ibm.com/Program
+:Program rdf:type owl:Class ;
+         rdfs:label "participant" ,
+                    "program" .
+
+
+###  http://claims-audit.ibm.com/Requirement
+:Requirement rdf:type owl:Class ;
+             rdfs:label "requirement" .
+
+
+###  http://claims-audit.ibm.com/Service
+:Service rdf:type owl:Class ;
+         rdfs:label "benefit" ,
+                    "service" ,
+                    "therapy" ,
+                    "treatment" .
+
+
+###  http://claims-audit.ibm.com/ServiceCategory
+:ServiceCategory rdf:type owl:Class ;
+                 rdfs:subClassOf :Service ;
+                 rdfs:label "service" .
+
+
+###  http://claims-audit.ibm.com/ServiceLimitation
+:ServiceLimitation rdf:type owl:Class ;
+                   rdfs:label "unit" .
+
+
+###  http://claims-audit.ibm.com/ServiceLimitationBenefitRule
+:ServiceLimitationBenefitRule rdf:type owl:Class ;
+                              rdfs:subClassOf :BenefitRule ;
+                              :displayName "Service Limitation" ;
+                              :hasComplianceRuleTag :compliance .
+
+
+###  http://claims-audit.ibm.com/ServiceModifier
+:ServiceModifier rdf:type owl:Class ;
+                 rdfs:subClassOf :Service .
+
+
+###  http://claims-audit.ibm.com/SinglePlaceOfService
+:SinglePlaceOfService rdf:type owl:Class ;
+                      rdfs:subClassOf :PlaceOfService .
+
+
+###  http://claims-audit.ibm.com/UmlsBiomedicalOccupationOrDiscipline
+:UmlsBiomedicalOccupationOrDiscipline rdf:type owl:Class ;
+                                      rdfs:subClassOf :BillingCommonality ,
+                                                      :UmlsConcept ;
+                                      :annotatedAs "bmod" ;
+                                      rdfs:comment "Umls semantic type BiomedicalOccupationOrDiscipline (bmod)" .
+
+
+###  http://claims-audit.ibm.com/UmlsConcept
+:UmlsConcept rdf:type owl:Class .
+
+
+###  http://claims-audit.ibm.com/UmlsDiseaseOrSyndrome
+:UmlsDiseaseOrSyndrome rdf:type owl:Class ;
+                       rdfs:subClassOf :UmlsConcept ;
+                       :annotatedAs "dsyn" ;
+                       rdfs:comment "Umls semantic type DiseaseOrSyndrome" .
+
+
+###  http://claims-audit.ibm.com/UmlsHealthCareActivity
+:UmlsHealthCareActivity rdf:type owl:Class ;
+                        rdfs:subClassOf :Service ,
+                                        :UmlsConcept ;
+                        :annotatedAs "hlca" ;
+                        rdfs:comment "Umls semantic type HealthCareActivity (hlca)" .
+
+
+###  http://claims-audit.ibm.com/UmlsPopulationGroup
+:UmlsPopulationGroup rdf:type owl:Class ;
+                     rdfs:subClassOf :UmlsConcept ;
+                     rdfs:comment "Umls semantic type PopulationGroup (popg)" .
+
+
+###  http://claims-audit.ibm.com/UmlsTemporalConcept
+:UmlsTemporalConcept rdf:type owl:Class ;
+                     rdfs:subClassOf :UmlsConcept ;
+                     :annotatedAs "tmco" ;
+                     rdfs:comment "Umls semantic type TemporalConcept (tmco)" .
+
+
+###  http://claims-audit.ibm.com/UmlsTherapeuticOrPreventiveProcedure
+:UmlsTherapeuticOrPreventiveProcedure rdf:type owl:Class ;
+                                      rdfs:subClassOf :Service ,
+                                                      :UmlsConcept ;
+                                      :annotatedAs "topp" ;
+                                      rdfs:comment "Umls semantic type TherapeuticOrPreventiveProcedure (topp)" .
+
+
+###  http://claims-audit.ibm.com/UnitOfTime
+:UnitOfTime rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://claims-audit.ibm.com/adults
+:adults rdf:type owl:NamedIndividual ,
+                 :AgeRange ;
+        owl:sameAs :legal_adults ;
+        :hasMaxAge "120"^^xsd:int ;
+        :hasMinAge "21"^^xsd:int ;
+        :hasUmlsConceptIdentifier "C0001675"^^xsd:string ;
+        :hasUmlsPreferredName "adult"^^xsd:string ;
+        rdfs:label "21 and older"^^xsd:string ,
+                   "21 and over"^^xsd:string ,
+                   "adult"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/all_members
+:all_members rdf:type owl:NamedIndividual ,
+                      :AgeRange ;
+             :hasMaxAge "120"^^xsd:int ;
+             :hasMinAge "0"^^xsd:int ;
+             rdfs:comment "Refers to all members, both children and adult regardless of age" ;
+             rdfs:label "all member" ,
+                        "any member" ,
+                        "child and adult" ,
+                        "per member" ,
+                        "regardless of age" .
+
+
+###  http://claims-audit.ibm.com/children
+:children rdf:type owl:NamedIndividual ,
+                   :AgeRange ;
+          :hasMaxAge "20"^^xsd:int ;
+          :hasMinAge "0"^^xsd:int ;
+          :hasUmlsConceptIdentifier "C0008059"^^xsd:string ;
+          :hasUmlsPreferredName "child"^^xsd:string ;
+          rdfs:label "20 and under"^^xsd:string ,
+                     "20 and younger"^^xsd:string ,
+                     "child"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/compliance
+:compliance rdf:type owl:NamedIndividual ,
+                     :ComplianceRuleTag ;
+            :displayName "compliance" .
+
+
+###  http://claims-audit.ibm.com/daily
+:daily rdf:type owl:NamedIndividual ,
+                :ApplicableTimePeriod ;
+       :hasUnitOfTime :day ;
+       :hasAmountOfTime "1"^^xsd:int ;
+       rdfs:label "a day" ,
+                  "daily"^^xsd:string ,
+                  "per date of service"^^xsd:string ,
+                  "per day"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/day
+:day rdf:type owl:NamedIndividual ,
+              :UnitOfTime ;
+     :displayName "day(s)"^^xsd:string ;
+     rdfs:label "day" .
+
+
+###  http://claims-audit.ibm.com/fiscal_year
+:fiscal_year rdf:type owl:NamedIndividual ,
+                      :UnitOfTime ;
+             :displayName "fiscal year(s)"^^xsd:string ;
+             rdfs:label "fiscal year" .
+
+
+###  http://claims-audit.ibm.com/individualized_service_plan_year
+:individualized_service_plan_year rdf:type owl:NamedIndividual ,
+                                           :UnitOfTime ;
+                                  :displayName "individualized service plan year(s)"^^xsd:string ;
+                                  rdfs:label "individualise service plan year" ,
+                                             "individualize service plan year" .
+
+
+###  http://claims-audit.ibm.com/legal_adults
+:legal_adults rdf:type owl:NamedIndividual ,
+                       :UmlsPopulationGroup ;
+              :hasUmlsConceptIdentifier "C1706450"^^xsd:string ;
+              :hasUmlsPreferredName "legal adult"^^xsd:string ;
+              rdfs:label "legal adult"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/lifetime
+:lifetime rdf:type owl:NamedIndividual ,
+                   :UnitOfTime ;
+          :displayName "lifetime"^^xsd:string ;
+          rdfs:label "lifetime"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/medical_necessity
+:medical_necessity rdf:type owl:NamedIndividual ,
+                            :Requirement ;
+                   :displayName "medical necessity"^^xsd:string ;
+                   rdfs:label "when necessary"^^xsd:string ;
+                   rdfs:label "medically necessary"^^xsd:string ;
+                   rdfs:label "medical necessity"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/medical_record_review
+:medical_record_review rdf:type owl:NamedIndividual ,
+                                :Requirement ;
+                       :displayName "medical record review" ;
+                       rdfs:comment "For those that can not be covered with medical necessity" .
+
+
+###  http://claims-audit.ibm.com/month
+:month rdf:type owl:NamedIndividual ,
+                :UnitOfTime ;
+       :displayName "month(s)"^^xsd:string ;
+       rdfs:label "month" .
+
+
+###  http://claims-audit.ibm.com/monthly
+:monthly rdf:type owl:NamedIndividual ,
+                  :ApplicableTimePeriod ;
+         :hasUnitOfTime :month ;
+         :hasAmountOfTime "1"^^xsd:int ;
+         rdfs:label "a month" ,
+                    "monthly"^^xsd:string ,
+                    "per month"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/non_compliance
+:non_compliance rdf:type owl:NamedIndividual ,
+                         :ComplianceRuleTag ;
+                :displayName "non compliance" .
+
+
+###  http://claims-audit.ibm.com/one_max_unit
+:one_max_unit rdf:type owl:NamedIndividual ,
+                       :ServiceLimitation ;
+              :hasMaxUnits "1"^^xsd:int ;
+              :hasMinUnits "0"^^xsd:int ;
+              rdfs:label "once"^^xsd:string ,
+                         "one time" .
+
+
+###  http://claims-audit.ibm.com/per_fiscal_year
+:per_fiscal_year rdf:type owl:NamedIndividual ,
+                          :ApplicableTimePeriod ;
+                 :hasUnitOfTime :fiscal_year ;
+                 :hasAmountOfTime "1"^^xsd:int ;
+                 rdfs:label "per fiscal year" .
+
+
+###  http://claims-audit.ibm.com/per_individualized_service_plan_year
+:per_individualized_service_plan_year rdf:type owl:NamedIndividual ,
+                                               :ApplicableTimePeriod ;
+                                      :hasUnitOfTime :individualized_service_plan_year ;
+                                      :hasAmountOfTime "1"^^xsd:int ;
+                                      rdfs:label "per individual service plan year" ,
+                                                 "per individualise service plan year" ,
+                                                 "per individualize service plan year" ,
+                                                 "per service plan year" .
+
+
+###  http://claims-audit.ibm.com/per_lifetime
+:per_lifetime rdf:type owl:NamedIndividual ,
+                       :ApplicableTimePeriod ;
+              :hasUnitOfTime :lifetime ;
+              :hasAmountOfTime "1"^^xsd:int ;
+              rdfs:label "per lifetime" .
+
+
+###  http://claims-audit.ibm.com/prior_authorization_requirement
+:prior_authorization_requirement rdf:type owl:NamedIndividual ,
+                                          :Requirement ;
+                                 :displayName "prior authorization requirement (par)"^^xsd:string ;
+                                 rdfs:label "authorization" ,
+                                            "par"^^xsd:string ,
+                                            "prior approval"^^xsd:string ,
+                                            "prior authorisation"^^xsd:string ,
+                                            "prior authorisation requirement"^^xsd:string ,
+                                            "prior authorization"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/same_body_part
+:same_body_part rdf:type owl:NamedIndividual ,
+                         :BillingCommonality ;
+                :displayName "same body part" ;
+                rdfs:label "same surgical area" .
+
+
+###  http://claims-audit.ibm.com/same_date
+:same_date rdf:type owl:NamedIndividual ,
+                    :ApplicableTimePeriod ;
+           :hasUnitOfTime :day ;
+           :hasAmountOfTime "1"^^xsd:int ;
+           rdfs:label "same date" ,
+                      "same day" ,
+                      "the same date" .
+
+
+###  http://claims-audit.ibm.com/same_place_of_service
+:same_place_of_service rdf:type owl:NamedIndividual ,
+                                :BillingCommonality ;
+                       :displayName "same place of service" ;
+                       rdfs:label "same location" .
+
+
+###  http://claims-audit.ibm.com/same_provider
+:same_provider rdf:type owl:NamedIndividual ,
+                        :BillingCommonality ;
+               :displayName "same provider" ;
+               rdfs:label "same provider" .
+
+
+###  http://claims-audit.ibm.com/same_provider_group
+:same_provider_group rdf:type owl:NamedIndividual ,
+                              :BillingCommonality ;
+                     :displayName "same provider group" ;
+                     rdfs:label "per dental practice" ,
+                                "same group" .
+
+
+###  http://claims-audit.ibm.com/same_visit
+:same_visit rdf:type owl:NamedIndividual ,
+                     :ApplicableTimePeriod ;
+            :hasUnitOfTime :day ;
+            :hasAmountOfTime "1"^^xsd:int ;
+            rdfs:label "same visit" .
+
+
+###  http://claims-audit.ibm.com/two_max_units
+:two_max_units rdf:type owl:NamedIndividual ,
+                        :ServiceLimitation ;
+               :hasMaxUnits "2"^^xsd:int ;
+               :hasMinUnits "0"^^xsd:int ;
+               rdfs:label "twice"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/utilization_management_review
+:utilization_management_review rdf:type owl:NamedIndividual ,
+                                        :Requirement ;
+                               :displayName "utilisation management review"^^xsd:string ;
+                               rdfs:label "um review"^^xsd:string ,
+                                          "utilisation management ( um ) review" ,
+                                          "utilisation management review"^^xsd:string .
+
+
+###  http://claims-audit.ibm.com/when_prescribed
+:when_prescribed rdf:type owl:NamedIndividual ,
+                          :Requirement ;
+                 :displayName "when prescribed" ;
+                 rdfs:label "when prescribed" .
+
+
+###  http://claims-audit.ibm.com/year
+:year rdf:type owl:NamedIndividual ,
+               :UnitOfTime ;
+      :displayName "year(s)"^^xsd:string ;
+      rdfs:label "year" .
+
+
+###  http://claims-audit.ibm.com/yearly
+:yearly rdf:type owl:NamedIndividual ,
+                 :ApplicableTimePeriod ;
+        :hasUnitOfTime :year ;
+        :hasAmountOfTime "1"^^xsd:int ;
+        rdfs:label "12 month" ,
+                   "12-month" ,
+                   "a year" ,
+                   "per year"^^xsd:string ,
+                   "yearly"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

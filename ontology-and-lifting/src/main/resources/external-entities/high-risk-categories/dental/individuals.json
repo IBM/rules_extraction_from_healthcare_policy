@@ -1,0 +1,42 @@
+[
+  {
+    "displayName": "topical fluoride treatments",
+    "entityId": "http://claims-audit.ibm.com/high_risk_category_for_topical_fluoride_treatments",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/HighRiskCategory"
+    ],
+    "surfaceForms": [
+      "topical fluoride treatment",
+      "topical fluoride treatment high risk"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "displayName": "caries",
+    "entityId": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/HighRiskCategory"
+    ],
+    "surfaceForms": [
+      "caries",
+      "high risk category for caries",
+      "high risk for caries",
+      "high risk of caries"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "displayName": "periodontal disease",
+    "entityId": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/HighRiskCategory"
+    ],
+    "surfaceForms": [
+      "periodontal disease",
+      "high risk category for periodontal disease",
+      "high risk for periodontal disease",
+      "high risk of periodontal disease"
+    ],
+    "type": "INDIVIDUAL"
+  }
+]

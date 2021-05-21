@@ -1,0 +1,60 @@
+[
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_occupational_therapy_services",
+    "displayName": "occupational therapy services",
+    "surfaceForms": [
+      "ot",
+      "occupational therapy"
+    ],
+    "tag": "procedure-codes-pt.20190718",
+    "timestamp": "2019-07-12T17:15:44.137Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_orthotic_services",
+    "displayName": "orthotic services",
+    "surfaceForms": [
+      "orthotic service"
+    ],
+    "tag": "procedure-codes-pt.20190718",
+    "timestamp": "2019-07-12T17:15:44.137Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_physical_therapy_services",
+    "displayName": "physical therapy services",
+    "surfaceForms": [
+      "pt",
+      "physical therapy"
+    ],
+    "tag": "procedure-codes-pt.20190718",
+    "timestamp": "2019-07-12T17:15:44.137Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP"
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_evaluation_services",
+    "displayName": "evaluation services",
+    "surfaceForms": [
+      "evaluation service"
+    ],
+    "tag": "procedure-codes-pt.20190718",
+    "timestamp": "2019-07-12T17:15:44.137Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP"
+  }
+]

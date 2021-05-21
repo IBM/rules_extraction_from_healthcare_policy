@@ -1,0 +1,35 @@
+[
+  {
+    "entityId": "http://claims-audit.ibm.com/service_category_dental",
+    "displayName": "all dental services",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceCategory"
+    ],
+    "surfaceForms": [
+      "dental benefit",
+      "dental service"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/service_category_medicine",
+    "displayName": "all medicine services",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceCategory"
+    ],
+    "surfaceForms": [],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/service_category_phys_ther",
+    "displayName": "all pt/ot services",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceCategory"
+    ],
+    "surfaceForms": [],
+    "type": "GROUP",
+    "members": []
+  }
+]

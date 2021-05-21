@@ -1,0 +1,2197 @@
+[
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_comprehensive_orthodontic_treatment",
+    "description": null,
+    "displayName": "comprehensive orthodontic treatment",
+    "surfaceForms": [
+      "comprehensive orthodontic treatment"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_multi_visit_treatments__endodontics_",
+    "description": null,
+    "displayName": "multi-visit treatments (endodontics)",
+    "surfaceForms": [
+      "multi-visit treatments (endodontics)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_adjustments_to_partial_dentures",
+    "description": null,
+    "displayName": "adjustments to partial dentures",
+    "surfaceForms": [
+      "adjustments to partial dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_crowns_with_noble_metals",
+    "description": null,
+    "displayName": "crowns with noble metals",
+    "surfaceForms": [
+      "crowns with noble metals"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periradicular_surgery",
+    "description": null,
+    "displayName": "periradicular surgery",
+    "surfaceForms": [
+      "periradicular surgery"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_dental_benefits",
+    "description": null,
+    "displayName": "preventative dental benefits",
+    "surfaceForms": [
+      "preventative dental benefits"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_restorative_services",
+    "description": null,
+    "displayName": "restorative services",
+    "surfaceForms": [
+      "restorative services"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_and_partial_bony_impaction",
+    "description": null,
+    "displayName": "complete and partial bony impaction",
+    "surfaceForms": [
+      "complete and partial bony impaction that requires an incision of overlying soft tissue, elevation of a flap, removal of bone and sectioning of the tooth (upper or lower)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_prefabricated_steel_crown",
+    "description": null,
+    "displayName": "prefabricated steel crown",
+    "surfaceForms": [
+      "prefabricated steel crown"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_root_canal",
+    "description": null,
+    "displayName": "root canal",
+    "surfaceForms": [
+      "root canal"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_crown_repair",
+    "description": null,
+    "displayName": "crown repair",
+    "surfaceForms": [
+      "crown repair"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_laboratory_processed_relines",
+    "description": null,
+    "displayName": "laboratory processed relines",
+    "surfaceForms": [
+      "laboratory processed relines"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_benefits",
+    "description": null,
+    "displayName": "denture benefits",
+    "surfaceForms": [
+      "denture benefits"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_oral_evaluation",
+    "description": null,
+    "displayName": "oral evaluation",
+    "surfaceForms": [
+      "oral evaluation"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_root_canal_retreatment",
+    "description": null,
+    "displayName": "root canal retreatment",
+    "surfaceForms": [
+      "root canal retreatment"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_prefabricated_stainless_steel_crowns",
+    "description": null,
+    "displayName": "prefabricated stainless steel crowns",
+    "surfaceForms": [
+      "prefabricated stainless steel crowns"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_measurement_of_pocket_depths",
+    "description": null,
+    "displayName": "measurement of pocket depths",
+    "surfaceForms": [
+      "measurement of pocket depths"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_liners__to_be_used_under_a_restoration_",
+    "description": null,
+    "displayName": "liners (to be used under a restoration)",
+    "surfaceForms": [
+      "liners (to be used under a restoration)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_root_resection",
+    "description": null,
+    "displayName": "root resection",
+    "surfaceForms": [
+      "root resection"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_limited_oral_evaluation",
+    "description": null,
+    "displayName": "limited oral evaluation",
+    "surfaceForms": [
+      "limited oral evaluation"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_obturator__for_surgically_excised_palatal_tissue_",
+    "description": null,
+    "displayName": "obturator (for surgically excised palatal tissue)",
+    "surfaceForms": [
+      "obturator (for surgically excised palatal tissue)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_soft_tissue_impaction_that_requires_an_incision_of_overlying_soft_tissue_and_the_removal_of_the_tooth",
+    "description": null,
+    "displayName": "soft tissue impaction that requires an incision of overlying soft tissue and the removal of the tooth",
+    "surfaceForms": [
+      "soft tissue impaction that requires an incision of overlying soft tissue and the removal of the tooth"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___flexible_base",
+    "description": null,
+    "displayName": "partial mandibular denture - flexible base",
+    "surfaceForms": [
+      "partial mandibular (lower) denture - flexible base"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_major_dental_benefits",
+    "description": null,
+    "displayName": "major dental benefits",
+    "surfaceForms": [
+      "major dental benefits"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_prophylaxis_paste",
+    "description": null,
+    "displayName": "fluoride prophylaxis paste",
+    "surfaceForms": [
+      "fluoride prophylaxis paste"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_tissue_conditioning",
+    "description": null,
+    "displayName": "tissue conditioning",
+    "surfaceForms": [
+      "tissue conditioning"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_modifications_and_adjustments_for_obturators",
+    "description": null,
+    "displayName": "modifications and adjustments for obturators",
+    "surfaceForms": [
+      "modifications and adjustments for obturators"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_restorative_fee",
+    "description": null,
+    "displayName": "restorative fee",
+    "surfaceForms": [
+      "restorative fee"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_implants_and_related_services",
+    "description": null,
+    "displayName": "dental implants and related services",
+    "surfaceForms": [
+      "dental implants (and related services)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_definitive_obturator_prosthesis",
+    "description": null,
+    "displayName": "definitive obturator prosthesis",
+    "surfaceForms": [
+      "definitive obturator prosthesis"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_early_and_periodic_screening__diagnostic_and_treatment",
+    "description": null,
+    "displayName": "early and periodic screening, diagnostic and treatment",
+    "surfaceForms": [
+      "early and periodic screening, diagnostic and treatment",
+      "epsdt"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_multi_visit_treatments__orthodontics_",
+    "description": null,
+    "displayName": "multi-visit treatments (orthodontics)",
+    "surfaceForms": [
+      "multi-visit treatments (orthodontics)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_vital_pulpotomies",
+    "description": null,
+    "displayName": "vital pulpotomies",
+    "surfaceForms": [
+      "vital pulpotomies"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.764Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_denture_post_delivery_care",
+    "description": null,
+    "displayName": "complete denture post-delivery care",
+    "surfaceForms": [
+      "complete denture post-delivery care"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_emergency_treatment_visits",
+    "description": null,
+    "displayName": "emergency treatment visits",
+    "surfaceForms": [
+      "emergency treatment visits"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_osseous_allograft",
+    "description": null,
+    "displayName": "osseous allograft",
+    "surfaceForms": [
+      "osseous allograft"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_diagnostic_procedures",
+    "description": null,
+    "displayName": "dental diagnostic procedures",
+    "surfaceForms": [
+      "dental diagnostic procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_space_maintainer_placement",
+    "description": null,
+    "displayName": "space maintainer placement",
+    "surfaceForms": [
+      "space maintainer placement"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_intraoral_films",
+    "description": null,
+    "displayName": "intraoral films",
+    "surfaceForms": [
+      "intraoral films"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_tooth_preparation",
+    "description": null,
+    "displayName": "tooth preparation",
+    "surfaceForms": [
+      "tooth preparation"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_adjustments_to_complete_dentures",
+    "description": null,
+    "displayName": "adjustments to complete dentures",
+    "surfaceForms": [
+      "adjustments to complete dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_treatment_of_dental_caries",
+    "description": null,
+    "displayName": "treatment of dental caries",
+    "surfaceForms": [
+      "treatment of dental caries"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.764Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_impressions",
+    "description": null,
+    "displayName": "impressions",
+    "surfaceForms": [
+      "impressions"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_bitewing_films",
+    "description": null,
+    "displayName": "bitewing films",
+    "surfaceForms": [
+      "bitewing films"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_scaling_and_root_planing",
+    "description": null,
+    "displayName": "periodontal scaling and root planing",
+    "surfaceForms": [
+      "periodontal scaling and root planing"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_occlusal_guards",
+    "description": null,
+    "displayName": "occlusal guards",
+    "surfaceForms": [
+      "occlusal guards"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_root_recovery__surgical_removal_of_residual_root_",
+    "description": null,
+    "displayName": "root recovery (surgical removal of residual root)",
+    "surfaceForms": [
+      "root recovery (surgical removal of residual root)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_rebase_of_partial_dentures",
+    "description": null,
+    "displayName": "rebase of partial dentures",
+    "surfaceForms": [
+      "rebase of partial dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+    "description": null,
+    "displayName": "dental prophylaxis",
+    "surfaceForms": [
+      "dental prophylaxis"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_sedative_filling",
+    "description": null,
+    "displayName": "sedative filling",
+    "surfaceForms": [
+      "sedative filling"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_treatment_procedures",
+    "description": null,
+    "displayName": "treatment procedures",
+    "surfaceForms": [
+      "treatment procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.764Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_emergency_dental_benefits",
+    "description": null,
+    "displayName": "emergency dental benefits",
+    "surfaceForms": [
+      "emergency dental benefits"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_insulating_liners",
+    "description": null,
+    "displayName": "insulating liners",
+    "surfaceForms": [
+      "insulating liners"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_temporary_restorations",
+    "description": null,
+    "displayName": "temporary restorations",
+    "surfaceForms": [
+      "temporary restorations"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___flexible_base",
+    "description": null,
+    "displayName": "partial maxillary denture - flexible base",
+    "surfaceForms": [
+      "partial maxillary (upper) denture - flexible base"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_apicoectomy",
+    "description": null,
+    "displayName": "apicoectomy",
+    "surfaceForms": [
+      "apicoectomy"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_removable_partial_dentures",
+    "description": null,
+    "displayName": "removable partial dentures",
+    "surfaceForms": [
+      "removable partial dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_surgery",
+    "description": null,
+    "displayName": "dental surgery",
+    "surfaceForms": [
+      "dental surgery"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_pulp_capping",
+    "description": null,
+    "displayName": "pulp capping",
+    "surfaceForms": [
+      "pulp capping"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_limited_root_planning_and_scaling",
+    "description": null,
+    "displayName": "limited root planning and scaling",
+    "surfaceForms": [
+      "limited root planning and scaling"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_routine_postoperative_care",
+    "description": null,
+    "displayName": "routine postoperative care",
+    "surfaceForms": [
+      "routine postoperative care"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_radiographs",
+    "description": null,
+    "displayName": "radiographs",
+    "surfaceForms": [
+      "radiographs"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_removable_prosthetics",
+    "description": null,
+    "displayName": "removable prosthetics",
+    "surfaceForms": [
+      "removable prosthetics"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___resin_base",
+    "description": null,
+    "displayName": "partial mandibular denture - resin base",
+    "surfaceForms": [
+      "partial mandibular (lower) denture - resin base"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_apical_curettage",
+    "description": null,
+    "displayName": "apical curettage",
+    "surfaceForms": [
+      "apical curettage"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_repair",
+    "description": null,
+    "displayName": "denture repair",
+    "surfaceForms": [
+      "denture repair"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_postoperative_care",
+    "description": null,
+    "displayName": "postoperative care",
+    "surfaceForms": [
+      "postoperative care"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_prophylactic_procedures",
+    "description": null,
+    "displayName": "prophylactic procedures",
+    "surfaceForms": [
+      "prophylactic procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_tissue_regeneration",
+    "description": null,
+    "displayName": "tissue regeneration",
+    "surfaceForms": [
+      "tissue regeneration"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_unspecified_restorative_procedures",
+    "description": null,
+    "displayName": "unspecified restorative procedures",
+    "surfaceForms": [
+      "unspecified restorative procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.764Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_adhesives__to_be_used_under_a_restoration_",
+    "description": null,
+    "displayName": "adhesives (to be used under a restoration)",
+    "surfaceForms": [
+      "adhesives (to be used under a restoration"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___resin_base",
+    "description": null,
+    "displayName": "partial maxillary denture - resin base",
+    "surfaceForms": [
+      "partial maxillary (upper) denture - resin base"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_sealants_application",
+    "description": null,
+    "displayName": "sealants application",
+    "surfaceForms": [
+      "sealants application"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_surgical_exposure_of_impacted_or_unerupted_tooth_for_orthodontic_reasons__including_ligation_when_indicated",
+    "description": null,
+    "displayName": "surgical exposure of impacted or unerupted tooth for orthodontic reasons, including ligation when indicated",
+    "surfaceForms": [
+      "surgical exposure of impacted or unerupted tooth for orthodontic reasons, including ligation when indicated"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_gingivoplasty",
+    "description": null,
+    "displayName": "gingivoplasty",
+    "surfaceForms": [
+      "gingivoplasty"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periapical_films",
+    "description": null,
+    "displayName": "periapical films",
+    "surfaceForms": [
+      "periapical films"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fixed_partial_dentures",
+    "description": null,
+    "displayName": "fixed partial dentures",
+    "surfaceForms": [
+      "fixed partial dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_anasthesia",
+    "description": null,
+    "displayName": "anasthesia",
+    "surfaceForms": [
+      "anasthesia"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_chairside_relines",
+    "description": null,
+    "displayName": "chairside relines",
+    "surfaceForms": [
+      "chairside relines"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_free_soft_tissue_graft",
+    "description": null,
+    "displayName": "free soft tissue graft",
+    "surfaceForms": [
+      "free soft tissue graft"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_space_management_services",
+    "description": null,
+    "displayName": "space management services",
+    "surfaceForms": [
+      "space management services"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_interceptive_orthodontic_treatment",
+    "description": null,
+    "displayName": "interceptive orthodontic treatment",
+    "surfaceForms": [
+      "interceptive orthodontic treatment"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_oral_antral_fistula_closure__or_antral_root_recovery_",
+    "description": null,
+    "displayName": "oral antral fistula closure (or antral root recovery)",
+    "surfaceForms": [
+      "oral antral fistula closure (or antral root recovery)"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_basic_dental_benefits",
+    "description": null,
+    "displayName": "basic dental benefits",
+    "surfaceForms": [
+      "basic dental benefits"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fixed_space_maintainer_placement",
+    "description": null,
+    "displayName": "fixed space maintainer placement",
+    "surfaceForms": [
+      "fixed space maintainer placement"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___cast_metal_framework",
+    "description": null,
+    "displayName": "partial mandibular denture - cast metal framework",
+    "surfaceForms": [
+      "partial mandibular (lower) denture - cast metal framework"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+    "description": null,
+    "displayName": "periodontal procedures",
+    "surfaceForms": [
+      "periodontal procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_fitting_and_follow_up",
+    "description": null,
+    "displayName": "denture fitting and follow-up",
+    "surfaceForms": [
+      "denture fitting and follow-up"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fixed_space_maintainer_removal",
+    "description": null,
+    "displayName": "fixed space maintainer removal",
+    "surfaceForms": [
+      "fixed space maintainer removal"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_toothbrush_prophylaxis",
+    "description": null,
+    "displayName": "toothbrush prophylaxis",
+    "surfaceForms": [
+      "toothbrush prophylaxis"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_extraoral_films",
+    "description": null,
+    "displayName": "extraoral films",
+    "surfaceForms": [
+      "extraoral films"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_surgical_extractions",
+    "description": null,
+    "displayName": "surgical extractions",
+    "surfaceForms": [
+      "surgical extractions"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_comprehensive_periodontal_evaluation",
+    "description": null,
+    "displayName": "comprehensive periodontal evaluation",
+    "surfaceForms": [
+      "comprehensive periodontal evaluation"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_rinse",
+    "description": null,
+    "displayName": "fluoride rinse",
+    "surfaceForms": [
+      "fluoride rinse"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_laboratory_fabricated_crowns_utilizing_non_precious_materials",
+    "description": null,
+    "displayName": "laboratory fabricated crowns utilizing non-precious materials",
+    "surfaceForms": [
+      "laboratory fabricated crowns utilizing non-precious materials"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_dentures",
+    "description": null,
+    "displayName": "complete dentures",
+    "surfaceForms": [
+      "complete dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_varnish",
+    "description": null,
+    "displayName": "fluoride varnish",
+    "surfaceForms": [
+      "fluoride varnish"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_prophylactic_fillings",
+    "description": null,
+    "displayName": "prophylactic fillings",
+    "surfaceForms": [
+      "prophylactic fillings"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_surgical_endodontic_treatment",
+    "description": null,
+    "displayName": "surgical endodontic treatment",
+    "surfaceForms": [
+      "surgical endodontic treatment"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_rebase_of_complete_dentures",
+    "description": null,
+    "displayName": "rebase of complete dentures",
+    "surfaceForms": [
+      "rebase of complete dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.762Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_surgery_procedure",
+    "description": null,
+    "displayName": "periodontal surgery procedure",
+    "surfaceForms": [
+      "periodontal surgery procedure"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_custom_fabrication_and_placement_of_obturator",
+    "description": null,
+    "displayName": "custom fabrication and placement of obturator",
+    "surfaceForms": [
+      "custom fabrication and placement of obturator"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_maxillary_denture",
+    "description": null,
+    "displayName": "complete maxillary denture",
+    "surfaceForms": [
+      "complete maxillary (upper) denture"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_excision_of_hyperplastic_tissue",
+    "description": null,
+    "displayName": "excision of hyperplastic tissue",
+    "surfaceForms": [
+      "excision of hyperplastic tissue"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.756Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_osseous_surgey",
+    "description": null,
+    "displayName": "osseous surgey",
+    "surfaceForms": [
+      "osseous surgey"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_occlusal_orthotic_appliance",
+    "description": null,
+    "displayName": "occlusal orthotic appliance",
+    "surfaceForms": [
+      "occlusal orthotic appliance"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_pedicle_soft_tissue_graft",
+    "description": null,
+    "displayName": "pedicle soft tissue graft",
+    "surfaceForms": [
+      "pedicle soft tissue graft"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_cone_beam_images",
+    "description": null,
+    "displayName": "cone beam images",
+    "surfaceForms": [
+      "cone beam images"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_ast_post_and_core__post_and_composite__or_post_and_amalgam",
+    "description": null,
+    "displayName": "ast post and core, post and composite, or post and amalgam",
+    "surfaceForms": [
+      "ast post and core, post and composite, or post and amalgam"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_bases__to_be_used_under_a_restoration_",
+    "description": null,
+    "displayName": "bases (to be used under a restoration)",
+    "surfaceForms": [
+      "bases (to be used under a restoration"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_nonsurgical_extractions",
+    "description": null,
+    "displayName": "nonsurgical extractions",
+    "surfaceForms": [
+      "nonsurgical extractions"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_post_operative_care",
+    "description": null,
+    "displayName": "post-operative care",
+    "surfaceForms": [
+      "post-operative care"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_composite_resin_filling_material",
+    "description": null,
+    "displayName": "composite resin filling material",
+    "surfaceForms": [
+      "composite resin filling material"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.754Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_orthodontic_procedures",
+    "description": null,
+    "displayName": "orthodontic procedures",
+    "surfaceForms": [
+      "orthodontic services",
+      "orthodontic procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_endodontic_procedure",
+    "description": null,
+    "displayName": "endodontic procedure",
+    "surfaceForms": [
+      "endodontic procedure"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_amalgam_filling_material",
+    "description": null,
+    "displayName": "amalgam filling material",
+    "surfaceForms": [
+      "amalgam filling material"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_mandibular_denture",
+    "description": null,
+    "displayName": "complete mandibular denture",
+    "surfaceForms": [
+      "complete mandibular (lower) denture"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___cast_metal_framework",
+    "description": null,
+    "displayName": "partial maxillary denture - cast metal framework",
+    "surfaceForms": [
+      "partial maxillary (upper) denture - cast metal framework"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_maintenance_therapy",
+    "description": null,
+    "displayName": "maintenance therapy",
+    "surfaceForms": [
+      "maintenance therapy"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.758Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_dentures",
+    "description": null,
+    "displayName": "partial dentures",
+    "surfaceForms": [
+      "partial dentures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.760Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_procedures",
+    "description": null,
+    "displayName": "preventative procedures",
+    "surfaceForms": [
+      "preventative procedures"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_gingivectomy",
+    "description": null,
+    "displayName": "gingivectomy",
+    "surfaceForms": [
+      "gingivectomy"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.757Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+    "description": null,
+    "displayName": "topical fluoride treatments",
+    "surfaceForms": [
+      "topical fluoride treatments"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.764Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_surgical_exposure_of_impacted_or_unerupted_tooth_to_aid_eruption",
+    "description": null,
+    "displayName": "surgical exposure of impacted or unerupted tooth to aid eruption",
+    "surfaceForms": [
+      "surgical exposure of impacted or unerupted tooth to aid eruption"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.763Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_oral_prophylaxis",
+    "description": null,
+    "displayName": "oral prophylaxis",
+    "surfaceForms": [
+      "oral prophylaxis"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.759Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_cement_bases",
+    "description": null,
+    "displayName": "cement bases",
+    "surfaceForms": [
+      "cement bases"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.753Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_all_crowns",
+    "description": null,
+    "displayName": "all crowns",
+    "surfaceForms": [
+      "all types of crowns"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.752Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_scaling",
+    "description": null,
+    "displayName": "periodontal scaling",
+    "surfaceForms": [
+      "periodontal scaling"
+    ],
+    "tag": "26/02/2020",
+    "claimValue": null,
+    "timestamp": "2020-02-26T16:06:12.761Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  },
+  {
+    "id": null,
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_placed",
+    "description": null,
+    "displayName": "denture placed",
+    "surfaceForms": [
+      "denture be place"
+    ],
+    "tag": "04/11/2020",
+    "claimValue": null,
+    "timestamp": "2020-11-04T16:06:12.755Z",
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/CustomProcedureCodesGroup"
+    ],
+    "type": "GROUP",
+    "members": []
+  }
+]

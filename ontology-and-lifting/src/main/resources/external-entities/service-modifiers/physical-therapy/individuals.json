@@ -1,0 +1,63 @@
+[
+  {
+    "entityId": "http://claims-audit.ibm.com/service_modifier_early_intervention",
+    "displayName": "early intervention (tl)",
+    "surfaceForms": [
+      "TL",
+      "early intervention"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceModifier"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/service_modifier_rehabilitative_physical_therapy",
+    "displayName": "rehabilitative physical therapy (gp)",
+    "surfaceForms": [
+      "GP",
+      "rehabilitative PT",
+      "rehabilitative physical therapy"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceModifier"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/service_modifier_habilitative",
+    "displayName": "habilitative (hb)",
+    "surfaceForms": [
+      "HB",
+      "habilitative"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceModifier"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/service_modifier_rehabilitative",
+    "displayName": "rehabilitative (gp/go)",
+    "surfaceForms": [
+      "rehabilitative"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceModifier"
+    ],
+    "type": "INDIVIDUAL"
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/service_modifier_rehabilitative_occupational_therapy",
+    "displayName": "rehabilitative occupational therapy (go)",
+    "surfaceForms": [
+      "rehabilitative OT",
+      "GO",
+      "rehabilitative occupational therapy"
+    ],
+    "entityTypeIds": [
+      "http://claims-audit.ibm.com/ServiceModifier"
+    ],
+    "type": "INDIVIDUAL"
+  }
+]

@@ -1,0 +1,66 @@
+logging.level.com.ibm.wh.extractionservice: DEBUG
+management.endpoints.web.exposure.include: "*"
+server.port: 8086
+spring.output.ansi.enabled: always
+spring.main.allow-bean-definition-overriding: true
+spring.datasource.driverClassName: org.h2.Driver
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+# ------------------------------
+# Domain ontology and external data
+# ------------------------------
+
+external-data.input.files: >
+  external-entities/body-parts/dental/groups.json,
+  external-entities/body-parts/dental/individuals.json,
+  external-entities/high-risk-categories/dental/individuals.json,
+  external-entities/places-of-service/individuals.json,
+  external-entities/places-of-service/groups.json,
+  external-entities/procedure-codes/service-categories.json,
+  external-entities/procedure-codes/dental/groups.json,
+  external-entities/procedure-codes/dental/lexicon.json,
+  external-entities/procedure-codes/physical-therapy/groups.json,
+  external-entities/service-modifiers/physical-therapy/individuals.json
+
+ontology.input.files: >
+  src/main/resources/ontology/benefit-rule-ontology.ttl,
+  src/main/resources/ontology/body-parts/dental/body-parts.ttl
+
+# should be one of the following: https://jena.apache.org/documentation/io/rdf-input.html#determining-the-rdf-syntax
+ontology.input.files.syntax: "TURTLE"
+
+# the namespace of the classes and properties of interest. It should include the trailing '/' or '#'
+ontology.namespace: "http://claims-audit.ibm.com/"
+
+# benefit rule class
+ontology.benefit-rule.class.uri: "http://claims-audit.ibm.com/BenefitRule"
+ontology.policy.class.uri: "http://claims-audit.ibm.com/Policy"
+ontology.annotation.display-name.uri: "http://claims-audit.ibm.com/displayName"
+ontology.annotation.claim-value.uri: "http://claims-audit.ibm.com/claimValue"
+ontology.annotation.default-value.uri: "http://claims-audit.ibm.com/defaultValue"
+ontology.annotation.surface-form.uri: "http://www.w3.org/2000/01/rdf-schema#label"
+ontology.annotation.affirmative-action.uri: "http://claims-audit.ibm.com/affirmativeAction"
+ontology.annotation.negative-action.uri: "http://claims-audit.ibm.com/negativeAction"
+ontology.annotation.is-negative-property.uri: "http://claims-audit.ibm.com/isNegated"
+ontology.annotation.annotated-as.uri: "http://claims-audit.ibm.com/annotatedAs"
+ontology.annotation.extraction-pattern.uri: "http://claims-audit.ibm.com/extractionPattern"
+ontology.annotation.has-compliance-rule.uri: "http://claims-audit.ibm.com/hasComplianceRuleTag"
+
+
+# ------------------------------
+# Benefit rule knowledge graph
+# ------------------------------
+
+kg.benefit-rule.extractor.property.uri: "http://purl.org/dc/elements/1.1/creator"
+kg.benefit-rule.source-text.property.uri: "http://purl.org/dc/elements/1.1/subject"
+kg.benefit-rule.source-node-id.property.uri: "http://claims-audit.ibm.com/nodeId"
+
+kg.confidence.property.uri: "http://claims-audit.ibm.com/hasConfidence"
+kg.confidence.class.uri: "http://claims-audit.ibm.com/ConfidenceScore"
+kg.confidence.source.property.uri: "http://claims-audit.ibm.com/hasConfidenceSource"
+kg.confidence.value.property.uri: "http://claims-audit.ibm.com/hasConfidenceValue"
+kg.subject.span.property.uri: "http://claims-audit.ibm.com/hasSubjectSpan"
+kg.property.span.property.uri: "http://claims-audit.ibm.com/hasPropertySpan"
+kg.object.span.property.uri: "http://claims-audit.ibm.com/hasObjectSpan"
+
+# should be one of the following: https://jena.apache.org/documentation/io/rdf-input.html#determining-the-rdf-syntax
+kg.output.syntax: "TURTLE"

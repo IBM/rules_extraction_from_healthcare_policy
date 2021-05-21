@@ -1,0 +1,40 @@
+{
+  "namespace": "http://claims-audit.ibm.com/",
+  "columns": [
+    {
+      "column": "service id",
+      "type": "http://claims-audit.ibm.com/CustomProcedureCodesGroup",
+      "entityType": "GROUP",
+      "properties": [
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "surface form 1"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "surface form 2"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "SURFACE_FORM",
+          "columns": [
+            "surface form 3"
+          ],
+          "transformation": "LOWERCASE"
+        },
+        {
+          "property": "DISPLAY_NAME",
+          "columns": [
+            "display name"
+          ],
+          "transformation": "LOWERCASE"
+        }
+      ]
+    }
+  ]
+}
