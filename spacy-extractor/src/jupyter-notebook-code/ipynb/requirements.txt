@@ -1,0 +1,17 @@
+Click==7.0           # intransitive dep
+Flask==1.1.1
+gunicorn==19.9.0
+itsdangerous==1.1.0  # intransitive dep
+Jinja2==2.10.3       # intransitive dep
+joblib==0.14.0
+JSON-log-formatter==0.2.0  
+MarkupSafe==1.1.1    # intransitive dep
+pip==19.2.3
+six==1.14.0          # intransitive dep
+setuptools==41.5.1
+Werkzeug==0.16.0     # intransitive dep
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
+pandas
+spacy==2.3.2
+spacy-pattern-builder==0.0.7
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_md-0.3.0.tar.gz
