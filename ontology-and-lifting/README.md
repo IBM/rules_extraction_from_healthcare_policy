@@ -10,7 +10,7 @@ a hierarchical tree structure. It performs concept annotation, rule extraction a
 and checking consistency over the domain ontology. The ontology guides the transformation of textual patterns into a
 semantically-meaningful knowledge graph of rules. 
 
-For more information on the ontology lifting and examples see: 
+For more information on the pipeline, the ontology lifting and examples see: 
 
 Towards protecting vital healthcare programs by extracting actionable knowledge from policy. Vanessa Lopez, Nagesh Yadav, Gabriele Picco, Inge Vejsbjerg, Eoin Carrol, Seamus Brady, Marco Luca Sbodio, Lam Thanh Hoang, Miao Wei, John Segrave. Findings of ACL, 2021
 
