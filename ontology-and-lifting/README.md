@@ -3,17 +3,21 @@
 *Tools for protecting vital healthcare programs by extracting actionable knowledge from policy.*
 
 This code was originally used as part of a pipeline for Policy Knowledge Extraction, which aims to make a
-policy-compliance ‘landscape’ visible to healthcare programs - helping them identify Fraud, Waste or Abuse. 
+policy-compliance ‘landscape’ visible to healthcare programs - helping policy investigators identify Fraud, Waste or Abuse. 
 
 This pipeline ingests PDF policy documents and processes them with their metadata, transforming the documents into
 a hierarchical tree structure. It performs concept annotation, rule extraction and consolidation guided by reasoning
 and checking consistency over the domain ontology. The ontology guides the transformation of textual patterns into a
 semantically-meaningful knowledge graph of rules. 
 
-For more information see :
+For more information on the ontology lifting and examples see: 
 
-- [Brisimi, Theodora & Lopez, Vanessa & Rho, Valentina & Sbodio, Marco & Picco, Gabriele & Kristiansen, Morten & Segrave-Daly, John & Cullen, Conor. (2020). Ontology-guided Policy Information Extraction for Healthcare Fraud Detection.](https://doi.org/10.3233/shti200287)
-- [Lopez, Vanessa & Rho, Valentina & Brisimi, Theodora & Segrave-Daly, John & Kristiansen, Morten & Cucci, Fabrizio. (2019). Benefit graph extraction from healthcare policies.](https://www.researchgate.net/publication/334573678_Benefit_graph_extraction_from_healthcare_policies)
+Towards protecting vital healthcare programs by extracting actionable knowledge from policy. Vanessa Lopez, Nagesh Yadav, Gabriele Picco, Inge Vejsbjerg, Eoin Carrol, Seamus Brady, Marco Luca Sbodio, Lam Thanh Hoang, Miao Wei, John Segrave. Findings of ACL, 2021
+
+Futher information on the domain ontology can be found in:
+
+- [Brisimi, Theodora & Lopez, Vanessa & Rho, Valentina & Sbodio, Marco & Picco, Gabriele & Kristiansen, Morten & Segrave-Daly, John & Cullen, Conor. (2020). Ontology-guided Policy Information Extraction for Healthcare Fraud Detection. MIE 2020](https://doi.org/10.3233/shti200287)
+- [Lopez, Vanessa & Rho, Valentina & Brisimi, Theodora & Segrave-Daly, John & Kristiansen, Morten & Cucci, Fabrizio. (2019). Benefit graph extraction from healthcare policies. ISWC 2019](https://www.researchgate.net/publication/334573678_Benefit_graph_extraction_from_healthcare_policies)
 
 ## How to use
 
