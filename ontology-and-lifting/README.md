@@ -12,7 +12,7 @@ semantically-meaningful knowledge graph of rules.
 
 For more information on the pipeline, the ontology lifting and examples see: 
 
-Towards protecting vital healthcare programs by extracting actionable knowledge from policy. Vanessa Lopez, Nagesh Yadav, Gabriele Picco, Inge Vejsbjerg, Eoin Carrol, Seamus Brady, Marco Luca Sbodio, Lam Thanh Hoang, Miao Wei, John Segrave. Findings of ACL, 2021
+Towards protecting vital healthcare programs by extracting actionable knowledge from policy. Vanessa Lopez, Nagesh Yadav, Gabriele Picco, Inge Vejsbjerg, Eoin Carroll, Seamus Brady, Marco Luca Sbodio, Lam Thanh Hoang, Miao Wei, John Segrave. Findings of ACL, 2021
 
 Futher information on the domain ontology can be found in:
 
