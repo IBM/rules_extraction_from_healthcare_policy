@@ -16,7 +16,6 @@ Towards protecting vital healthcare programs by extracting actionable knowledge 
 
 Futher information on the domain ontology can be found in:
 
-- [Brisimi, Theodora & Lopez, Vanessa & Rho, Valentina & Sbodio, Marco & Picco, Gabriele & Kristiansen, Morten & Segrave-Daly, John & Cullen, Conor. (2020). Ontology-guided Policy Information Extraction for Healthcare Fraud Detection. MIE 2020](https://doi.org/10.3233/shti200287)
 - [Lopez, Vanessa & Rho, Valentina & Brisimi, Theodora & Segrave-Daly, John & Kristiansen, Morten & Cucci, Fabrizio. (2019). Benefit graph extraction from healthcare policies. ISWC 2019](https://www.researchgate.net/publication/334573678_Benefit_graph_extraction_from_healthcare_policies)
 
 ## How to use
