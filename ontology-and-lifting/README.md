@@ -36,7 +36,7 @@ Navigate to the project folder and run the following docker command.
 
 ### Add external entities to the ontology
 The policy knowledge extraction system adds domain-specific external entities such as places of service, CPT and HCPCS codes to the ontology.
-For information and full instructions about lifting external data to be used during the extraction process, refer to [this document](/docs/external-entities-and-lifting.md). This process is required, for example, to
+For information and full instructions about lifting external data to be used during the extraction process, refer to [this document](/ontology-and-lifting/docs/external-entities-and-lifting.md). This process is required, for example, to
 load a new set of procedure codes in the domain ontology. Some predefined configuration files with corresponding csv
 files are available in `external-data/*` folders.
 
