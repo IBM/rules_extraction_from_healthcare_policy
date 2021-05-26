@@ -7,7 +7,7 @@ policy-compliance ‘landscape’ visible to healthcare programs - helping polic
 
 This pipeline ingests PDF policy documents and processes them with their metadata, transforming the documents into
 a hierarchical tree structure. It performs concept annotation, rule extraction and consolidation guided by reasoning
-and checking consistency over the domain ontology. The ontology guides the transformation of textual patterns into a
+and checking consistency over the [domain ontology](/ontology-and-lifting/docs/ontology/domain-ontology.md). The ontology guides the transformation of textual patterns into a
 semantically-meaningful knowledge graph of rules. 
 
 For more information on the pipeline, the ontology lifting and examples see: 
