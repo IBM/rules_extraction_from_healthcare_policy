@@ -53,5 +53,5 @@ in JSONLD, N3, NTRIPLES, RDFXML, or TURTLE format.
 
 ### Running an RDF4j instance to explore the ontology
 You can use [RDF4j](https://rdf4j.org/documentation/tools/server-workbench/) for example to explore the updated ontology file:
-`docker build -f Rdf4j/DockerfileRdf4J -t rdf4j . && docker run -p 8080:8080 rdf4j`
+`docker run -p 8080:8080 ghcr.io/ibm/rules_extraction_from_healthcare_policy/rdf4j-policy-extraction-ontology`
 RDF4J Workbench is available at http://localhost:8080/rdf4j-workbench and contains the populated ontology that can be obtained using the lifting endpoints described above.
