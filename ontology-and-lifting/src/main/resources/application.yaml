@@ -17,6 +17,7 @@ external-data.input.files: >
   external-entities/places-of-service/groups.json,
   external-entities/procedure-codes/service-categories.json,
   external-entities/procedure-codes/dental/groups.json,
+  external-entities/procedure-codes/dental/group-members.json,
   external-entities/procedure-codes/dental/lexicon.json,
   external-entities/procedure-codes/physical-therapy/groups.json,
   external-entities/service-modifiers/physical-therapy/individuals.json
