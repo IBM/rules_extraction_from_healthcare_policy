@@ -33,7 +33,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: ./ontology-and-lifting
-        file: ./Rdf4j/Dockerfile
+        file: /Rdf4j/Dockerfile
         push: true
         tags: ghcr.io/ibm/rules_extraction_from_healthcare_policy/rdf4j-policy-extraction-ontology:latest
     
