@@ -1,0 +1,673 @@
+[
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_dentures",
+    "comment": "'D5211', 'D5212', 'D5213', 'D5214', 'D5221', 'D5222', 'D5223', 'D5224', 'D5225', 'D5226', 'D5281'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5211",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5212",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5213",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5214",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5221",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5222",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5223",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5224",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5225",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5226",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5281",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_dentures",
+    "comment": "'D5110', 'D5120', 'D5130', 'D5140'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5110",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5120",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5130",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5140",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_chairside_relines",
+    "comment": "'D5730', 'D5731', 'D5740', 'D5741'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5730",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5731",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5740",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5741",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_laboratory_processed_relines",
+    "comment": "'D5750', 'D5751', 'D5760', 'D5761'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5750",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5751",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5760",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5761",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_tissue_conditioning",
+    "comment": "'D5850', 'D5851'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5850",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5851",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_repair",
+    "comment": "'D5510', 'D5520', 'D5610', 'D5620', 'D5630', 'D5640', 'D5650', 'D5660', 'D5670', 'D5671'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5510",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5520",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5610",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5620",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5630",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5640",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5650",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5660",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5670",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5671",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_prophylactic_procedures",
+    "comment": "'D1110', 'D1120', 'D1206', 'D1208'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1110",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1120",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1206",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1208",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_procedures",
+    "comment": "'D1310', 'D1320', 'D1330', 'D1351', 'D1353', 'D1352', 'D1354'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1310",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1320",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1330",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1351",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1353",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1352",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1354",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_fixed_space_maintainer_placement",
+    "comment": "'D1510', 'D1516', 'D1517'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1510",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1516",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1517",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_orthodontic_procedures",
+    "comment": "'D8010', 'D8020', 'D8030', 'D8040', 'D8050', 'D8060', 'D8070 ', 'D8080', 'D8090', 'D8210', 'D8220', 'D8670', 'D8680', 'D8681', 'D8690', 'D8691', 'D8692', 'D8693', 'D8694', 'D8695', 'D8999', 'D7880'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8010",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8020",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8030",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8040",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8050",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8060",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8070",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8080",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8090",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8210",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8220",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8670",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8680",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8681",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8690",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8691",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8692",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8693",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8694",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8695",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d8999",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d7880",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+    "comment": "'D1206', 'D1208'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1206",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1208",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_comprehensive_periodontal_evaluation",
+    "comment": "'D0180'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0180",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_bitewing_films",
+    "comment": "'D0270', 'D0272', 'D0273', 'D0274', 'D0277'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0270",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0272",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0273",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0274",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0277",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_composite_resin_filling_material",
+    "comment": "'D2330','D2331','D2332','D2335','D2390','D2391','D2392','D2393','D2394','D2650','D2651','D2652','D2662','D2663','D2664','D2710'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2330",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2331",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2332",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2335",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2390",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2391",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2392",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2393",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2394",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2650",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2651",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2652",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2662",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2663",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2664",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2710",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_amalgam_filling_material",
+    "comment": "'D2140','D2150','D2160','D2161'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2140",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2150",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2160",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d2161",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_fitting_and_follow_up",
+    "comment": "'D5410','D5411','D5421','D5422'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5410",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5411",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5421",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5422",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_periapical_films",
+    "comment": "'D0220','D0230'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0220",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0230",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_oral_evaluation",
+    "comment": "'D0120','D0140','D0145','D0150','D0160','D0170','D0171','D0180'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0120",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0140",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0145",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0150",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0160",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0170",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0171",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d0180",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_placed",
+    "comment": "'D5110','D5120','D5130','D5140','D5211','D5212','D5213','D5214','D5221','D5222','D5223','D5224','D5225','D5226','D5281'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5110",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5120",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5130",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5140",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5211",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5212",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5213",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5214",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5221",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5222",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5223",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5224",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5225",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5226",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5281",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+    "comment": "'D1110','D1120'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1110",
+        "type": "SINGLE"
+      },
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d1120",
+        "type": "SINGLE"
+      }
+    ]
+  },
+  {
+    "entityId": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_maxillary_denture",
+    "comment": "'D5110'",
+    "type": "GROUP",
+    "members": [
+      {
+        "id": "http://claims-audit.ibm.com/procedure_code_d5110",
+        "type": "SINGLE"
+      }
+    ]
+  }
+]
