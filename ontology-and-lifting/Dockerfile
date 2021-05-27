@@ -1,6 +1,5 @@
 FROM openjdk:8u181-jdk-slim-stretch
 WORKDIR /app
-COPY gradle gradle
 COPY gradlew gradlew
 RUN ./gradlew --version
 COPY settings.gradle settings.gradle
