@@ -28,5 +28,4 @@ jobs:
       with:
         context: ./ontology-and-lifting
         push: true
-        tags: |
-          docker.pkg.github.com/${{ github.repository }}/policy-knowledge-extraction-service
+        tags: policy-knowledge-extraction-service:latest
