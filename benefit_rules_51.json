@@ -1,0 +1,4267 @@
+[{
+  "_id": {
+    "$oid": "5c387dedcff47e0007dc8eea"
+  },
+  "displayName": "JS TB done 001 (partial)",
+  "conditions": [
+    {
+      "value": "JUL-01",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasStartDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "reference period - start date",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "JUN-30",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasEndDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/service_category_dental",
+          "label": "all dental services",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "displayName": "applicable service",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "$1,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "displayName": "reference period - unit of time",
+      "_class": "SingleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "member - min age",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_emergency_dental_benefits",
+          "label": "emergency dental benefits",
+          "type": "GROUP"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_benefits",
+          "label": "denture benefits",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasExcludedService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "displayName": "excluded service",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "reference period - amount of time",
+      "_class": "FreeTextConditionTemplateValue"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Adult members may receive up to $1,000 in dental benefits per year (July 1 through June 30.) Emergency and denture benefits are not subject to this limit.",
+      "html": "<div class=\"BenefitRuleTextHighlighter-passage-461\"><p><span><bbox>Adult members may receive up to $1,000 in dental benefits per year (July 1 through June </bbox></span></p></div><div class=\"BenefitRuleTextHighlighter-passage-461\"><li><span><span><bbox>30.) </bbox></span></span><span><bbox>Emergency and denture benefits are not subject to this limit.</bbox></span></li></div>",
+      "serialization": "type:textContent|43882$44036$$mark$fragments",
+      "beginFragmentSequenceNumber": 554,
+      "endFragmentSequenceNumber": 556
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "complianceTag": "compliance",
+  "subtype": "Service Limitation",
+  "_class": "BenefitRule"
+},{
+  "_id": {
+    "$oid": "5c38809dcff47e0007dc8eee"
+  },
+  "displayName": "JS TB done 002 (partial)",
+  "conditions": [
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/program_co_developmental_disabilities_waiver",
+          "label": "colorado - developmental disabilities waiver program",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/isEnrolledInProgram",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - program enrollment"
+    },
+    {
+      "value": "$2,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/individualized_service_plan_year",
+        "label": "individualized service plan year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_basic_dental_benefits",
+          "label": "basic dental benefits",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_dental_benefits",
+          "label": "preventative dental benefits",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "2.04 HCBS DIDD Adult Waiver Dental Benefit Limits - DD and SLS Wavier Program",
+      "html": "<span><bbox>2.04 HCBS DIDD Adult Waiver Dental Benefit Limits </bbox></span><span><bbox>- </bbox></span><span><bbox>DD and SLS Wavier Program</bbox></span>",
+      "serialization": "type:textContent|44274$44351$$mark$fragments",
+      "beginFragmentSequenceNumber": 559,
+      "endFragmentSequenceNumber": 559
+    },
+    {
+      "text": "In addition to the State Plan adult benefit, adult waiver participant members age 21 and over may receive up to $2,000 in basic/preventative dental benefits per individualized Service Plan year.",
+      "html": "In addition to the State Plan adult benefit, adult waiver participant members age 21 and over may receive up to $2,000 in basic/preventative dental benefits per individualized Service Plan year.",
+      "serialization": "type:textContent|44352$44546$$mark$fragments",
+      "beginFragmentSequenceNumber": 560,
+      "endFragmentSequenceNumber": 560
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3883bfcff47e0007dc8ef0"
+  },
+  "displayName": "JS TB done 003 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/program_co_developmental_disabilities_waiver",
+          "label": "colorado - developmental disabilities waiver program",
+          "type": "SINGLE"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/isEnrolledInProgram",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - program enrollment"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_major_dental_benefits",
+          "label": "major dental benefits",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "value": "$10,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "2019-JUN-30",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasEndDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "2014-JUL-01",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasStartDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - start date"
+    },
+    {
+      "value": "5",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "DIDD adult waiver participant members may also receive up to $10,000 in major dental benefits over the 5 year lifespan of the Waivers (July 1, 2014-June 30, 2019)",
+      "html": "DIDD adult waiver participant members may also receive up to $10,000 in major dental benefits over the 5 year lifespan of the Waivers (July 1, 2014-June 30, 2019)",
+      "serialization": "type:textContent|44547$44709$$mark$fragments",
+      "beginFragmentSequenceNumber": 561,
+      "endFragmentSequenceNumber": 561
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c38a2d2cff47e0007dc8ef4"
+  },
+  "displayName": "JS TB done 004 (partial)",
+  "conditions": [
+    {
+      "value": "JUL-01",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasStartDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - start date"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/service_category_dental",
+          "label": "all dental services",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/program_co_developmental_disabilities_waiver",
+          "label": "colorado - developmental disabilities waiver program",
+          "type": "SINGLE"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/isEnrolledInProgram",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - program enrollment"
+    },
+    {
+      "value": "JUN-30",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasEndDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "value": "$1,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/fiscal_year",
+        "label": "fiscal year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "State Plan Limits for DIDD Adult Waiver Participant Members • $1,000 benefit limit per Fiscal Year (July 1- June 30) • Same benefit as general Health First Colorado population (please reference Appendix B, Exhibit B)",
+      "html": "<div class=\"BenefitRuleTextHighlighter-passage-882\"><p><span><span><bbox>State Plan Limits for DIDD Adult Waiver Participant Members </bbox></span></span></p></div><div class=\"BenefitRuleTextHighlighter-passage-882\"><li><span><span><bbox>• </bbox></span></span><span><bbox>$1,000 benefit limit per Fiscal Year (July 1- June 30) </bbox></span></li></div><div class=\"BenefitRuleTextHighlighter-passage-882\"><li><span><span><bbox>• </bbox></span></span><span><bbox>Same benefit as general Health First Colorado population (please reference Appendix B, Exhibit B)</bbox></span></li></div>",
+      "serialization": "type:textContent|46199$46415$$mark$fragments",
+      "beginFragmentSequenceNumber": 571,
+      "endFragmentSequenceNumber": 575
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c38a9abcff47e0007dc8ef9"
+  },
+  "displayName": "JS TB done 007 (partial)",
+  "conditions": [
+    {
+      "value": "JUL-01",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasStartDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - start date"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/service_category_dental",
+          "label": "all dental services",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_emergency_dental_benefits",
+          "label": "emergency dental benefits",
+          "type": "GROUP"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_denture_benefits",
+          "label": "denture benefits",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasExcludedService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "excluded service"
+    },
+    {
+      "value": "JUN-30",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasEndDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "value": "$1,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Dental services for adults 21 years of age and older are limited to a total of $1,000 per adult Health First Colorado recipient per year (July 1 - June 30). Emergency and denture benefits are not subject to this limit.",
+      "html": "Dental services for adults 21 years of age and older are limited to a total of $1,000 per adult Health First Colorado recipient per year (July 1 - June 30). Emergency and denture benefits are not subject to this limit.",
+      "serialization": "type:textContent|49121$49339$$mark$fragments",
+      "beginFragmentSequenceNumber": 643,
+      "endFragmentSequenceNumber": 644
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca37fcff47e0007550762"
+  },
+  "displayName": "JS TB done 005 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/program_co_developmental_disabilities_waiver",
+          "label": "colorado - developmental disabilities waiver program",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/isEnrolledInProgram",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - program enrollment"
+    },
+    {
+      "value": "$2,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/individualized_service_plan_year",
+        "label": "individualized service plan year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_basic_dental_benefits",
+          "label": "basic dental benefits",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_preventative_dental_benefits",
+          "label": "preventative dental benefits",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "DD Waiver Program Limits for DIDD Adult Waiver Participant Members • $2,000 basic/preventative benefit per service plan year (varies per individual Service Plan year)",
+      "html": "<div class=\"BenefitRuleTextHighlighter-passage-401\"><p><span><span><bbox>DD Waiver Program Limits for DIDD Adult Waiver Participant Members </bbox></span></span></p></div><div class=\"BenefitRuleTextHighlighter-passage-401\"><li><span><span><bbox>• </bbox></span></span><span><bbox>$2,000 basic/preventative benefit per service plan year (varies per individual Service Plan year)</bbox></span></li></div>",
+      "serialization": "type:textContent|46416$46582$$mark$fragments",
+      "beginFragmentSequenceNumber": 576,
+      "endFragmentSequenceNumber": 578
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca3fbcff47e0007550766"
+  },
+  "displayName": "MK TB done 016 (full)",
+  "conditions": [
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/month",
+        "label": "month(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "displayName": "reference period - unit of time",
+      "_class": "SingleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "unit limitation - max",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_dentures",
+          "label": "partial dentures",
+          "type": "GROUP"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_dentures",
+          "label": "complete dentures",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "displayName": "applicable service",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "120",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "member - max age",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "84",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "reference period - amount of time",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "member - min age",
+      "_class": "FreeTextConditionTemplateValue"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Complete dentures and partial dentures shall only be provided once every 84 months (7 years) for adult members and are not subject to the $1,000 per adult member annual maximum.",
+      "html": "Complete dentures and partial dentures shall only be provided once every 84 months (7 years) for adult members and are not subject to the $1,000 per adult member annual maximum.",
+      "serialization": "type:textContent|54686$54863$$mark$fragments",
+      "beginFragmentSequenceNumber": 754,
+      "endFragmentSequenceNumber": 754
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "complianceTag": "compliance",
+  "subtype": "Service Limitation",
+  "_class": "BenefitRule"
+},{
+  "_id": {
+    "$oid": "5c3ca4d0cff47e000755076c"
+  },
+  "displayName": "JS TB done 009 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_mandibular_denture",
+          "label": "complete mandibular denture",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Complete Lower Denture One time every 7 years. Includes initial 6 months of relines. Prior authorization required.",
+      "html": "<td><p><span><bbox>Complete Lower Denture </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Includes initial 6 months of relines. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53315$53429$$mark$fragments",
+      "beginFragmentSequenceNumber": 725,
+      "endFragmentSequenceNumber": 728
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca538cff47e000755076e"
+  },
+  "displayName": "JS TB done 010 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___resin_base",
+          "label": "partial maxillary denture - resin base",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Removable Partial Upper Denture/Resin Based One time every 7 years. Prior authorization required.",
+      "html": "<td><p><span><bbox>Removable Partial Upper Denture/Resin Based </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53430$53527$$mark$fragments",
+      "beginFragmentSequenceNumber": 729,
+      "endFragmentSequenceNumber": 731
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca566cff47e0007550770"
+  },
+  "displayName": "JS TB done 011 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___resin_base",
+          "label": "partial mandibular denture - resin base",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Removable Partial Lower Denture/Resin Based One time every 7 years. Prior authorization required.",
+      "html": "<td><p><span><bbox>Removable Partial Lower Denture/Resin Based </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53528$53625$$mark$fragments",
+      "beginFragmentSequenceNumber": 732,
+      "endFragmentSequenceNumber": 734
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca594cff47e0007550772"
+  },
+  "displayName": "JS TB done 012 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___cast_metal_framework",
+          "label": "partial maxillary denture - cast metal framework",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Removable Partial Upper Denture/Cast Metal Framework One time every 7 years. Prior authorization required.",
+      "html": "<td><p><span><bbox>Removable Partial Upper Denture/Cast Metal Framework </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53626$53732$$mark$fragments",
+      "beginFragmentSequenceNumber": 735,
+      "endFragmentSequenceNumber": 737
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca5c4cff47e0007550774"
+  },
+  "displayName": "JS TB done 013 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___cast_metal_framework",
+          "label": "partial mandibular denture - cast metal framework",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Removable Partial Lower Denture/Cast Metal Framework One time every 7 years. Prior authorization required.",
+      "html": "<td><p><span><bbox>Removable Partial Lower Denture/Cast Metal Framework </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53733$53839$$mark$fragments",
+      "beginFragmentSequenceNumber": 738,
+      "endFragmentSequenceNumber": 740
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca5efcff47e0007550776"
+  },
+  "displayName": "JS TB done 014 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_maxillary_denture___flexible_base",
+          "label": "partial maxillary denture - flexible base",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Removable Partial Upper Denture/Flexible Base One time every 7 years. Prior authorization required.",
+      "html": "<td><p><span><bbox>Removable Partial Upper Denture/Flexible Base </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53840$53939$$mark$fragments",
+      "beginFragmentSequenceNumber": 741,
+      "endFragmentSequenceNumber": 743
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca618cff47e0007550778"
+  },
+  "displayName": "JS TB done 015 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_mandibular_denture___flexible_base",
+          "label": "partial mandibular denture - flexible base",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "7",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Removable Partial Lower Denture/Flexible Base One time every 7 years. Prior authorization required.",
+      "html": "<td><p><span><bbox>Removable Partial Lower Denture/Flexible Base </bbox></span></p></td><td><p><span><bbox>One time every 7 years. Prior authorization required.</bbox></span></p></td>",
+      "serialization": "type:textContent|53940$54039$$mark$fragments",
+      "beginFragmentSequenceNumber": 744,
+      "endFragmentSequenceNumber": 746
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca64fcff47e000755077a"
+  },
+  "displayName": "MK TB done 017 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "2",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "12",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/month",
+        "label": "month(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Dental prophylaxis (i.e., teeth cleanings) is recommended every 6 months, and may be reimbursed twice per 12 months per member.",
+      "html": "Dental prophylaxis (i.e., teeth cleanings) is recommended every 6 months, and may be reimbursed twice per 12 months per member.",
+      "serialization": "type:textContent|62783$62910$$mark$fragments",
+      "beginFragmentSequenceNumber": 820,
+      "endFragmentSequenceNumber": 820
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca6d4cff47e000755077f"
+  },
+  "displayName": "MK TB done 020 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNoMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year.",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year.",
+      "serialization": "type:textContent|63494$63843$$mark$fragments",
+      "beginFragmentSequenceNumber": 826,
+      "endFragmentSequenceNumber": 827
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca6f4cff47e0007550781"
+  },
+  "displayName": "MK TB done 022 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "html": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "serialization": "type:textContent|64556$64795$$mark$fragments",
+      "beginFragmentSequenceNumber": 843,
+      "endFragmentSequenceNumber": 843
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca71ecff47e0007550783"
+  },
+  "displayName": "MK TB done 024 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d1206",
+          "label": "d1206 - topical fluoride varnish; therapeutic application for moderate to high caries risk patients",
+          "type": "SINGLE",
+          "claimValue": "D1206"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "20",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "2",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Topical fluoride is a covered benefit for child members through age 20 and topical fluoride treatments are allowed twice (2) per year for child members.",
+      "html": "Topical fluoride is a covered benefit for child members through age 20 and topical fluoride treatments are allowed twice (2) per year for child members.",
+      "serialization": "type:textContent|65053$65205$$mark$fragments",
+      "beginFragmentSequenceNumber": 847,
+      "endFragmentSequenceNumber": 847
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca790cff47e0007550785"
+  },
+  "displayName": "MK TB done 027 (partial)",
+  "conditions": [
+    {
+      "value": "5",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "value": "0",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d1206",
+          "label": "d1206 - topical fluoride varnish; therapeutic application for moderate to high caries risk patients",
+          "type": "SINGLE",
+          "claimValue": "D1206"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Fluoride varnish is considered the standard of care and is the only acceptable topical fluoride treatment for child member's ages 0 through 5 years (up to the day before their sixth birthday).",
+      "html": "Fluoride varnish is considered the standard of care and is the only acceptable topical fluoride treatment for child member's ages 0 through 5 years (up to the day before their sixth birthday).",
+      "serialization": "type:textContent|66115$66307$$mark$fragments",
+      "beginFragmentSequenceNumber": 854,
+      "endFragmentSequenceNumber": 854
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3ca7b2cff47e0007550787"
+  },
+  "displayName": "MK TB done 029 (partial)",
+  "conditions": [
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_rinse",
+          "label": "fluoride rinse",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNotApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "not covered service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Fluoride rinse is not an acceptable treatment for any child member and will not be reimbursed.",
+      "html": "Fluoride rinse is not an acceptable treatment for any child member and will not be reimbursed.",
+      "serialization": "type:textContent|66425$66519$$mark$fragments",
+      "beginFragmentSequenceNumber": 856,
+      "endFragmentSequenceNumber": 856
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Non Coverage",
+  "complianceTag": "non compliance"
+},{
+  "_id": {
+    "$oid": "5c3daddbcff47e00075507a5"
+  },
+  "displayName": "JS TB done 006 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_major_dental_benefits",
+          "label": "major dental benefits",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/program_co_developmental_disabilities_waiver",
+          "label": "colorado - developmental disabilities waiver program",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/isEnrolledInProgram",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - program enrollment"
+    },
+    {
+      "value": "2014-JUL-01",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasStartDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - start date"
+    },
+    {
+      "value": "2019-JUN-30",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasEndDate",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "$10,000",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxReimbursedAmount",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "DD Waiver Program Limits for DIDD Adult Waiver Participant Members",
+      "html": "DD Waiver Program Limits for DIDD Adult Waiver Participant Members",
+      "serialization": "type:textContent|46416$46482$$mark$fragments",
+      "beginFragmentSequenceNumber": 576,
+      "endFragmentSequenceNumber": 576
+    },
+    {
+      "text": "• $10,000 major benefit per life time of waiver (July 1, 2014- June 30, 2019)",
+      "html": "<span><span><bbox>• </bbox></span></span><span><bbox>$10,000 major benefit per life time of waiver (July 1, 2014- June 30, 2019)</bbox></span>",
+      "serialization": "type:textContent|46583$46660$$mark$fragments",
+      "beginFragmentSequenceNumber": 579,
+      "endFragmentSequenceNumber": 580
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3dde70cff47e00075507b8"
+  },
+  "displayName": "MK TB done 018 (full)",
+  "conditions": [
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/day",
+        "label": "day(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "displayName": "reference period - unit of time",
+      "_class": "SingleSelectionConditionTemplateValue"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMutuallyExclusiveReimbursableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "displayName": "mutual exclusive reimbursable service",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMutuallyExclusiveNotReimbursableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "displayName": "mutual exclusive non-reimbursable service",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "displayName": "reference period - amount of time",
+      "_class": "FreeTextConditionTemplateValue"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Prophylaxis is not a benefit when billed on the same date of service as any periodontal procedure code.",
+      "html": "Prophylaxis is not a benefit when billed on the same date of service as any periodontal procedure code.",
+      "serialization": "type:textContent|62911$63014$$mark$fragments",
+      "beginFragmentSequenceNumber": 821,
+      "endFragmentSequenceNumber": 821
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "complianceTag": "non compliance",
+  "subtype": "Mutually Exclusive",
+  "_class": "BenefitRule"
+},{
+  "_id": {
+    "$oid": "5c3de052cff47e00075507bc"
+  },
+  "displayName": "MK TB done 021 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - medical history of disease"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year.",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year.",
+      "serialization": "type:textContent|63494$63843$$mark$fragments",
+      "beginFragmentSequenceNumber": 826,
+      "endFragmentSequenceNumber": 827
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de165cff47e00075507bf"
+  },
+  "displayName": "MK TB done 023 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "html": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "serialization": "type:textContent|64556$64795$$mark$fragments",
+      "beginFragmentSequenceNumber": 843,
+      "endFragmentSequenceNumber": 843
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de255cff47e00075507c3"
+  },
+  "displayName": "MK TB done 025 (full)",
+  "conditions": [
+    {
+      "value": "0",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d1206",
+          "label": "d1206 - topical fluoride varnish; therapeutic application for moderate to high caries risk patients",
+          "type": "SINGLE",
+          "claimValue": "D1206"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Child members ages 0 through 4 years at high risk for caries may receive an additional two (2) fluoride topical applications per year for a total of up to four (4) per year.",
+      "html": "Child members ages 0 through 4 years at high risk for caries may receive an additional two (2) fluoride topical applications per year for a total of up to four (4) per year.",
+      "serialization": "type:textContent|65206$65379$$mark$fragments",
+      "beginFragmentSequenceNumber": 848,
+      "endFragmentSequenceNumber": 848
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de298cff47e00075507c5"
+  },
+  "displayName": "MK TB done 026 (full)",
+  "conditions": [
+    {
+      "value": "5",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "value": "20",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "value": "3",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+          "label": "topical fluoride treatments",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Topical fluoride is a covered benefit for child members through age 20 ",
+      "html": "Topical fluoride is a covered benefit for child members through age 20 ",
+      "serialization": "type:textContent|65053$65124$$mark$fragments",
+      "beginFragmentSequenceNumber": 847,
+      "endFragmentSequenceNumber": 847
+    },
+    {
+      "text": "Child members ages 5 through 20 years may receive an additional one (1) per year with no adjustment for risk for a total of three (3) per year.",
+      "html": "Child members ages 5 through 20 years may receive an additional one (1) per year with no adjustment for risk for a total of three (3) per year.",
+      "serialization": "type:textContent|65380$65523$$mark$fragments",
+      "beginFragmentSequenceNumber": 849,
+      "endFragmentSequenceNumber": 849
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de468cff47e00075507c8"
+  },
+  "displayName": "MK TB done 028 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+          "label": "topical fluoride treatments",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_varnish",
+          "label": "fluoride varnish",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "6",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "However, either topical fluoride or fluoride varnish may be used for child members after the child's sixth birthday.",
+      "html": "However, either topical fluoride or fluoride varnish may be used for child members after the child's sixth birthday.",
+      "serialization": "type:textContent|66308$66424$$mark$fragments",
+      "beginFragmentSequenceNumber": 855,
+      "endFragmentSequenceNumber": 855
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de5a9cff47e00075507cc"
+  },
+  "displayName": "MK TB done 031 (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/prior_authorization_requirement",
+          "label": "prior authorization requirement (par)",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNoRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - not needed"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+          "label": "topical fluoride treatments",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Prior authorization (PAR) is not necessary for adult members to receive topical fluoride treatments.",
+      "html": "Prior authorization (PAR) is not necessary for adult members to receive topical fluoride treatments.",
+      "serialization": "type:textContent|67630$67730$$mark$fragments",
+      "beginFragmentSequenceNumber": 873,
+      "endFragmentSequenceNumber": 873
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de7eacff47e00075507ce"
+  },
+  "displayName": "MK TB done 032 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_sealants_application",
+          "label": "sealants application",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "2",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/lifetime",
+        "label": "lifetime",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_31",
+          "label": "tooth 31 - permanent mandibular right second molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_30",
+          "label": "tooth 30 - permanent mandibular right first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_14",
+          "label": "tooth 14 - permanent maxillary left first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_15",
+          "label": "tooth 15 - permanent maxillary left second molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_18",
+          "label": "tooth 18 - permanent mandibular left second molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_2",
+          "label": "tooth 2 - permanent maxillary right second molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_3",
+          "label": "tooth 3 - permanent maxillary right first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_19",
+          "label": "tooth 19 - permanent mandibular left first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Sealants may be applied twice per lifetime per tooth to the unrestored occlusal surface of any permanent first or second molar at risk for occlusal pit and fissure decay.",
+      "html": "Sealants may be applied twice per lifetime per tooth to the unrestored occlusal surface of any permanent first or second molar at risk for occlusal pit and fissure decay.",
+      "serialization": "type:textContent|67881$68051$$mark$fragments",
+      "beginFragmentSequenceNumber": 876,
+      "endFragmentSequenceNumber": 876
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3de9a9cff47e00075507d0"
+  },
+  "displayName": "MK TB done 033 (partial)",
+  "conditions": [
+    {
+      "values": [],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_sealants_application",
+          "label": "sealants application",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "15",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_17",
+          "label": "tooth 17 - permanent mandibular left third molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_3",
+          "label": "tooth 3 - permanent maxillary right first molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_15",
+          "label": "tooth 15 - permanent maxillary left second molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_2",
+          "label": "tooth 2 - permanent maxillary right second molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_19",
+          "label": "tooth 19 - permanent mandibular left first molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_16",
+          "label": "tooth 16 - permanent maxillary left third molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_1",
+          "label": "tooth 1 - permanent maxillary right third molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_18",
+          "label": "tooth 18 - permanent mandibular left second molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_31",
+          "label": "tooth 31 - permanent mandibular right second molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_32",
+          "label": "tooth 32 - permanent mandibular right third molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_30",
+          "label": "tooth 30 - permanent mandibular right first molar",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_14",
+          "label": "tooth 14 - permanent maxillary left first molar",
+          "type": "SINGLE"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    },
+    {
+      "value": "5",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Sealants may be applied to all unrestored permanent molars without a capitated lesion in child member's ages 5 through 15 years old.",
+      "html": "Sealants may be applied to all unrestored permanent molars without a capitated lesion in child member's ages 5 through 15 years old.",
+      "serialization": "type:textContent|68184$68316$$mark$fragments",
+      "beginFragmentSequenceNumber": 878,
+      "endFragmentSequenceNumber": 878
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3deaf9cff47e00075507d2"
+  },
+  "displayName": "MK TB done 034 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_space_maintainer_placement",
+          "label": "space maintainer placement",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "14",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/premolars",
+          "label": "premolars",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_30",
+          "label": "tooth 30 - permanent mandibular right first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_14",
+          "label": "tooth 14 - permanent maxillary left first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_19",
+          "label": "tooth 19 - permanent mandibular left first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/tooth_3",
+          "label": "tooth 3 - permanent maxillary right first molar",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Criteria for Space Maintainers",
+      "html": "Criteria for Space Maintainers",
+      "serialization": "type:textContent|68323$68353$$mark$fragments",
+      "beginFragmentSequenceNumber": 879,
+      "endFragmentSequenceNumber": 879
+    },
+    {
+      "text": "• Removable and fixed space maintainers are performed to prevent tooth movement and maintain the space for eruption of a first or second premolar or permanent first molar when a primary tooth has been lost prematurely or for a congenitally missing permanent tooth for members up to the age of 14.",
+      "html": "<span><span><bbox>• </bbox></span></span><span><bbox>Removable and fixed space maintainers are performed to prevent tooth movement and maintain the space for eruption of a first or second premolar or permanent first molar when a primary tooth has been lost prematurely or for a congenitally missing permanent tooth for members up to the age of 14.</bbox></span>",
+      "serialization": "type:textContent|68354$68650$$mark$fragments",
+      "beginFragmentSequenceNumber": 880,
+      "endFragmentSequenceNumber": 881
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f0ab9cff47e00075507d5"
+  },
+  "displayName": "MK TB done 035 (full)",
+  "conditions": [
+    {
+      "value": "2",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/quadrants",
+          "label": "per quadrant",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/lifetime",
+        "label": "lifetime",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_space_maintainer_placement",
+          "label": "space maintainer placement",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Criteria for Space Maintainers",
+      "html": "Criteria for Space Maintainers",
+      "serialization": "type:textContent|68323$68353$$mark$fragments",
+      "beginFragmentSequenceNumber": 879,
+      "endFragmentSequenceNumber": 879
+    },
+    {
+      "text": "• The procedure is reimbursable twice per quadrant per lifetime and includes any follow-up care and/or re-cementing, if necessary.",
+      "html": "<span><span><bbox>• </bbox></span></span><span><bbox>The procedure is reimbursable twice per quadrant per lifetime and includes any follow-up care and/or re-cementing, if necessary.</bbox></span>",
+      "serialization": "type:textContent|68651$68781$$mark$fragments",
+      "beginFragmentSequenceNumber": 882,
+      "endFragmentSequenceNumber": 883
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f0b76cff47e00075507d7"
+  },
+  "displayName": "MK TB done 036 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_space_maintainer_placement",
+          "label": "space maintainer placement",
+          "type": "GROUP"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Criteria for Space Maintainers",
+      "html": "Criteria for Space Maintainers",
+      "serialization": "type:textContent|68323$68353$$mark$fragments",
+      "beginFragmentSequenceNumber": 879,
+      "endFragmentSequenceNumber": 879
+    },
+    {
+      "text": "mmendation of space maintainers is allowed once per year, and is not payable within 6 months of original placement by the same Provider/dental office.",
+      "html": "<span class=\"mark\">mmendation of space maintainers is allowed once per year,</span> and is not payable within 6 months of original placement by the same Provider/dental office.",
+      "serialization": "type:textContent|68872$69026$$mark$fragments",
+      "beginFragmentSequenceNumber": 886,
+      "endFragmentSequenceNumber": 886
+    },
+    {
+      "text": " ",
+      "html": " ",
+      "serialization": "type:textContent|70176$70177$$mark$fragments",
+      "beginFragmentSequenceNumber": 898,
+      "endFragmentSequenceNumber": 898
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f0e72cff47e00075507d9"
+  },
+  "displayName": "MK TB done 037 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_fixed_space_maintainer_removal",
+          "label": "fixed space maintainer removal",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/lifetime",
+        "label": "lifetime",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Criteria for Space Maintainers",
+      "html": "Criteria for Space Maintainers",
+      "serialization": "type:textContent|68323$68353$$mark$fragments",
+      "beginFragmentSequenceNumber": 879,
+      "endFragmentSequenceNumber": 879
+    },
+    {
+      "text": " Removal of fixed space maintainers is allowed once per lifetime",
+      "html": "<span><span><bbox> </bbox></span></span><span><bbox>Removal of fixed space maintainers is allowed once per lifetime</bbox></span>",
+      "serialization": "type:textContent|69123$69187$$mark$fragments",
+      "beginFragmentSequenceNumber": 889,
+      "endFragmentSequenceNumber": 890
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f0f40cff47e00075507db"
+  },
+  "displayName": "MK TB done 038 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d2932",
+          "label": "d2932 - prefabricated resin crown",
+          "type": "SINGLE",
+          "claimValue": "D2932"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_prefabricated_stainless_steel_crowns",
+          "label": "prefabricated stainless steel crowns",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d2933",
+          "label": "d2933 - prefabricated stainless steel crown with resin window",
+          "type": "SINGLE",
+          "claimValue": "D2933"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/teeth",
+          "label": "per tooth",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Prefabricated stainless steel crowns, prefabricated resin crowns, and prefabricated stainless steel crowns with a resin window are a benefit for both primary and permanent teeth for child and adult members.",
+      "html": "Prefabricated stainless steel crowns, prefabricated resin crowns, and prefabricated stainless steel crowns with a resin window are a benefit for both primary and permanent teeth for child and adult members.",
+      "serialization": "type:textContent|69352$69558$$mark$fragments",
+      "beginFragmentSequenceNumber": 892,
+      "endFragmentSequenceNumber": 892
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f154acff47e00075507e1"
+  },
+  "displayName": "MK TB done 041 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4910",
+          "label": "d4910 - periodontal maintenance",
+          "type": "SINGLE",
+          "claimValue": "D4910"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4341",
+          "label": "d4341 - periodontal scaling and root planing - four or more teeth per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4341"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4346",
+          "label": "d4346 - scaling in presence of generalized moderate or severe gingival inflammation - full mouth, after oral evaluation",
+          "type": "SINGLE",
+          "claimValue": "D4346"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4342",
+          "label": "d4342 - periodontal scaling and root planing - one to three teeth per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4342"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d6081",
+          "label": "d6081 - scaling and debridement in the presence of inflammation or mucositis of a single implant, including cleaning of the implant surfaces, without flap entry and closure",
+          "type": "SINGLE",
+          "claimValue": "D6081"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMedicalHistoryOfTreatment",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - medical history of treatment"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members with a history of periodontal treatment, including scaling and root planing and osseous surgery will be eligible for up to four (4) periodontal maintenance visits per year.",
+      "html": "Members with a history of periodontal treatment, including scaling and root planing and osseous surgery will be eligible for up to four (4) periodontal <span class=\"mark\">maintenance</span> visits per year.",
+      "serialization": "type:textContent|71540$71720$$mark$fragments",
+      "beginFragmentSequenceNumber": 919,
+      "endFragmentSequenceNumber": 919
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f1707cff47e00075507e3"
+  },
+  "displayName": "JS TB done 042 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNoMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - min"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/utilization_management_review",
+          "label": "utilisation management review",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review.",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review.",
+      "serialization": "type:textContent|71721$72165$$mark$fragments",
+      "beginFragmentSequenceNumber": 920,
+      "endFragmentSequenceNumber": 922
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f178ccff47e00075507e5"
+  },
+  "displayName": "JS TB done 043 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - medical history of disease"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year.",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year.",
+      "serialization": "type:textContent|71721$72070$$mark$fragments",
+      "beginFragmentSequenceNumber": 920,
+      "endFragmentSequenceNumber": 921
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f1a2ccff47e00075507eb"
+  },
+  "displayName": "JS TB done 043a (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNoMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year",
+      "serialization": "type:textContent|71721$72069$$mark$fragments",
+      "beginFragmentSequenceNumber": 920,
+      "endFragmentSequenceNumber": 921
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f1a8ccff47e00075507ed"
+  },
+  "displayName": "JS TB done 044 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "html": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "serialization": "type:textContent|72366$72605$$mark$fragments",
+      "beginFragmentSequenceNumber": 934,
+      "endFragmentSequenceNumber": 934
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f1bb6cff47e00075507ef"
+  },
+  "displayName": "JS TB done 046 (partial)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4341",
+          "label": "d4341 - periodontal scaling and root planing - four or more teeth per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4341"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4342",
+          "label": "d4342 - periodontal scaling and root planing - one to three teeth per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4342"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/quadrants",
+          "label": "per quadrant",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    },
+    {
+      "value": "3",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Covered Procedures (child and adult members) • Periodontal scaling and root planing - four (4) or more teeth affected in the quadrant (D4341) • Periodontal scaling and root planing - one (1) to three (3) teeth affected in the quadrant (D4342).",
+      "html": "<div class=\"BenefitRuleTextHighlighter-passage-1140\"><li><p><span><bbox>Covered Procedures (child and adult members) </bbox></span></p></li></div><div class=\"BenefitRuleTextHighlighter-passage-1140\"><li><span><span><bbox>• </bbox></span></span><span><bbox>Periodontal scaling and root planing - four (4) or more teeth affected in the quadrant (D4341) </bbox></span></li></div><div class=\"BenefitRuleTextHighlighter-passage-1140\"><li><span><span><bbox>• </bbox></span></span><span><bbox>Periodontal scaling and root planing - one (1) to three (3) teeth affected in the quadrant (D4342).</bbox></span></li></div>",
+      "serialization": "type:textContent|72966$73209$$mark$fragments",
+      "beginFragmentSequenceNumber": 944,
+      "endFragmentSequenceNumber": 948
+    },
+    {
+      "text": "• Periodontal scaling and root planing (D4341 and/or D4342) is allowed once per quadrant every three (3) years (children and adults).",
+      "html": "<span><span><bbox>• </bbox></span></span><span><bbox>Periodontal scaling and root planing (D4341 and/or D4342) is allowed once per quadrant every three (3) years (children and adults).</bbox></span>",
+      "serialization": "type:textContent|73638$73771$$mark$fragments",
+      "beginFragmentSequenceNumber": 962,
+      "endFragmentSequenceNumber": 963
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c3f1ef6cff47e00075507f7"
+  },
+  "displayName": "JS TB done 048 (partial)",
+  "conditions": [
+    {
+      "value": "12",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/month",
+        "label": "month(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/quadrants",
+          "label": "per quadrant",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4341",
+          "label": "d4341 - periodontal scaling and root planing - four or more teeth per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4341"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4342",
+          "label": "d4342 - periodontal scaling and root planing - one to three teeth per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4342"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMutuallyExclusiveNotReimbursableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "mutual exclusive non-reimbursable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4211",
+          "label": "d4211 - gingivectomy or gingivoplasty - one to three contiguous teeth or tooth bounded spaces per quadrant",
+          "type": "SINGLE",
+          "claimValue": "D4211"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4212",
+          "label": "d4212 - gingivectomy or gingivoplasty to allow access for restorative procedure, per tooth",
+          "type": "SINGLE",
+          "claimValue": "D4212"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMutuallyExclusiveReimbursableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "mutual exclusive reimbursable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Covered Procedures (child and adult members) • Periodontal scaling and root planing - four (4) or more teeth affected in the quadrant (D4341) • Periodontal scaling and root planing - one (1) to three (3) teeth affected in the quadrant (D4342).",
+      "html": "<div class=\"BenefitRuleTextHighlighter-passage-536\"><li><p><span><bbox>Covered Procedures (child and adult members) </bbox></span></p></li></div><div class=\"BenefitRuleTextHighlighter-passage-536\"><li><span><span><bbox>• </bbox></span></span><span><bbox>Periodontal scaling and root planing - four (4) or more teeth affected in the quadrant (D4341) </bbox></span></li></div><div class=\"BenefitRuleTextHighlighter-passage-536\"><li><span><span><bbox>• </bbox></span></span><span><bbox>Periodontal scaling and root planing - one (1) to three (3) teeth affected in the quadrant (D4342).</bbox></span></li></div>",
+      "serialization": "type:textContent|72966$73209$$mark$fragments",
+      "beginFragmentSequenceNumber": 944,
+      "endFragmentSequenceNumber": 948
+    },
+    {
+      "text": "• Not allowed if there is a history of gingivectomy (D4211 and/or D4212) provided in the past 12 months in the same quadrant.",
+      "html": "<span><span><bbox>• </bbox></span></span><span><bbox>Not allowed if there is a history of gingivectomy (D4211 and/or D4212) provided in the past 12 months in the same quadrant.</bbox></span>",
+      "serialization": "type:textContent|73868$73993$$mark$fragments",
+      "beginFragmentSequenceNumber": 966,
+      "endFragmentSequenceNumber": 967
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Mutually Exclusive",
+  "complianceTag": "non compliance"
+},{
+  "_id": {
+    "$oid": "5c46f3e5cff47e0006151334"
+  },
+  "displayName": "MK TB done 020a (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNoMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - min"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/utilization_management_review",
+          "label": "utilisation management review",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review",
+      "serialization": "type:textContent|63494$63937$$mark$fragments",
+      "beginFragmentSequenceNumber": 826,
+      "endFragmentSequenceNumber": 828
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c46f4f4cff47e0006151339"
+  },
+  "displayName": "MK TB done 021a (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_periodontal_procedures",
+          "label": "periodontal procedures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - min"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - medical history of disease"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/utilization_management_review",
+          "label": "utilisation management review",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) prophylaxis procedures without a history of periodontal disease or up to four (4) periodontal maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review",
+      "serialization": "type:textContent|63494$63937$$mark$fragments",
+      "beginFragmentSequenceNumber": 826,
+      "endFragmentSequenceNumber": 828
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c46f7cecff47e000615133f"
+  },
+  "displayName": "JS TB done 042a (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4910",
+          "label": "d4910 - periodontal maintenance",
+          "type": "SINGLE",
+          "claimValue": "D4910"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/umls_disease_or_syndrome_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMedicalHistoryOfDisease",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - medical history of disease"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - min"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/utilization_management_review",
+          "label": "utilisation management review",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasRequirement",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "requirement - needed"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review.",
+      "html": "Members determined to be at high risk for periodontal disease or high risk for caries (decay) is eligible for additional services. These services include up to four (4) Prophylaxis procedures without a history of periodontal disease or up to four (4) Periodontal Maintenance procedures once a history of periodontal disease is established, per year. Any services exceeding these guidelines will be subject to utilization management (UM) review.",
+      "serialization": "type:textContent|71721$72165$$mark$fragments",
+      "beginFragmentSequenceNumber": 920,
+      "endFragmentSequenceNumber": 922
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c46f9d4cff47e0006151348"
+  },
+  "displayName": "JS TB done 044a (full)",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_dental_prophylaxis",
+          "label": "dental prophylaxis",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "4",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_periodontal_disease",
+          "label": "periodontal disease",
+          "type": "SINGLE",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_caries",
+          "label": "caries",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "html": "Members who are determined to fit into the high risk category for periodontal disease or high risk for caries (decay) are eligible for any combination of up to four (4) prophylaxes or up to four (4) periodontal maintenance visits per year.",
+      "serialization": "type:textContent|72366$72605$$mark$fragments",
+      "beginFragmentSequenceNumber": 934,
+      "endFragmentSequenceNumber": 934
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c5b12365da90d0009524ded"
+  },
+  "displayName": "GF 30A",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_fluoride_rinse",
+          "label": "fluoride rinse",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasNotApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "not covered service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Fluoride rinse is not an acceptable treatment for any member and will not be reimbursed.",
+      "html": "Fluoride rinse is not an acceptable treatment for any member and will not be reimbursed.",
+      "serialization": "type:textContent|66996$67084$$mark$fragments",
+      "beginFragmentSequenceNumber": 862,
+      "endFragmentSequenceNumber": 862
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Non Coverage",
+  "complianceTag": "non compliance"
+},{
+  "_id": {
+    "$oid": "5c5b3a3a5da90d0009524dfd"
+  },
+  "displayName": "GF 49a",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_complete_dentures",
+          "label": "complete dentures",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_partial_dentures",
+          "label": "partial dentures",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/canines",
+          "label": "canines",
+          "type": "GROUP",
+          "claimValue": null
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/incisors",
+          "label": "incisors",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPerBodyPartApplicability",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "body part"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "html": "Removable Prosthetics for Adult Members (age 21 years and older)",
+      "serialization": "type:textContent|52837$52901$$mark$fragments",
+      "beginFragmentSequenceNumber": 715,
+      "endFragmentSequenceNumber": 715
+    },
+    {
+      "text": "Coverage is provided, however, for anterior teeth, irrespective of the number of teeth in occlusion.",
+      "html": "Coverage is provided, however, for anterior teeth, irrespective of the number of teeth in occlusion.",
+      "serialization": "type:textContent|53019$53119$$mark$fragments",
+      "beginFragmentSequenceNumber": 717,
+      "endFragmentSequenceNumber": 717
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c5b3cae5da90d0009524e01"
+  },
+  "displayName": "GF 51",
+  "conditions": [
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d1120",
+          "label": "d1120 - prophylaxis - child",
+          "claimValue": "D1120",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d1110",
+          "label": "d1110 - prophylaxis - adult",
+          "claimValue": "D1110",
+          "type": "SINGLE"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMutuallyExclusiveNotReimbursableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "mutual exclusive non-reimbursable service"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/day",
+        "label": "day(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4342",
+          "label": "d4342 - periodontal scaling and root planing - one to three teeth per quadrant",
+          "claimValue": "D4342",
+          "type": "SINGLE"
+        },
+        {
+          "_id": "http://claims-audit.ibm.com/procedure_code_d4341",
+          "label": "d4341 - periodontal scaling and root planing - four or more teeth per quadrant",
+          "claimValue": "D4341",
+          "type": "SINGLE"
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMutuallyExclusiveReimbursableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "mutual exclusive reimbursable service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Prophylaxis (D1110 and/or D1120) is not paid on the same day as periodontal scaling and root planing (D4341 and/or D4342).",
+      "html": "Prophylaxis (D1110 and/or D1120) is not paid on the same day as periodontal scaling and root planing (D4341 and/or D4342).",
+      "serialization": "type:textContent|73996$74118$$mark$fragments",
+      "beginFragmentSequenceNumber": 969,
+      "endFragmentSequenceNumber": 969
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Mutually Exclusive",
+  "complianceTag": "non compliance"
+},{
+  "_id": {
+    "$oid": "5c5b4e885da90d0009524e0c"
+  },
+  "displayName": "GF JD 30 C",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_topical_fluoride_treatments",
+          "label": "topical fluoride treatments",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "2",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/year",
+        "label": "year(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/high_risk_category_for_topical_fluoride_treatments",
+          "label": "topical fluoride treatments",
+          "type": "SINGLE",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/belongsToHighRiskCategory",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "member - high risk category"
+    },
+    {
+      "value": "21",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMinAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - min age"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "Topical fluoride treatments are allowed twice (2) per year for adult members considered high risk.",
+      "html": "Topical fluoride treatments are allowed twice (2) per year for adult members considered high risk.",
+      "serialization": "type:textContent|66897$66995$$mark$fragments",
+      "beginFragmentSequenceNumber": 861,
+      "endFragmentSequenceNumber": 861
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+},{
+  "_id": {
+    "$oid": "5c5b5bfd5da90d0009524e1a"
+  },
+  "displayName": "GF JD 40 A",
+  "conditions": [
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/custom_procedure_codes_group_all_crowns",
+          "label": "all crowns",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasApplicableService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "applicable service"
+    },
+    {
+      "value": "1",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasAmountOfTime",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "reference period - amount of time"
+    },
+    {
+      "value": {
+        "_id": "http://claims-audit.ibm.com/day",
+        "label": "day(s)",
+        "type": "SINGLE"
+      },
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasUnitOfTime",
+      "conditionTemplateType": "SINGLE_SELECTION",
+      "_class": "SingleSelectionConditionTemplateValue",
+      "displayName": "reference period - unit of time"
+    },
+    {
+      "value": "20",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxAge",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "member - max age"
+    },
+    {
+      "value": "5",
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasMaxUnits",
+      "conditionTemplateType": "FREE_TEXT",
+      "_class": "FreeTextConditionTemplateValue",
+      "displayName": "unit limitation - max"
+    },
+    {
+      "values": [
+        {
+          "_id": "http://claims-audit.ibm.com/places_of_service_group_non_hospital",
+          "label": "non-hospital",
+          "type": "GROUP",
+          "claimValue": null
+        }
+      ],
+      "conditionTemplateId": "http://claims-audit.ibm.com/hasPlaceOfService",
+      "conditionTemplateType": "MULTIPLE_SELECTION",
+      "_class": "MultipleSelectionConditionTemplateValue",
+      "displayName": "place of service"
+    }
+  ],
+  "highlights": [
+    {
+      "text": "When treating children under the age of 21, a maximum of five (5) crowns may be prepared and inserted on the same day of service in a non-hospital setting unless in-office sedation is provided.",
+      "html": "When treating children under the age of 21, a maximum of five (5) crowns may be prepared and inserted on the same day of service in a non-hospital setting unless in-office sedation is provided.",
+      "serialization": "type:textContent|69659$69852$$mark$fragments",
+      "beginFragmentSequenceNumber": 894,
+      "endFragmentSequenceNumber": 894
+    }
+  ],
+  "policyId": "5c378080cff47e0007dc8c87",
+  "status": "VERIFIED",
+  "_class": "BenefitRule",
+  "subtype": "Service Limitation",
+  "complianceTag": "compliance"
+}]
