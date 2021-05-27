@@ -29,7 +29,7 @@ the sections below to generate the ontology and access it though a REST service.
 4. [Access the REST API](#access-the-rest-api)
 
 ### Run the application
-Navigate to the folder `rules_extraction_from_healthcare_policy/ontology-and-lifting/` and run the following docker command.
+Navigate to the folder `rules_extraction_from_healthcare_policy/ontology-and-lifting/` and run the following [docker](https://www.docker.com/) command.
 
 `docker build --tag policy-knowledge-extraction-service . && docker run -p 8086:8086 policy-knowledge-extraction-service`
 
@@ -52,6 +52,6 @@ The ontology can be exported using the Swagger API at http://localhost:8086/swag
 in JSONLD, N3, NTRIPLES, RDFXML, or TURTLE format.
 
 ### Running an RDF4j instance to explore the ontology
-You can use RDFj for example to explore the updated ontology file:
+You can use [RDF4j](https://rdf4j.org/documentation/tools/server-workbench/) for example to explore the updated ontology file:
 `docker build -f Rdf4j/DockerfileRdf4J -t rdf4j . && docker run -p 8080:8080 rdf4j`
 RDF4J Workbench is available at http://localhost:8080/rdf4j-workbench and contains the populated ontology that can be obtained using the lifting endpoints described above.
