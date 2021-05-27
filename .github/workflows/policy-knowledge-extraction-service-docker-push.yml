@@ -23,9 +23,17 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build container image
+    - name: Build policy-knowledge-extraction-service container image
       uses: docker/build-push-action@v2
       with:
         context: ./ontology-and-lifting
         push: true
         tags: ghcr.io/ibm/rules_extraction_from_healthcare_policy/policy-knowledge-extraction-service:latest
+    - name: Build rdf4j-policy-extraction-ontology container image
+      uses: docker/build-push-action@v2
+      with:
+        context: ./ontology-and-lifting/Rdf4j
+        file: DockerfileRdf4J
+        push: true
+        tags: ghcr.io/ibm/rules_extraction_from_healthcare_policy/rdf4j-policy-extraction-ontology:latest
+    
