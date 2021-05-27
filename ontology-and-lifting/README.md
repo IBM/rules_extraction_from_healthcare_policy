@@ -29,7 +29,7 @@ the sections below to generate the ontology and access it though a REST service.
 4. [Access the REST API](#access-the-rest-api)
 
 ### Run the application
-Navigate to the project folder and run the following docker command.
+Navigate to the folder `rules_extraction_from_healthcare_policy/ontology-and-lifting/` and run the following docker command.
 
 `docker build --tag policy-knowledge-extraction-service . && docker run -p 8086:8086 policy-knowledge-extraction-service`
 
