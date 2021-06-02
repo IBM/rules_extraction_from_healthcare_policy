@@ -28,12 +28,12 @@ jobs:
       with:
         context: ./ontology-and-lifting
         push: true
-        tags: ghcr.io/ibm/rules_extraction_from_healthcare_policy/policy-knowledge-extraction-service:latest
+        tags: ghcr.io/ibm/policy-knowledge-extraction-service:latest
     - name: Build rdf4j-policy-extraction-ontology container image
       uses: docker/build-push-action@v2
       with:
         context: ./ontology-and-lifting
         file: ./ontology-and-lifting/Rdf4j/Dockerfile
         push: true
-        tags: ghcr.io/ibm/rules_extraction_from_healthcare_policy/rdf4j-policy-extraction-ontology:latest
+        tags: ghcr.io/ibm/rdf4j-policy-extraction-ontology:latest
     
