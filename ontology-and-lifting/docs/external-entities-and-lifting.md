@@ -156,7 +156,7 @@ for each column is specified
     * `properties`, an array of property's definitions that will be associated with the created individual in the output model
         * `property`, defines the target property to use, there are two types of properties:
             * (a) predefined properties, currently `DISPLAY_NAME`, `SURFACE_FORM`, `DESCRIPTION` and `CLAIM_VALUE` values are supported
-            * (b) custom defined properties, **TODO: not yet implemented!**, that are defined by  
+            * (b) custom defined properties, **not yet implemented!**, that are defined by  
                 * `uri`, the property uri
                 * `type`, the type of the range value, currently `LITERAL` and `INDIVIDUAL` value are allowed
                 * `typeUri`, the uri of the type for the range value         
