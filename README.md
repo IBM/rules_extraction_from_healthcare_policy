@@ -20,4 +20,5 @@ We provide two collections of benefit rules: [1](benefit_rules_90.json), [2](ben
 ### References
 1. Towards protecting vital healthcare programs by extracting actionable knowledge from policy. Vanessa Lopez, Nagesh Yadav, Gabriele Picco, Inge Vejsbjerg, Eoin Carroll, Seamus Brady, Marco Luca Sbodio, Lam Thanh Hoang, Miao Wei, John Segrave. Findings of ACL, 2021.
 2.  Brisimi, Theodora & Lopez, Vanessa & Rho, Valentina & Sbodio, Marco & Picco, Gabriele & Kristiansen, Morten & Segrave-Daly, John & Cullen, Conor. (2020). Ontology-guided Policy Information Extraction for Healthcare Fraud Detection. MIE 2020 
+3.  Benefit graph extraction from healthcare policies. Vanessa Lopez, Valentina Rho, Theodora Brisimi et al. ISWC, 2019
 
