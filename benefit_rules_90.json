@@ -69,6 +69,7 @@
   "policyId": "5c8a6c8f3a25490006d6a146",
   "status": "VERIFIED",
   "complianceTag": "compliance",
+  "subtype": "Service Limitation",    
   "_class": "BenefitRule"
 },{
   "_id": {
@@ -446,6 +447,7 @@
   "policyId": "5c8a6c8f3a25490006d6a146",
   "status": "VERIFIED",
   "_class": "BenefitRule",
+  "subtype": "Service Limitation",    
   "complianceTag": "compliance"
 },{
   "_id": {
@@ -4303,6 +4305,7 @@
   "policyId": "5c8a6c8f3a25490006d6a146",
   "status": "VERIFIED",
   "_class": "BenefitRule",
+  "subtype": "Non Coverage",  
   "complianceTag": "non compliance"
 },{
   "_id": {
@@ -5774,6 +5777,7 @@
   "policyId": "5c8a6c8f3a25490006d6a146",
   "status": "VERIFIED",
   "_class": "BenefitRule",
+  "subtype": "Mutually Exclusive",    
   "complianceTag": "non compliance"
 },{
   "_id": {
