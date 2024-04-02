@@ -34,6 +34,7 @@ import com.ibm.wh.extractionservice.externalentity.lifting.LiftingConfiguration.
 import com.ibm.wh.extractionservice.externalentity.lifting.LiftingConfiguration.PropertyMapping;
 import com.ibm.wh.extractionservice.externalentity.lifting.LiftingConfiguration.PropertyMapping.Transformation;
 import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
 
 @Service
 public class LiftingService {
@@ -83,6 +84,8 @@ public class LiftingService {
                 this.columnHeadersToPosition = cleanHeaders(currentLine);
             } catch (IOException e) {
                 throw new UncheckedIOException(e);
+            } catch (CsvValidationException e){
+                throw new RuntimeException("A CsvValidationException occurred", e);
             }
         }
 
@@ -97,6 +100,8 @@ public class LiftingService {
                 this.currentLine = csvReader.readNext();
             } catch (IOException e) {
                 throw new UncheckedIOException(e);
+            } catch (CsvValidationException e){
+                throw new RuntimeException("A CsvValidationException occurred", e);
             }
         }
 

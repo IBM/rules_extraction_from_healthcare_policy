@@ -27,7 +27,7 @@ ext {
     jsoupVersion = '1.12.1'
     jungVersion = "2.0.1"
     luceneVersion = "8.2.0"
-    openCsvVersion = "4.6"
+    openCsvVersion = "5.9"
     springCloudContractVersion = "2.1.2.RELEASE"
     springCloudVersion = "Greenwich.RELEASE"
     springfoxVersion = "2.9.2"
