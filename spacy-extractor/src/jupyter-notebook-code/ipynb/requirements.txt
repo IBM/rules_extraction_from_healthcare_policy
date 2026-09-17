@@ -9,7 +9,7 @@ MarkupSafe==1.1.1    # intransitive dep
 pip==19.2.3
 six==1.14.0          # intransitive dep
 setuptools==41.5.1
-Werkzeug==0.16.0     # intransitive dep
+Werkzeug==3.1.6     # intransitive dep
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
 pandas
 spacy==2.3.2
