@@ -6,7 +6,7 @@ Jinja2==2.10.3       # intransitive dep
 joblib==0.14.0
 JSON-log-formatter==0.2.0  
 MarkupSafe==1.1.1    # intransitive dep
-pip==19.2.3
+pip==26.2
 six==1.14.0          # intransitive dep
 setuptools==41.5.1
 Werkzeug==0.16.0     # intransitive dep
